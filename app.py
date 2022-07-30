@@ -68,3 +68,10 @@ def area_triangle(base, height):
     return int(base*height/2)
 
 print(area_triangle(10,5))
+
+area_a = area_triangle(4, 6)
+print("Area A: ", area_a)
+area_b = area_triangle(90, 8)
+print("Area B: ", area_b)
+sum_area = area_a + area_b
+print("The sum of areas is: ", sum_area)
