@@ -235,3 +235,16 @@ def is_even(number):
     return False
 
 is_even(165242342)
+
+
+# validation username < 3 and not long than 15
+
+def hint_username(username):
+    if len(username) < 3:
+        print("Invalid username, Must be at least 3 characters long")
+    elif len(username) > 15:
+        print("Invalid username, Must be at most 15 characters long")
+    else:
+        print("Valid username. You ready to go")
+
+hint_username("Hazlan Muhammad Qodri")
