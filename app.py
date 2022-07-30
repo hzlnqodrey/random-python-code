@@ -55,3 +55,10 @@ def greeting(name, department):
     print("You are part of " + department + " department")
 
 greeting("Hazlan Muhammad Qodri", "Software Engineering")
+
+# seconds convertion calc
+def print_to_seconds(day, hours, minutes, seconds):
+    print(str(day) + " day, " + str(hours) + " hours, " + str(minutes) + " minutes, and " + str(seconds) + " seconds is same as ")
+    print(str((day*24*3600)+(hours*3600)+(minutes*60)+seconds) + " seconds")
+
+print_to_seconds(7, 5, 15, 0)
