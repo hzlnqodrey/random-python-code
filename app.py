@@ -302,9 +302,9 @@ def exam_grade(score):
 	if score > 95:
 		grade = "Top Score"
 	elif score >= 60:
-		grade = "Pass"
+		grade = "Passed"
 	else:
-		grade = "Fail"
+		grade = "Failed"
 	return grade
 
 print(exam_grade(65)) # Should be Pass
