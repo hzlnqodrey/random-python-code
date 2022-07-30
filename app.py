@@ -116,3 +116,10 @@ def area_of_circle(radius):
     print("The area of circle, by given radius " + str(radius) + " is: " + str(area))
 
 area_of_circle(5)
+
+# refactoring area of a rectangle ( base * height )
+def rectangle_area(base, height):
+	area = base*height  # the area is base*height
+	print("The area is " + str(area))
+
+rectangle_area(5,6)
