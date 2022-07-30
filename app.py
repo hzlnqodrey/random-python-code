@@ -210,5 +210,18 @@ def user_feeling(name, get_feeling):
     print("This user: " + name + " is feeling " + get_feeling + " today.")
 
 
-get_feeling = express_emoji("😭")
+get_feeling = express_emoji("😡")
 user_feeling("Qodri", get_feeling)
+
+#####################################################
+
+# validation username < 3
+
+def hint_username(username):
+    if len(username) < 3:
+        print("Invalid username, Must be at least 3 characters long")
+    else:
+        print("You ready to go")
+
+hint_username("Qodrey")
+
