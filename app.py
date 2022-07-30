@@ -94,3 +94,10 @@ def convert_to_seconds(seconds):
 
 hours, minutes, remaining_seconds = convert_to_seconds(7841)
 print(hours, minutes, remaining_seconds)
+
+# lucky number 
+def lucky_number(name):
+    number = len(name) * 8
+    print("Hello " + name + ". Your lucky number is: " + str(number))
+
+lucky_number("Qodrey")
