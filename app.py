@@ -47,3 +47,10 @@ word6 = "so "
 word7 = "far?"
 
 print(word1+word2+word3+word4+word5+word6+word7)
+
+
+# define a function
+def greeting(name):
+    print("Welcome, " + name)
+
+greeting("Hazlan Muhammad Qodri")
