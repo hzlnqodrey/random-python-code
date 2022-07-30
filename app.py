@@ -192,3 +192,23 @@ smaller, bigger = order_numbers(100, 99)
 print(smaller, bigger)
 
 #####################################################
+
+# user feeling function checking by emoji
+def express_emoji(emoji):
+    if (emoji == "😃"):
+        return "😃 Happy 😃"
+    elif (emoji == "😒"):
+        return "😒 Annoyed 😒"
+    elif (emoji == "😡"):
+        return "😡 Angry 😡"
+    elif (emoji == "😭"):
+        return "😭 Sad 😭"
+    else:
+        return "Flat"
+
+def user_feeling(name, get_feeling):
+    print("This user: " + name + " is feeling " + get_feeling + " today.")
+
+
+get_feeling = express_emoji("😭")
+user_feeling("Qodri", get_feeling)
