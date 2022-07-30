@@ -101,3 +101,10 @@ def lucky_number(name):
     print("Hello " + name + ". Your lucky number is: " + str(number))
 
 lucky_number("Qodrey")
+
+# month_days
+def month_days(month, days):
+    print(month + " has " + str(days) + " days.")
+
+month_days("June", 30)
+month_days("July", 31)
