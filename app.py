@@ -17,3 +17,12 @@ for i in range(10):
 
 for i in range(5):
   print("This is fun!")
+
+seconds_in_a_day = 86400
+seconds_in_a_week = seconds_in_a_day*7
+print(seconds_in_a_week)
+
+base = 5
+height = 3
+area = (base*height)/2
+print("The area of the triangle is " + str(area))
