@@ -95,16 +95,24 @@ def convert_to_seconds(seconds):
 hours, minutes, remaining_seconds = convert_to_seconds(7841)
 print(hours, minutes, remaining_seconds)
 
-# lucky number 
+# lucky number func
 def lucky_number(name):
     number = len(name) * 8
     print("Hello " + name + ". Your lucky number is: " + str(number))
 
 lucky_number("Qodrey")
 
-# month_days
+# month_days func
 def month_days(month, days):
     print(month + " has " + str(days) + " days.")
 
 month_days("June", 30)
 month_days("July", 31)
+
+# area of a circle ( 𝝅r^2 )
+def area_of_circle(radius):
+    𝝅 = 3.14
+    area = 𝝅 * (radius ** 2)
+    print("The area of circle, by given radius " + str(radius) + " is: " + str(area))
+
+area_of_circle(5)
