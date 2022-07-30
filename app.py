@@ -10,3 +10,7 @@ friends = ["Rivano" , "Fauzan", "Hazlan", "Cemilik", "Gilang", "Bintang", "Mas P
 
 for friend in friends:
     print("Hi " + friend)
+
+
+for i in range(10):
+    print("Hello, World!")
