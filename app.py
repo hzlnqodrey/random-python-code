@@ -221,7 +221,17 @@ def hint_username(username):
     if len(username) < 3:
         print("Invalid username, Must be at least 3 characters long")
     else:
-        print("You ready to go")
+        print("Valid username. You ready to go")
 
 hint_username("Qodrey")
 
+#####################################################
+
+# the basic even or odd number function
+
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    return False
+
+is_even(165242342)
