@@ -62,3 +62,9 @@ def print_to_seconds(day, hours, minutes, seconds):
     print(str((day*24*3600)+(hours*3600)+(minutes*60)+seconds) + " seconds")
 
 print_to_seconds(7, 5, 15, 0)
+
+# calculate the area of triangle
+def area_triangle(base, height):
+    return int(base*height/2)
+
+print(area_triangle(10,5))
