@@ -25,4 +25,10 @@ print(seconds_in_a_week)
 base = 5
 height = 3
 area = (base*height)/2
-print("The area of the triangle is " + str(area))
+print("The area of the triangle is: " + str(area))
+
+bill = 47.28
+tip = bill * (0.15)
+total = bill + tip
+share = total / 2 
+print("Each person needs to pay: " + str(share))
