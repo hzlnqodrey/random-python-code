@@ -6,26 +6,38 @@ for home_team in teams:
             print(home_team + " vs " + away_team)
 
 
+#####################################################
+
 friends = ["Rivano" , "Fauzan", "Hazlan", "Cemilik", "Gilang", "Bintang", "Mas Pram", "Najma", "Julio", "Regularity", "Singularity"]
 
 for friend in friends:
     print("Hi " + friend)
 
+#####################################################
+
 
 for i in range(10):
     print("Hello, World!")
 
+#####################################################
+
 for i in range(5):
   print("This is fun!")
+
+#####################################################
 
 seconds_in_a_day = 86400
 seconds_in_a_week = seconds_in_a_day*7
 print(seconds_in_a_week)
 
+#####################################################
+
 base = 5
 height = 3
 area = (base*height)/2
 print("The area of the triangle is: " + str(area))
+
+#####################################################
 
 bill = 47.28
 tip = bill * (0.15)
@@ -33,10 +45,14 @@ total = bill + tip
 share = total / 2 
 print("Each person needs to pay: " + str(share))
 
+#####################################################
+
 numerator = 10
 denominator = 10
 result = numerator / denominator
 print(int(result))
+
+#####################################################
 
 word1 = "How "
 word2 = "do "
@@ -48,6 +64,7 @@ word7 = "far?"
 
 print(word1+word2+word3+word4+word5+word6+word7)
 
+#####################################################
 
 # define a function
 def greeting(name, department):
@@ -56,12 +73,16 @@ def greeting(name, department):
 
 greeting("Hazlan Muhammad Qodri", "Software Engineering")
 
+#####################################################
+
 # seconds convertion calc
 def print_to_seconds(day, hours, minutes, seconds):
     print(str(day) + " day, " + str(hours) + " hours, " + str(minutes) + " minutes, and " + str(seconds) + " seconds is same as ")
     print(str((day*24*3600)+(hours*3600)+(minutes*60)+seconds) + " seconds")
 
 print_to_seconds(7, 5, 15, 0)
+
+#####################################################
 
 # calculate the area of triangle
 def area_triangle(base, height):
@@ -76,6 +97,8 @@ print("Area B: ", area_b)
 sum_area = area_a + area_b
 print("The sum of areas is: ", sum_area)
 
+#####################################################
+
 # seconds convertion calc return value
 def get_seconds(hours, minutes, seconds):
   return 3600*hours + 60*minutes + seconds
@@ -84,6 +107,8 @@ amount_a = get_seconds(2, 30, 0)
 amount_b = get_seconds(0, 45, 15)
 result = amount_a + amount_b
 print(result)
+
+#####################################################
 
 # remaining seconds func
 def convert_to_seconds(seconds):
@@ -95,6 +120,8 @@ def convert_to_seconds(seconds):
 hours, minutes, remaining_seconds = convert_to_seconds(7841)
 print(hours, minutes, remaining_seconds)
 
+#####################################################
+
 # lucky number func
 def lucky_number(name):
     number = len(name) * 8
@@ -102,12 +129,16 @@ def lucky_number(name):
 
 lucky_number("Qodrey")
 
+#####################################################
+
 # month_days func
 def month_days(month, days):
     print(month + " has " + str(days) + " days.")
 
 month_days("June", 30)
 month_days("July", 31)
+
+#####################################################
 
 # area of a circle ( 𝝅r^2 )
 def area_of_circle(radius):
@@ -117,12 +148,16 @@ def area_of_circle(radius):
 
 area_of_circle(5)
 
+#####################################################
+
 # refactoring area of a rectangle ( base * height )
 def rectangle_area(base, height):
 	area = base*height  # the area is base*height
 	print("The area is " + str(area))
 
 rectangle_area(5,6)
+
+#####################################################
 
 # 1) Complete the function to return the result of the conversion
 def convert_distance(miles):
@@ -140,3 +175,20 @@ print("The distance in kilometers is " + str(my_trip_km))
 # 4) Calculate the round-trip in kilometers by doubling the result,
 #    and fill in the blank to print the result
 print("The round-trip in kilometers is " + str(my_trip_km*2))
+
+#####################################################
+
+# This function compares two numbers and returns them
+# in increasing order.
+def order_numbers(number1, number2):
+	if number2 > number1:
+		return number1, number2
+	else:
+		return number2, number1
+
+# 1) Fill in the blanks so the print statement displays the result
+#    of the function call
+smaller, bigger = order_numbers(100, 99)
+print(smaller, bigger)
+
+#####################################################
