@@ -865,3 +865,16 @@ print(fruit[4:]) # output: 'apple', Accessing 4 to NOTHING takes everything from
 word = "supercalifragilisticexpialidocious"
 print(word.index("x")) # Should be 21
 
+# 'in' substring in a string
+pets = "Cats & Dogs"
+"Dragon" in pets # Should be False
+"Cats" in pets # Should be True
+
+# STRING: Real World Problem - Convert old email domain to the new one
+
+def replace_domain(email, old_domain, new_domain):
+    if "@" + old_domain in email: # if user still using the old domain, change them
+        index = email.index("@" + old_domain) # index to find what index is start of @ and get the value, so we can start slicing without @ + old_domain
+        new_email = email[:index] + new_domain
+        return new_email
+    return email # if use alrd using the new domain, just return the current value
