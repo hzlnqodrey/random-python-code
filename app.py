@@ -829,3 +829,4 @@ def votes(params):
 
 name = "Jaylen"
 print(name[0])
+print(name[len(name)-1]) # how to search the last character in the strings
