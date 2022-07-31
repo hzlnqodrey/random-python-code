@@ -822,3 +822,10 @@ def votes(params):
 	    print("Possible option:" + vote)
 
 # output: votes(['yes', 'no', 'maybe'])
+
+#####################################################
+
+# string indexing - string start index at 0 
+
+name = "Jaylen"
+print(name[0])
