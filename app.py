@@ -596,3 +596,15 @@ for left in range(7):
         print("[" + str(left) + "|" + str(right) + "]", end=" ")
     # print newline
     print()
+
+#####################################################
+
+
+def validate_users(users):
+  for user in users:
+    if is_valid(user):
+      print(user + " is valid")
+    else:
+      print(user + " is invalid")
+
+validate_users(["purplecat"])
