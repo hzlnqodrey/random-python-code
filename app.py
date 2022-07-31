@@ -635,3 +635,21 @@ for x in range(1,11):
 for x in range(0, 101):
     if x % 7 == 0:
         print(x)
+
+def factorial(n):
+    result = 1
+    for x in range(1,n):
+        result = result * x
+    return result
+
+for n in range(0,10):
+    print(n, factorial(n+1))
+
+#####################################################
+
+# recursion
+
+def factorial(n):
+    if n < 2: # base case
+        return 1
+    return n * factorial(n-1) # recursive case
