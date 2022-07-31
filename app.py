@@ -857,3 +857,11 @@ fruit[1:-1] # output 'rang'
 fruit = "Pineapple"
 print(fruit[:4]) # output: 'Pine'
 print(fruit[4:]) # output: 'apple', Accessing 4 to NOTHING takes everything from index four onward.
+
+# string in Python is immutable/can't be modified
+
+# STRING METHOD
+
+word = "supercalifragilisticexpialidocious"
+print(word.index("x")) # Should be 21
+
