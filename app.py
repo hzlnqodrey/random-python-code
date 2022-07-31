@@ -574,3 +574,15 @@ def factorial(n):
 
 print(factorial(4)) # should return 24
 print(factorial(5)) # should return 120
+
+#####################################################
+
+# Convert Fahrenheit to Celcius
+
+def convert_to_celcius(x):
+    return (x-32)*5/9
+
+for x in range(0, 101, 10):
+    print(x, convert_to_celcius(x))
+
+print("F   C")
