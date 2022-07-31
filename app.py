@@ -602,7 +602,7 @@ for left in range(7):
 
 def validate_users(users):
   for user in users:
-    if is_valid(user):
+    if len(users) > 3:
       print(user + " is valid")
     else:
       print(user + " is invalid")
