@@ -556,3 +556,21 @@ for value in values:
     length += 1
 
 print("The total sum of values is " + str(sum) + " and the average of values is " + str(sum/length))
+
+#####################################################
+
+# Factorial
+product = 1
+for n in range(1, 1000000):
+    product = product * n
+
+print(product)
+
+def factorial(n):
+    result = 1
+    for i in range(1,n+1):
+        result = result * i
+    return result
+
+print(factorial(4)) # should return 24
+print(factorial(5)) # should return 120
