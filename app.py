@@ -1,4 +1,4 @@
-teams = ["Human", "Dragon", "Slave", "Unicorn", "Orc", "Magician", "Fruit Slayer"]
+teams = ["Human", "Dragon", "Slave", "Unicorn"]
 
 for home_team in teams:
     for away_team in teams:
@@ -586,3 +586,13 @@ for x in range(0, 101, 10):
     print(x, convert_to_celcius(x))
 
 print("F   C")
+
+#####################################################
+
+# Domino's Bracket
+
+for left in range(7):
+    for right in range(left, 7):
+        print("[" + str(left) + "|" + str(right) + "]", end=" ")
+    # print newline
+    print()
