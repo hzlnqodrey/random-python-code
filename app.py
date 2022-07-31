@@ -851,3 +851,9 @@ print(first_and_last(""))
 
 fruit = "Orange"
 fruit[1:-1] # output 'rang'
+
+# slice one side is onward
+
+fruit = "Pineapple"
+print(fruit[:4]) # output: 'Pine'
+print(fruit[4:]) # output: 'apple', Accessing 4 to NOTHING takes everything from index four onward.
