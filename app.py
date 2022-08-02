@@ -965,3 +965,12 @@ print(price, with_tax)
 
 # -> example of formatting expression
 print("Base price of the is ${:.2f}. With tax: ${:.2f}".format(price, with_tax))
+
+
+
+# formatted the celc to fahrenheit
+def convert_to_celcius(x):
+    return (x-32)*5/9
+
+for x in range(0, 101, 10):
+    print("{:>3} F | {:>6.2f} C ".format(x, convert_to_celcius(x)))
