@@ -915,9 +915,21 @@ int("12345") + int("54321") #  66666
 
 " ".join(["This", "is", "a", "phrase", "joined", "by", "spaces"])
 
-# 6. Split - returns array of string that splitted into indexes
+# 6. Split - returns array/list of string that splitted into indexes
 
 "This is another example".split()
 
+# Short Quiz in More String Methods
+
+def initials(phrase):
+    words = phrase.split()
+    result = ""
+    for word in words:
+        result += word[:1]
+    return result.upper()
+
+print(initials("Universal Serial Bus")) # Should be: USB
+print(initials("local area network")) # Should be: LAN
+print(initials("Operating system")) # Should be: OS
 
 
