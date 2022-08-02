@@ -881,7 +881,13 @@ def replace_domain(email, old_domain, new_domain):
 
 # Another String Method Example: 
 
+# 1. Lower and Upper Method
+
 answer = "YES"
 
 if answer.lower() == "yes":
     print("User said yes")
+
+# 2. Strip Method - To get rid of whitespaces
+
+"yes ".strip()
