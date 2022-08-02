@@ -911,4 +911,8 @@ if answer.lower() == "yes":
 
 int("12345") + int("54321") #  66666
 
+# 5. Join - to concatinate string
+
+" ".join(["This", "is", "a", "phrase", "joined", "by", "spaces"])
+
 
