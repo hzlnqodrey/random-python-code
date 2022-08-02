@@ -942,3 +942,8 @@ number = len(name) * 9 - 7 + 28
 print("Hello {}!. Your lucky number is {}...".format(name, number))
 
 
+# name = req.body.name
+# tokenizer = auth.token.generator() #contohnya
+
+print("Your token is {tokenizer}, {name}".format(name=name, tokenizer="tokenizer"))
+
