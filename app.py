@@ -894,3 +894,7 @@ if answer.lower() == "yes":
     # .rstrip() - get rid of right whitespaces
 
 " yes ".lstrip()
+
+# 3. Count - returns how many times a given substring appears within a string
+
+"The number of times e occurs in this string is 4".count('e')
