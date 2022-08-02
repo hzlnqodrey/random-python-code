@@ -903,3 +903,12 @@ if answer.lower() == "yes":
 
 "Forest".endswith("rest")
 
+# 4. isnumeric 
+
+"Forest".isnumeric() # False
+
+"12345".isnumeric() # True
+
+int("12345") + int("54321") #  66666
+
+
