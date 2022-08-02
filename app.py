@@ -1,3 +1,5 @@
+import random
+
 teams = ["Human", "Dragon", "Slave", "Unicorn"]
 
 for home_team in teams:
@@ -947,7 +949,7 @@ print("Hello {}!. Your lucky number is {}...".format(name, number))
 
 print("Your token is {tokenizer}, {name}".format(name=name, tokenizer="tokenizer"))
 
-# another exampple
+# another example
 
 def student_grade(name, grade):
 	return "{name} received {grade}% on the exam".format(name=name, grade=grade)
@@ -955,3 +957,11 @@ def student_grade(name, grade):
 print(student_grade("Reed", 80))
 print(student_grade("Paige", 92))
 print(student_grade("Jesse", 85))
+
+# Formatting expression
+price = 7.5
+with_tax = price * 1.09 # 9% taxes lol
+print(price, with_tax)
+
+# -> example of formatting expression
+print("Base price of the is ${:.2f}. With tax: ${:.2f}".format(price, with_tax))
