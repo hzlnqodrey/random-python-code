@@ -898,3 +898,8 @@ if answer.lower() == "yes":
 # 3. Count - returns how many times a given substring appears within a string
 
 "The number of times e occurs in this string is 4".count('e')
+
+# 3. Endswith - returns a boolean whether string have the specific requested substring
+
+"Forest".endswith("rest")
+
