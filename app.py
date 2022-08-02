@@ -915,4 +915,9 @@ int("12345") + int("54321") #  66666
 
 " ".join(["This", "is", "a", "phrase", "joined", "by", "spaces"])
 
+# 6. Split - returns array of string that splitted into indexes
+
+"This is another example".split()
+
+
 
