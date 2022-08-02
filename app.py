@@ -874,7 +874,14 @@ pets = "Cats & Dogs"
 
 def replace_domain(email, old_domain, new_domain):
     if "@" + old_domain in email: # if user still using the old domain, change them
-        index = email.index("@" + old_domain) # index to find what index is start of @ and get the value, so we can start slicing without @ + old_domain
+        index = email.index("@" + old_domain) # index to find what index is contained by '@', so we can start slicing without @ + old_domain
         new_email = email[:index] + new_domain
         return new_email
     return email # if use alrd using the new domain, just return the current value
+
+# Another String Method Example: 
+
+answer = "YES"
+
+if answer.lower() == "yes":
+    print("User said yes")
