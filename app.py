@@ -933,3 +933,12 @@ print(initials("local area network")) # Should be: LAN
 print(initials("Operating system")) # Should be: OS
 
 
+##############################################################################
+
+# String Format
+
+name = "Hazlan"
+number = len(name) * 9 - 7 + 28
+print("Hello {}!. Your lucky number is {}...".format(name, number))
+
+
