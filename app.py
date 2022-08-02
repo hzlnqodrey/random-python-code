@@ -889,5 +889,8 @@ if answer.lower() == "yes":
     print("User said yes")
 
 # 2. Strip Method - To get rid of whitespaces
+    # strip combination
+    # .lstrip() - get rid of left whitespaces
+    # .rstrip() - get rid of right whitespaces
 
-"yes ".strip()
+" yes ".lstrip()
