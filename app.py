@@ -1069,3 +1069,17 @@ print(skip_elements([])) # Should be []
 
 #   https://stackoverflow.com/questions/509211/understanding-slice-notation
 
+##########################################################################################################
+
+# Tuples - same as list, but immutable (can't be changed or modified), THE ORDERS of INDEX in tuple are matters
+
+# remaining seconds func
+def convert_to_seconds(seconds):
+    hours = seconds // 3600
+    minutes = (seconds - hours * 3600) // 60
+    remaining_seconds = seconds - hours * 3600 - minutes * 60
+    return hours, minutes, remaining_seconds # this give us tuple
+
+result = convert_to_seconds(7841)
+type(result)
+print(result)
