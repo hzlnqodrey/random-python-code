@@ -1020,3 +1020,4 @@ print(fruits) # ["Manggo", "Banana", "Apple", "Orange", "Watermelon"]
 
 # [2] Insert - add element based index that specified choosen
 fruits.insert(1, "Kiwi") # will add 'Kiwi' after 'Manggo'
+# some note: if we use an index higher than the current length of the list, the elements just gets added to the end
