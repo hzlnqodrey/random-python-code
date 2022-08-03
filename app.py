@@ -1013,7 +1013,10 @@ print(get_word("Now we are cooking!", 5)) # Nothing
 
 # LIST METHOD
 
-# [1] Append - will add item(s) in the end of index of a list
+# [1] Append - will add element(s) in the end of index of a list
 fruits = ["Manggo", "Banana", "Apple", "Orange"]
 fruits.append("Watermelon")
 print(fruits) # ["Manggo", "Banana", "Apple", "Orange", "Watermelon"]
+
+# [2] Insert - add element based index that specified choosen
+fruits.insert(1, "Kiwi") # will add 'Kiwi' after 'Manggo'
