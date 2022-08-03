@@ -895,7 +895,7 @@ if answer.lower() == "yes":
     # .lstrip() - get rid of left whitespaces
     # .rstrip() - get rid of right whitespaces
 
-" yes ".lstrip()
+" yes ".strip()
 
 # 3. Count - returns how many times a given substring appears within a string
 
@@ -919,7 +919,7 @@ int("12345") + int("54321") #  66666
 
 # 6. Split - returns array/list of string that splitted into indexes
 
-"This is another example".split()
+"This is another example".split() # ['This', 'is', 'another', 'example']
 
 # Short Quiz in More String Methods
 
@@ -974,3 +974,11 @@ def convert_to_celcius(x):
 
 for x in range(0, 101, 10):
     print("{:>3} F | {:>6.2f} C ".format(x, convert_to_celcius(x)))
+
+
+##########################################################################################
+
+# List
+
+sentence = ["Now", "we", "are", "cooking!"]
+type(sentence) # class<list>
