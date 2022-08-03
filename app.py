@@ -980,5 +980,12 @@ for x in range(0, 101, 10):
 
 # List
 
+# check type
 sentence = ["Now", "we", "are", "cooking!"]
 type(sentence) # class<list>
+
+# print list
+print(sentence)
+
+# length of the list
+len(sentence)
