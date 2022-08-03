@@ -1083,3 +1083,7 @@ def convert_to_seconds(seconds):
 result = convert_to_seconds(7841)
 type(result)
 print(result)
+
+# unpack tuples
+hours, minutes, remaining_seconds = convert_to_seconds(5000)
+print(hours, minutes, remaining_seconds)
