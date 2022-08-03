@@ -1024,3 +1024,7 @@ print(fruits)
 # some note: if we use an index higher than the current length of the list, the elements just gets added to the end
 fruits.insert(100, "Tomato")
 print(fruits) 
+
+# [3] Remove - remove element
+fruits.remove("Banana")
+print(fruits) 
