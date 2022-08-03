@@ -1033,6 +1033,39 @@ print(fruits)
 fruits.pop(0) # will remove 'Manggo'
 print(fruits)
 
-# Manually change the value of element by assign a new value to the specified index
+# Manually change/modifying the value of element by assign a new value to the specified index
 fruits[2] = "Strawberry"
 print(fruits)
+
+def skip_elements(elements):
+	# Initialize variables
+	new_list = []
+	i = 0
+
+	# Iterate through the list
+	for word in elements:
+		# Does this element belong in the resulting list?
+		if elements[i] == word:
+			# Add this element to the resulting list
+			new_list.append(word)
+			# Increment i
+			i += 2
+
+	return new_list
+
+print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
+print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
+print(skip_elements([])) # Should be []
+
+
+# List Slice Notation '[ : : ]'
+#This notation [::2] allows you to select every second element in a sequence.
+
+# [start:stop:step] - items from start to stop-1 by step.
+
+# If you do not specify start, stop or step, then the default values will be applied instead.
+
+# Deeper analysis here:
+
+#   https://stackoverflow.com/questions/509211/understanding-slice-notation
+
