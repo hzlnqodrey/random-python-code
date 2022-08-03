@@ -1141,3 +1141,18 @@ def skip_elements(elements):
 
 print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
 print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
+
+# List comprehension - one line for loops iteration to add element(s) to a list
+
+multiple = [x*7 for x in range(1,11)]
+print(multiple)
+
+languages = ["Python", "Perl", "Ruby", "Go", "Java", "C"]
+
+len_language = [len(language) for language in languages]
+
+# If conditional in List Comprehension
+# let's say we want to know all number between 0 and 100 that can divide by 3
+
+z = [i for i in range(0, 1001) if i % 3 == 0]
+print(z)
