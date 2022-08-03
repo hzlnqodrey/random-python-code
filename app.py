@@ -1116,3 +1116,14 @@ winners = ["Ashley", "Dylan", "Reese"]
 
 for index, winner in enumerate(winners):
     print("{} - {}".format(index+1, winner))
+
+
+# EXAMPLE: list of tuples
+
+def full_emails(people):
+    result = []
+    for email, name in people:
+        result.append("{} <{}>".format(name, email))
+    return result
+
+print(full_emails([("hazlanqodri2020work@gmail.com", "Hazlan Muhammad Qodri"), ("geemde@gmail.com", "Gilang Martadinata")]))
