@@ -1025,6 +1025,10 @@ print(fruits)
 fruits.insert(100, "Tomato")
 print(fruits) 
 
-# [3] Remove - remove element
+# [3] Remove - remove element return a new list that doesn't have the removed element(s)
 fruits.remove("Banana")
 print(fruits) 
+
+# [4] Pop - remove element and return a index that newly removed
+fruits.pop(0) # will remove 'Manggo'
+print(fruits)
