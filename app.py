@@ -989,3 +989,7 @@ print(sentence)
 
 # length of the list
 len(sentence)
+
+# to check if list contains a certain elements, use 'in'
+"cooking!" in sentence # True
+"cooking" in sentence # False
