@@ -1,3 +1,4 @@
+import enum
 import random
 
 teams = ["Human", "Dragon", "Slave", "Unicorn"]
@@ -1098,3 +1099,20 @@ print(file_size(('Class Assignment', 'docx', 17875))) # Should print 17.46
 print(file_size(('Notes', 'txt', 496))) # Should print 0.48
 print(file_size(('Program', 'py', 1239))) # Should print 1.21
 
+
+animals = ["Monkey", "Donkey", "Horse", "Zebra"]
+
+chars = 0
+
+for animal in animals:
+    chars += len(animal)
+
+print("The total characters in animal list: {}. The Average is {}".format(chars, chars/len(animals)))
+
+
+# Enumerate Function - returns an tuple and useful for indexing a list
+
+winners = ["Ashley", "Dylan", "Reese"]
+
+for index, winner in enumerate(winners):
+    print("{} - {}".format(index+1, winner))
