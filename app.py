@@ -1223,3 +1223,13 @@ print(octal_to_string(755)) # Should be rwxr-xr-x
 print(octal_to_string(644)) # Should be rw-r--r--
 print(octal_to_string(750)) # Should be rwxr-x---
 print(octal_to_string(600)) # Should be rw-------
+
+# Question 5
+
+def group_list(group, users):
+  members = "{group}: {users}".format(group=group, users = ", ".join(users))
+  return members
+
+print(group_list("Marketing", ["Mike", "Karen", "Jake", "Tasha"])) # Should be "Marketing: Mike, Karen, Jake, Tasha"
+print(group_list("Engineering", ["Kim", "Jay", "Tom"])) # Should be "Engineering: Kim, Jay, Tom"
+print(group_list("Users", "")) # Should be "Users:"
