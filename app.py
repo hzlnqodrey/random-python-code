@@ -1032,3 +1032,7 @@ print(fruits)
 # [4] Pop - remove element and return a index that newly removed
 fruits.pop(0) # will remove 'Manggo'
 print(fruits)
+
+# Manually change the value of element by assign a new value to the specified index
+fruits[2] = "Strawberry"
+print(fruits)
