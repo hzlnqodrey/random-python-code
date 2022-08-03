@@ -1126,7 +1126,7 @@ def full_emails(people):
         result.append("{} <{}>".format(name, email))
     return result
 
-print(full_emails([("hazlanqodri2020work@gmail.com", "Hazlan Muhammad Qodri"), ("geemde@gmail.com", "Gilang Martadinata")]))
+print(full_emails([("hazlanqodri2020work@gmail.com", ["Hazlan Muhammad Qodri"]), ("geemde@gmail.com", ["Gilang Martadinata"])]))
 
 
 # Skip elements but use enumerate function
@@ -1165,3 +1165,23 @@ print(odd_numbers(10)) # Should print [1, 3, 5, 7, 9]
 print(odd_numbers(11)) # Should print [1, 3, 5, 7, 9, 11]
 print(odd_numbers(1))  # Should print [1]
 print(odd_numbers(-1)) # Should print []
+
+# Practice Quiz: List and Tuple
+
+# Question 1
+
+filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
+# Generate newfilenames as a list containing the new filenames
+# using as many lines of code as your chosen method requires.
+
+newfilenames = []
+get_new_name = ""
+for index, i in enumerate(filenames):
+    if i.endswith('.hpp'):
+        get_new_name = i[:-2]
+        filenames[index] = get_new_name
+
+newfilenames = filenames
+
+print(newfilenames) 
+# Should be ["program.c", "stdio.h", "sample.h", "a.out", "math.h", "hpp.out"]
