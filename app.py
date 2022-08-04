@@ -1272,3 +1272,8 @@ file_counts["txt"] # 14
 "jpg" in file_counts # True
 
 "html" in file_counts # False
+
+# add new key-value pair in dict
+
+file_counts["cfg"] = 8
+print(file_counts) # add the newly added k-v to dict in the end of dict
