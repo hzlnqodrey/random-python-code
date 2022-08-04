@@ -1268,3 +1268,7 @@ file_counts = {
 print(file_counts)
 
 file_counts["txt"] # 14
+
+"jpg" in file_counts # True
+
+"html" in file_counts # False
