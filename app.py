@@ -1277,3 +1277,7 @@ file_counts["txt"] # 14
 
 file_counts["cfg"] = 8
 print(file_counts) # add the newly added k-v to dict in the end of dict
+
+# modified the value of existing key in dict
+file_counts["csv"] = 17
+print(file_counts)
