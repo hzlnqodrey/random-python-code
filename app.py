@@ -1257,3 +1257,12 @@ guest_list([('Ken', 30, "Chef"), ("Pat", 35, 'Lawyer'), ('Amanda', 25, "Engineer
 
 x = {}
 type(x) # <class 'dict'>
+
+file_counts = {
+    "jpg": 10,
+    "txt": 14,
+    "csv": 2,
+    "py": 23
+}
+
+print(file_counts)
