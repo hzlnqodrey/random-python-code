@@ -1250,3 +1250,10 @@ guest_list([('Ken', 30, "Chef"), ("Pat", 35, 'Lawyer'), ('Amanda', 25, "Engineer
 # Pat is 35 years old and works as Lawyer
 # Amanda is 25 years old and works as Engineer
 # """
+
+################################################################################################
+
+# Dictionaries [Dict]
+
+x = {}
+type(x) # <class 'dict'>
