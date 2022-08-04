@@ -1281,3 +1281,7 @@ print(file_counts) # add the newly added k-v to dict in the end of dict
 # modified the value of existing key in dict
 file_counts["csv"] = 17
 print(file_counts)
+
+# delete key in dict
+del file_counts["cfg"]
+print(file_counts)
