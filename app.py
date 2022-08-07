@@ -1295,3 +1295,16 @@ print(toc) # What are the current contents of the dictionary?
 print("Chapter 5" in toc)# Is there a Chapter 5?
 
 # https://stackoverflow.com/questions/20987485/what-are-the-differences-between-python-dictionaries-vs-javascript-objects
+
+# Iterating to Dict
+
+file_counts = {
+    "jpg": 12,
+    "txt": 2,
+    "csv": 14,
+    "py": 23
+}
+
+for extension in file_counts:
+    print(extension)
+
