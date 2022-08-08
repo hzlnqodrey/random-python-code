@@ -1598,7 +1598,7 @@ print(format_address("55 North Center Drive"))
 # Q2
 
 def highlight_word(sentence, word):
-	return(" ".join([x.replace(word, word.upper()) for find, x in enumerate(sentence.split()) if word in sentence]))
+	return(" ".join([x.replace(word, word.upper()) for x in sentence.split()]))
 
 print(highlight_word("Have a nice day", "nice"))
 print(highlight_word("Shhh, don't be so loud!", "loud"))
