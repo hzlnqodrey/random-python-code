@@ -1349,3 +1349,28 @@ wardrobe = {
 for clothing, colors in wardrobe.items():
 	for color in colors:
 		print("{} {}".format(color, clothing))
+
+print(file_counts)
+{'jpg': 12, 'txt': 2, 'csv': 14, 'py': 23}
+file_counts.get("jpg")
+12
+file_counts.get("py")
+23
+file_counts.values()
+# dict_values([12, 2, 14, 23])
+file_counts.keys()
+# dict_keys(['jpg', 'txt', 'csv', 'py'])
+file_counts.update(file_returning) 
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'file_returning' is not defined
+file_returning = {}
+file_counts.update(file_returning)
+print(file_returning)
+{}
+file_returning.update(file_counts)
+print(file_returning)
+{'jpg': 12, 'txt': 2, 'csv': 14, 'py': 23}
+file_returning.clear()
+print(file_returning)
+{}
