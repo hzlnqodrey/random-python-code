@@ -1333,3 +1333,19 @@ def count_letter(text):
 
 count_letter("aaaaaa")
 count_letter("Hazlan Muhammad Qodri")
+
+wardrobe = {
+	"shirt": [
+		"red",
+		"blue",
+		"white"
+		], 
+	"jeans": [
+		"blue",
+		"black"
+		]
+}
+
+for clothing, colors in wardrobe.items():
+	for color in colors:
+		print("{} {}".format(color, clothing))
