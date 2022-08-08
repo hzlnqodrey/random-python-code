@@ -1322,3 +1322,14 @@ file_counts.values() # return an array of values in file_counts
 cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
 for beast, anatomy in cool_beasts.items():
     print("{} have {}".format(beast, anatomy))
+
+def count_letter(text):
+    result = {}
+    for letter in text:
+        if letter not in result:
+            result[letter] = 0
+        result[letter] += 1
+    return result
+
+count_letter("aaaaaa")
+count_letter("Hazlan Muhammad Qodri")
