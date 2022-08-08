@@ -1625,3 +1625,13 @@ def squares(start, end):
 print(squares(2, 3)) # Should be [4, 9]
 print(squares(1, 5)) # Should be [1, 4, 9, 16, 25]
 print(squares(0, 10)) # Should be [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# Q5
+
+def car_listing(car_prices):
+  result = ""
+  for car_model, car_price in car_prices.items():
+    result += "{} costs {} dollars".format(car_model, car_price) + "\n"
+  return result
+
+print(car_listing({"Kia Soul":19000, "Lamborghini Diablo":55000, "Ford Fiesta":13000, "Toyota Prius":24000}))
