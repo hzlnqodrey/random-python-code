@@ -1319,4 +1319,6 @@ file_counts.keys() # return an array of key in file_counts
 
 file_counts.values() # return an array of values in file_counts
 
-
+cool_beasts = {"octopuses":"tentacles", "dolphins":"fins", "rhinos":"horns"}
+for beast, anatomy in cool_beasts.items():
+    print("{} have {}".format(beast, anatomy))
