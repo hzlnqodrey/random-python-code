@@ -1313,4 +1313,10 @@ for extension in file_counts:
 for ext, amount in file_counts.items():
     print("There are {} files with the .{} extension".format(amount, ext))
 
+# Dict base method [key/value]
+
+file_counts.keys() # return an array of key in file_counts
+
+file_counts.values() # return an array of values in file_counts
+
 
