@@ -1603,3 +1603,16 @@ def highlight_word(sentence, word):
 print(highlight_word("Have a nice day", "nice"))
 print(highlight_word("Shhh, don't be so loud!", "loud"))
 print(highlight_word("Automating with Python is fun", "fun"))
+
+# Q3
+
+def combine_lists(list1, list2):
+  # Generate a new list containing the elements of list2
+  # Followed by the elements of list1 in reverse order
+  Drews_list.extend(Jamies_list[::-1])
+  return Drews_list
+	
+Jamies_list = ["Alice", "Cindy", "Bobby", "Jan", "Peter"]
+Drews_list = ["Mike", "Carol", "Greg", "Marcia"]
+
+print(combine_lists(Jamies_list, Drews_list))
