@@ -1308,3 +1308,9 @@ file_counts = {
 for extension in file_counts:
     print(extension)
 
+# Iterating to Dict Value
+
+for ext, amount in file_counts.items():
+    print("There are {} files with the .{} extension".format(amount, ext))
+
+
