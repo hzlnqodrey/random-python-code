@@ -1565,6 +1565,9 @@ groceries = {"bananas": 1.56, "apples": 2.50, "oranges": 0.99, "bread": 4.59,
 
 print(add_prices(groceries)) # Should print 28.44
 
+# Module 4 Graded Assessment
+
+# Q1
 
 def format_address(address_string):
   # Declare variables
@@ -1591,3 +1594,12 @@ print(format_address("1001 1st Ave"))
 
 print(format_address("55 North Center Drive"))
 # Should print "house number 55 on street named North Center Drive"
+
+# Q2
+
+def highlight_word(sentence, word):
+	return(" ".join([x.replace(word, word.upper()) for find, x in enumerate(sentence.split()) if word in sentence]))
+
+print(highlight_word("Have a nice day", "nice"))
+print(highlight_word("Shhh, don't be so loud!", "loud"))
+print(highlight_word("Automating with Python is fun", "fun"))
