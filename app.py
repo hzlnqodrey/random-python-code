@@ -1310,7 +1310,7 @@ for extension in file_counts:
 
 # Iterating to Dict Value
 
-for ext, amount in file_counts.items():
+for ext, amount in file_counts.items(): # items to get key-value pair
     print("There are {} files with the .{} extension".format(amount, ext))
 
 # Dict base method [key/value]
