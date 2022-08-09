@@ -2093,5 +2093,11 @@ help("") # to read how to use all the method of class str in module builtin
 # Defining New Classes
 
 class Apple:
-    pass
+    pass # to show the body of the class is empty
+
+# Defining Attributes
+
+class Apple:
+    color = ""
+    flavor = ""
 
