@@ -2107,3 +2107,5 @@ jonagold = Apple()
 jonagold.color = "Red"
 jonagold.flavor = "Sweet"
 print(jonagold.color, jonagold.flavor)
+
+# the expression to call class attribute is DOT NOTATION (___.___)
