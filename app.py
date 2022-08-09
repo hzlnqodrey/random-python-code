@@ -2113,3 +2113,9 @@ print(jonagold.color, jonagold.flavor)
 print(jonagold.color.upper()) # RED
 
 # we can use other object attributes and method to our own
+
+golden = Apple()
+golden.color = "Yellow"
+golden.flavor = "Soft"
+
+# both jonagold and golden are the instances of Apple
