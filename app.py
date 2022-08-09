@@ -2109,3 +2109,7 @@ jonagold.flavor = "Sweet"
 print(jonagold.color, jonagold.flavor)
 
 # the expression to call class attribute is DOT NOTATION (___.___)
+
+print(jonagold.color.upper()) # RED
+
+# we can use other object attributes and method to our own
