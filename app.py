@@ -2101,3 +2101,9 @@ class Apple:
     color = ""
     flavor = ""
 
+# Create new Instance of class
+
+jonagold = Apple()
+jonagold.color = "Red"
+jonagold.flavor = "Sweat"
+print(jonagold.color, jonagold.flavor)
