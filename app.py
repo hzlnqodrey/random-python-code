@@ -2119,3 +2119,20 @@ golden.color = "Yellow"
 golden.flavor = "Soft"
 
 # both jonagold and golden are the instances of Apple
+
+# Short Quiz
+
+class Flower:
+  color = 'unknown'
+
+rose = Flower()
+rose.color = "red"
+
+violet = Flower()
+violet.color = "blue"
+
+this_pun_is_for_you = "your mom has bed your father has hoe"
+
+print("Roses are {},".format(rose.color))
+print("violets are {},".format(violet.color))
+print(this_pun_is_for_you) 
