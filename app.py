@@ -2105,5 +2105,5 @@ class Apple:
 
 jonagold = Apple()
 jonagold.color = "Red"
-jonagold.flavor = "Sweat"
+jonagold.flavor = "Sweet"
 print(jonagold.color, jonagold.flavor)
