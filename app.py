@@ -2213,9 +2213,13 @@ print(fido.dog_years())
 # defining constructor
 # -> explanation: the constructor of the class is the method that's called 
 #                 when you call the name of the class
-#                 It's always named __init__
+#                 It's always named __init__ (remember: method that have '__x__' is a special method)
 
 class Apple():
+    # constructor
     def __init__(self, color, flavor):
         self.color = color
         self.flavor = flavor
+
+# calling/requesting a constructor by instanciates
+jonagold = Apple("red", "flavor")
