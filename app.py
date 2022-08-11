@@ -2149,3 +2149,5 @@ class Piglet:
         print("oink oink")
 
 hamlet = Piglet()
+
+hamlet.speak() # oink oink
