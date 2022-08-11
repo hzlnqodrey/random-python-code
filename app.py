@@ -2212,7 +2212,7 @@ print(fido.dog_years())
 
 # defining constructor
 # -> explanation: the constructor of the class is the method that's called 
-#                 when you call the name of the class
+#                 when you call the name of the class, it usually sets the attributes of instances right when it's created
 #                 It's always named __init__ (remember: method that have '__x__' is a special method)
 
 class Apple():
@@ -2226,3 +2226,17 @@ jonagold = Apple("red", "sweet")
 
 print(jonagold.color) # red
 print(jonagold.flavor) # sweet
+
+# Short Quiz
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+    def greeting(self):
+        # Should return "hi, my name is " followed by the name of the Person.
+        return "hi, my name is {}".format(self.name)
+
+# Create a new instance with a name of your choice
+some_person = Person("Hazlan Muhammad Qodri")  
+# Call the greeting method
+print(some_person.greeting())
