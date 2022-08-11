@@ -2160,8 +2160,10 @@ class Piglet:
         print("Oink! I'm {}! Oink!".format(self.name))
 
 hamlet = Piglet()
-hamlet.name
+hamlet.name = "Hamlet" # instace variable
 hamlet.speak() # oink oink
+
+
 # >>> class Piglet:
 # ...     # attribute
 # ...     name = "Piglet"
@@ -2177,6 +2179,7 @@ hamlet.speak() # oink oink
 # Oink! I'm Hamlet! Oink!
 # >>>
 
+
 petunia = Piglet()
-petunia.name = "Petunia"
+petunia.name = "Petunia" # instance variable
 petunia.speak()
