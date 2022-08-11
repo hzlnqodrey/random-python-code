@@ -2222,4 +2222,7 @@ class Apple():
         self.flavor = flavor
 
 # calling/requesting a constructor by instanciates
-jonagold = Apple("red", "flavor")
+jonagold = Apple("red", "sweet")
+
+print(jonagold.color) # red
+print(jonagold.flavor) # sweet
