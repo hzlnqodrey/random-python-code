@@ -2183,3 +2183,18 @@ hamlet.speak() # oink oink
 petunia = Piglet()
 petunia.name = "Petunia" # instance variable
 petunia.speak()
+
+# Returning Method
+
+class Piglet:
+    # attribute
+    years = 0
+    # method
+    def pig_years(self):
+        return self.years * 18
+
+piggy = Piglet()
+print(piggy.pig_years()) # 0
+
+piggy.years = 2
+print(piggy.pig_years()) # 36
