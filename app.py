@@ -2136,3 +2136,16 @@ this_pun_is_for_you = "your mom has bed your father has hoe"
 print("Roses are {},".format(rose.color))
 print("violets are {},".format(violet.color))
 print(this_pun_is_for_you) 
+
+
+####################################################################################
+
+# Method of Class - For objects to perform actions, they need methods
+#                 - A method is a function that operates on a single instance of an object
+
+class Piglet:
+    # defining Method of Piglet's class
+    def speak(self):
+        print("oink oink")
+
+hamlet = Piglet()
