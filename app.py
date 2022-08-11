@@ -2211,6 +2211,9 @@ print(fido.dog_years())
 # Method: Constructor
 
 # defining constructor
+# -> explanation: the constructor of the class is the method that's called 
+#                 when you call the name of the class
+#                 It's always named __init__
 
 class Apple():
     def __init__(self, color, flavor):
