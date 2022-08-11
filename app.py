@@ -2151,3 +2151,32 @@ class Piglet:
 hamlet = Piglet()
 
 hamlet.speak() # oink oink
+
+class Piglet:
+    # attribute
+    name = "Piglet"
+    # method
+    def speak(self):
+        print("Oink! I'm {}! Oink!".format(self.name))
+
+hamlet = Piglet()
+hamlet.name
+hamlet.speak() # oink oink
+# >>> class Piglet:
+# ...     # attribute
+# ...     name = "Piglet"
+# ...     # method
+# ...     def speak(self):
+# ...         print("Oink! I'm {}! Oink!".format(self.name))
+# ...
+# >>> hamlet = Piglet()
+# >>> hamlet.speak()
+# Oink! I'm Piglet! Oink!
+# >>> hamlet.name = "Hamlet"
+# >>> hamlet.speak()
+# Oink! I'm Hamlet! Oink!
+# >>>
+
+petunia = Piglet()
+petunia.name = "Petunia"
+petunia.speak()
