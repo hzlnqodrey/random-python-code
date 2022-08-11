@@ -2207,3 +2207,12 @@ class Dog:
 fido = Dog()
 fido.years = 3
 print(fido.dog_years())
+
+# Method: Constructor
+
+# defining constructor
+
+class Apple():
+    def __init__(self, color, flavor):
+        self.color = color
+        self.flavor = flavor
