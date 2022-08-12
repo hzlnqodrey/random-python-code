@@ -2240,3 +2240,6 @@ class Person:
 some_person = Person("Hazlan Muhammad Qodri")  
 # Call the greeting method
 print(some_person.greeting())
+
+some_person.name = "Kononawa"
+print(some_person.greeting())
