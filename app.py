@@ -2417,3 +2417,41 @@ print(elevator.current) # should be 1
 
 # -> 9
 # -> 1
+
+# Now add the str method to your Elevator class definition above so that when printing the elevator using the print( ) method, we get the current floor together with a message. For example, in the 5th floor it should say "Current floor: 5"
+
+# Remember, Python uses the default method, that prints the position where the object is stored in the computer’s memory. If your output is something like:
+
+# <main.Elevator object at 0x7ff6a9ff3fd0>
+
+# Then you will need to add the special str method, which returns the string that you want to print. Try again until you get the desired output, "Current floor: 5".
+
+# Once you have successfully produced the desired output, you are all done with this practice notebook. Awesome!
+
+class Elevator:
+    def __init__(self, bottom, top, current):
+        """Initializes the Elevator instance."""
+        self.bottom = 0
+        self.top = 10
+        self.current = current
+    def __str__(self):
+        return "Current floor: {}".format(self.current)
+    def up(self):
+        """Makes the elevator go up one floor."""
+        if self.current < self.top:
+            self.current += 1
+    def down(self):
+        """Makes the elevator go down one floor."""
+        if self.current > self.bottom:
+            self.current -= 1
+    def go_to(self, current):
+        """Makes the elevator go to the specific floor."""
+        self.current = current
+
+
+elevator = Elevator(-1, 10, 0)
+
+elevator.go_to(5)
+print(elevator)
+
+# -> Current floor: 5
