@@ -2243,3 +2243,17 @@ print(some_person.greeting())
 
 some_person.name = "Kononawa"
 print(some_person.greeting())
+
+# special STR method in class syntax : __str__(self)
+
+class Apple:
+    # constructor
+    def __init__(self, color, flavor):
+        self.color = color
+        self.flavor = flavor
+    # special method
+    def __str__(self):
+        return "This apple is {} and its flavor is {}".format(self.color, self.flavor)
+
+golden_breeze = Apple("yellow", "Sweet")
+print(golden_breeze)
