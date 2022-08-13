@@ -2308,6 +2308,23 @@ help(Apple) # to show the detail inside of Apple class
 
 # example
 def to_string(hours, minutes, seconds):
-    """Return the amount of seconds in the given hours, minutes, and seconds"""
+    """Return the amount of seconds in the given hours, minutes, and seconds""" # this is Docstring
     return hours*3600+minutes*60+seconds
+
+help(to_string)
+
+class Piglet:
+    """Represent a piglet that can say their name."""
+    def __init__(self, years, name):
+        self.years = years
+        self.name = name
+    # Method Speak
+    def speak(self):
+        """Output a message including the name of the piglet."""
+        print("Oink! I'm {}! Oink!".format(self.name))
+    # Method Pig Years
+    def pig_years(self):
+        """Converts the current age to equivalent pig years."""
+        return self.years * 18
+
 
