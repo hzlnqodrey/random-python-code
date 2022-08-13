@@ -2338,3 +2338,40 @@ class Person:
     print("Hello! My name is {name}.".format(name = self.name)) 
 
 help(Person)
+
+#####################################################################################################
+
+# IPNYB | Jupyter Notebook | C1M5L2_Methods_and_Classes_V3
+
+class Elevator:
+    def __init__(self, bottom, top, current):
+        """Initializes the Elevator instance."""
+        self.bottom = bottom
+        self.top = top
+        self.current = current
+    def up(self):
+        """Makes the elevator go up one floor."""
+        self.current += 1
+    def down(self):
+        """Makes the elevator go down one floor."""
+        self.current -= 1
+    def go_to(self, floor):
+        """Makes the elevator go to the specific floor."""
+        self.current = floor
+
+elevator = Elevator(-1, 10, 0)
+
+elevator.up() 
+elevator.current #should output 1
+
+# -> 1
+
+elevator.down() 
+elevator.current #should output 0
+
+# -> 0
+
+elevator.go_to(10) 
+elevator.current #should output 10
+
+# -> 10
