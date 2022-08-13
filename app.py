@@ -2291,3 +2291,14 @@ print(golden_breeze)
 # This apple is red and its flavor is sweet
 
 # It's good practice to think about how your class might be used and to define a __str__ method when creating objects that you may want to print later.
+
+
+class Apple:
+    def __init__(self, color, flavor):
+        self.color = color
+        self.flavor = flavor
+    
+    def __str__(self) -> str:
+        return "This apple is {} and its flavor is {}".format(self.color, self.flavor)
+
+help(Apple) # to show the detail inside of Apple class 
