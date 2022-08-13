@@ -2302,3 +2302,12 @@ class Apple:
         return "This apple is {} and its flavor is {}".format(self.color, self.flavor)
 
 help(Apple) # to show the detail inside of Apple class 
+
+# Docstring (Triple double quotes """""")
+# -> A brief text that explains what something does
+
+# example
+def to_string(hours, minutes, seconds):
+    """Return the amount of seconds in the given hours, minutes, and seconds"""
+    return hours*3600+minutes*60+seconds
+
