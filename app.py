@@ -2654,3 +2654,11 @@ def generate_report(machines):
             # convert set to a string for a output functionality | The join() function of str gathers the user attributes (which is a string) into a single string, with commas separating the users.
             user_list = ", ".join(users)
             print("{}: {}".format(machine, user_list))
+
+# Create Event Class:
+class Event:
+    def __init__(self, event_machine, event_user, event_date, event_type) -> None:
+        self.machine = event_machine
+        self.user = event_user
+        self.date = event_date
+        self.type = event_type
