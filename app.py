@@ -2550,3 +2550,33 @@ class Repository:
         for package in self.packages.value():
             result += package.size
         return result
+
+# Let’s expand a bit on our Clothing classes from the previous in-video question. Your mission: Finish the "Stock_by_Material" method and iterate over the amount of each item of a given material that is in stock. When you’re finished, the script should add up to 10 cotton Polo shirts.
+
+# Parent Class
+class Clothing:
+    # Defining Parent Attributes
+    # Stock will gonna be dict to store all the info 
+    stock = { 'name': [], 'material': [], 'amount': [] }
+    # constructor
+    def __init__(self, name) -> None:
+        material = ""
+        self.name = name
+    # Method add element to each list in stock dict
+    def add_items(self, name, material, amount):
+        Clothing.stock['name'].append(self.name)
+        Clothing.stock['material'].append(self.material)
+        Clothing.stock['amount'].append(self.amount)
+    # Method to total stock by material 
+    def Stock_by_material(self, material):
+        # Define 'result' to store the total value of amount based on material
+        result = 0
+        # Define 'n' to helping iterate through list amount in stock dict
+        n = 0
+        for item in Clothing.stock['material']:
+            # If item same as the material which searched on, then add the amount values
+            if item == material:
+                # Do this
+                count += Clothing.stock['amount'][n]
+                n += 1
+            return count
