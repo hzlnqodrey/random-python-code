@@ -2618,3 +2618,11 @@ print(now)
 
 # timedelta - datetime classes
 print(now + dt.timedelta(days = 28))
+
+
+########################### 
+
+# Writing the Script of the given problem Statement 
+
+def get_the_date(event):
+    return event.date
