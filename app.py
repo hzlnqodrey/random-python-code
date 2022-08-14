@@ -1,5 +1,4 @@
 import enum
-import random
 
 teams = ["Human", "Dragon", "Slave", "Unicorn"]
 
@@ -2602,3 +2601,9 @@ sweatpants.add_items(sweatpants.name, sweatpants.material, 15)
 Current_Stock = sweatpants.Stock_by_material("Cotton")
 
 print(Current_Stock)
+
+
+### Python Modules
+
+import random as rd
+rd.randint(1, 10)
