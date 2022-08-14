@@ -2657,11 +2657,11 @@ def generate_report(machines):
 
 # Create Event Class:
 class Event:
-    def __init__(self, event_machine, event_user, event_date, event_type) -> None:
-        self.machine = event_machine
-        self.user = event_user
-        self.date = event_date
-        self.type = event_type
+  def __init__(self, event_date, event_type, machine_name, user):
+    self.date = event_date
+    self.type = event_type
+    self.machine = machine_name
+    self.user = user
 
 # Populate Event Class by creating instance/object of list of a Event Class
 events = [
