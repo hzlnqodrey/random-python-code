@@ -2609,3 +2609,9 @@ import random as rd
 rd.randint(1, 10) # random number between 1 - 10
 rd.randint(1, 100) # random number between 1 - 100
 rd.randint(1, 1000) # random number between 1 - 1000
+
+import datetime as dt
+# print the current date
+now = dt.datetime.now()
+type(now) # <class 'datetime.datetime'>
+print(now)
