@@ -2613,5 +2613,8 @@ rd.randint(1, 1000) # random number between 1 - 1000
 import datetime as dt
 # print the current date
 now = dt.datetime.now()
-type(now) # <class 'datetime.datetime'>
+type(now) # <class 'datetime.datetime'> first datetime is a module, second datetime is a class of datetime module
 print(now)
+
+# timedelta - datetime classes
+print(now + dt.timedelta(days = 28))
