@@ -2566,7 +2566,7 @@ class Clothing:
     def add_items(self, name, material, amount):
         Clothing.stock['name'].append(self.name)
         Clothing.stock['material'].append(self.material)
-        Clothing.stock['amount'].append(self.amount)
+        Clothing.stock['amount'].append(amount)
     # Method to total stock by material 
     def Stock_by_material(self, material):
         # Define 'result' to store the total value of amount based on material
