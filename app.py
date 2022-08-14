@@ -2640,3 +2640,6 @@ def current_users(events):
         # if event.type is login, so add the event.user to the machines[event.machine] set
         if event.type == "login":
             machines[event.machine].add(event.user)
+        # if event.type is logout, so remove the event.user to the machines[event.machine] set
+        elif event.type == "logout":
+            machines[event.machine].remove(event.user)
