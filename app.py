@@ -2529,3 +2529,19 @@ polo.checkmaterial()
 # Shirt class that inherited from it!
 
 # Inheritance lets you reuse code written for one class in other classes.
+
+###
+
+# Composition - The class contains info about other class, but this is not Inherited Class
+#             - We gonna use other class method to other class 
+
+class Repository:
+    def __init__(self) -> None:
+        self.packages = {} # Dict
+    # Method to add packages to repository
+    def add_package(self, package):
+        self.packages[package.name] = package
+    # Method to remove packages 
+    def remove_package(self, package):
+        del self.packages[package.name]
+    
