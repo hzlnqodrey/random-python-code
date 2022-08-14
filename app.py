@@ -2580,3 +2580,13 @@ class Clothing:
                 count += Clothing.stock['amount'][n]
                 n += 1
             return count
+
+# Inherit Class Clothing to various clothing type, like Shirt or Pants
+
+# Shirt Class
+class Shirt(Clothing):
+    material = ""
+
+# Pant Class
+class Pants(Clothing):
+    material = ""
