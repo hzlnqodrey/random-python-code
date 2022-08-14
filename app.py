@@ -2455,3 +2455,18 @@ elevator.go_to(5)
 print(elevator)
 
 # -> Current floor: 5
+
+######################## OOP - Code Reuse 
+
+# Inheritance
+
+class Fruit:
+    def __init__(self, color, flavor) -> None:
+        self.color = color
+        self.flavor = flavor
+
+class Apple(Fruit):
+    pass
+
+class Grape(Fruit):
+    pass
