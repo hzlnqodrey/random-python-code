@@ -2577,16 +2577,28 @@ class Clothing:
             # If item same as the material which searched on, then add the amount values
             if item == material:
                 # Do this
-                count += Clothing.stock['amount'][n]
+                result += Clothing.stock['amount'][n]
                 n += 1
-            return count
+            return result
 
 # Inherit Class Clothing to various clothing type, like Shirt or Pants
 
 # Shirt Class
 class Shirt(Clothing):
-    material = ""
+    material = "Cotton"
 
 # Pant Class
 class Pants(Clothing):
-    material = ""
+    material = "Cotton"
+
+
+# Create Instance of Inherit Class
+polo = Shirt("Polo")
+polo.add_items(polo.name, polo.material, 10)
+
+sweatpants = Pants("Sweatpants")
+sweatpants.add_items(sweatpants.name, sweatpants.material, 15)
+
+Current_Stock = sweatpants.Stock_by_material(sweatpants.material)
+
+print(Current_Stock)
