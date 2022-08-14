@@ -2476,3 +2476,6 @@ granny_smith = Apple("green", "tart")
 
 # an Instance of Grape Class
 carnelian = Grape("purple", "sweet")
+
+print(granny_smith.flavor) # tart
+print(carnelian.color) # purple
