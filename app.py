@@ -2490,10 +2490,18 @@ class Animal:
     def speak(self):
         print("{sound} I'm {name}! {sound}!".format(name = self.name, sound = self.sound))
 
-# Inherit Class
+# Inherit Class of Animal - Piglet
 class Piglet(Animal):
     sound = "Oink"
 
 # Instance of the child class
 hamlet = Piglet("Hamlet")
 hamlet.speak()
+
+# Inherited Class of Animal - Cow
+class Cow(Animal):
+    sound = "Moooooooooooo"
+
+# Instance of the child class
+milky = Cow("Milky Whitey")
+milky.speak()
