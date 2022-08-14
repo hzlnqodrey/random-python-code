@@ -2607,3 +2607,5 @@ print(Current_Stock)
 
 import random as rd
 rd.randint(1, 10)
+rd.randint(1, 100)
+rd.randint(1, 1000)
