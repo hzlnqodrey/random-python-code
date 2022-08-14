@@ -2624,5 +2624,10 @@ print(now + dt.timedelta(days = 28))
 
 # Writing the Script of the given problem Statement 
 
+# create get_the_date func to get the event.date of given machine
 def get_the_date(event):
     return event.date
+
+# get a sorted list by a date of current users 
+def current_users(events):
+    events.sort(key = get_the_date)
