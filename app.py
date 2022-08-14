@@ -2544,4 +2544,9 @@ class Repository:
     # Method to remove packages 
     def remove_package(self, package):
         del self.packages[package.name]
-    
+    # Calculate the total size of packages in repository
+    def total_size(self):
+        result = 0
+        for package in self.packages.value():
+            result += package.size
+        return result
