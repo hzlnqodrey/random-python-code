@@ -2470,3 +2470,9 @@ class Apple(Fruit): # Child Class
 
 class Grape(Fruit): # Child Class
     pass
+
+# an Instance of Apple Class
+granny_smith = Apple("green", "tart")
+
+# an Instance of Grape Class
+carnelian = Grape("purple", "sweet")
