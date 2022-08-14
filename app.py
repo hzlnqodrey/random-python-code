@@ -2460,13 +2460,13 @@ print(elevator)
 
 # Inheritance
 
-class Fruit:
+class Fruit: # Parent Class
     def __init__(self, color, flavor) -> None:
         self.color = color
         self.flavor = flavor
 
-class Apple(Fruit):
+class Apple(Fruit): # Child Class
     pass
 
-class Grape(Fruit):
+class Grape(Fruit): # Child Class
     pass
