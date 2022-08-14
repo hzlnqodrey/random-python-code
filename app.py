@@ -2579,7 +2579,7 @@ class Clothing:
                 # Do this
                 result += Clothing.stock['amount'][n]
                 n += 1
-            return result
+        return result
 
 # Inherit Class Clothing to various clothing type, like Shirt or Pants
 
@@ -2594,11 +2594,11 @@ class Pants(Clothing):
 
 # Create Instance of Inherit Class
 polo = Shirt("Polo")
+sweatpants = Pants("Sweatpants")
 polo.add_items(polo.name, polo.material, 10)
 
-sweatpants = Pants("Sweatpants")
 sweatpants.add_items(sweatpants.name, sweatpants.material, 15)
 
-Current_Stock = sweatpants.Stock_by_material(sweatpants.material)
+Current_Stock = sweatpants.Stock_by_material("Cotton")
 
 print(Current_Stock)
