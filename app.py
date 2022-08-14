@@ -2527,3 +2527,5 @@ polo.checkmaterial()
 
 # Nice work! You used the existing Clothing class to make a
 # Shirt class that inherited from it!
+
+# Inheritance lets you reuse code written for one class in other classes.
