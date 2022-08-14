@@ -2633,6 +2633,6 @@ def current_users(events):
     events.sort(key = get_the_date)
     machines = {}
     for event in events:
+        # new machine coming in! set empty set to the newly key and values
         if event.machine not in machines:
             machines[event.machine] = set()
-            
