@@ -2631,3 +2631,8 @@ def get_the_date(event):
 # get a sorted list by a date of current users 
 def current_users(events):
     events.sort(key = get_the_date)
+    machines = {}
+    for event in events:
+        if event.machine not in machines:
+            machines[event.machine] = set()
+            
