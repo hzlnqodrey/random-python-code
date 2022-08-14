@@ -2662,3 +2662,8 @@ class Event:
         self.user = event_user
         self.date = event_date
         self.type = event_type
+
+# Populate Event Class by creating instance/object of list of a Event Class
+events = [
+    Event("")
+]
