@@ -2651,6 +2651,6 @@ def generate_report(machines):
     for machine, users in machines.items():
         # check if machine are not logged out before printing out
         if len(users) > 0:
-            # convert set to a string for a output functionality
+            # convert set to a string for a output functionality | The join() function of str gathers the user attributes (which is a string) into a single string, with commas separating the users.
             user_list = ", ".join(users)
             print("{}: {}".format(machine, user_list))
