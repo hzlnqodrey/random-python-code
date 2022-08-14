@@ -2644,3 +2644,13 @@ def current_users(events):
         elif event.type == "logout":
             machines[event.machine].remove(event.user)
     return machines
+
+# print all the sorted events
+def generate_report(machines):
+    # iterating through machine's dict as a key, and user's set as a value
+    for machine, users in machines.items():
+        # check if machine are not logged out before printing out
+        if len(users) > 0:
+            # convert set to a string for a output functionality
+            user_list = ", ".join(users)
+            print("{}: {}".format(machine, user_list))
