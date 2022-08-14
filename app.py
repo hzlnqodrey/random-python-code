@@ -2667,3 +2667,7 @@ class Event:
 events = [
     Event("")
 ]
+
+# get the detail of state of machines now
+users = current_users(events)
+
