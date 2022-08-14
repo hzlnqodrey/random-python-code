@@ -2670,7 +2670,7 @@ events = [
     Event('2020-01-21 18:53:21', 'login', 'webserver.local', 'lane'),
     Event('2020-01-22 10:25:34', 'logout', 'myworkstation.local', 'jordan'),
     Event('2020-01-21 08:20:01', 'login', 'webserver.local', 'jordan'),
-    Event('2020-01-23 11:24:35', 'logout', 'mailserver.local', 'chris'),
+    Event('2020-01-23 10:23:22', 'login', 'mailserver.local', 'chris')
 ]
 
 # get the detail of state of machines now
