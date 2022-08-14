@@ -2637,3 +2637,6 @@ def current_users(events):
         # new machine coming in! set empty set to the newly key and values
         if event.machine not in machines:
             machines[event.machine] = set()
+        # if event.type is login, so add the event.user to the machines[event.machine] set
+        if event.type == "login":
+            machines[event.machine].add(event.user)
