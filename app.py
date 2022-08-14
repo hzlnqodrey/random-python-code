@@ -2671,3 +2671,5 @@ events = [
 # get the detail of state of machines now
 users = current_users(events)
 
+# print the users in given machine name
+generate_report(users)
