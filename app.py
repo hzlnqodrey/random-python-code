@@ -2479,3 +2479,21 @@ carnelian = Grape("purple", "sweet")
 
 print(granny_smith.flavor) # tart
 print(carnelian.color) # purple
+
+###### another example - animal class
+
+# Base Class
+class Animal:
+    sound = ""
+    def __init__(self, name) -> None:
+        self.name = name
+    def speak(self):
+        print("{sound} I'm {name}! {sound}!".format(name = self.name, sound = self.sound))
+
+# Inherit Class
+class Piglet(Animal):
+    sound = "Oink"
+
+# Instance of the child class
+hamlet = Piglet("Hamlet")
+hamlet.speak()
