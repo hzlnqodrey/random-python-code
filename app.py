@@ -11,3 +11,7 @@ errors = [23, 52, 62, 89, 12]
 df = pd.DataFrame( {"visitors": visitors, "errors": errors}, index=["Mon", "Tue", "Wed", "Thu", "Fri"] )
 
 print(df)
+
+# DataFrame operator method [Mean, Average, Sum, etc]
+errors_mean = df["errors"].mean()
+print(errors_mean)
