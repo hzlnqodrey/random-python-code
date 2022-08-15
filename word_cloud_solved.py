@@ -14,7 +14,6 @@ def cleaning_punctuation(file_contents, punctuations):
     for character in punctuations:
         file_contents = file_contents.replace(character, '')
     txt = file_contents
-    print(txt)
     return txt
 
 # 2. Cleaning Unused Word
