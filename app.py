@@ -1,5 +1,5 @@
 import requests as req
  
-response = req.get("http://twitter.com")
+response = req.get("http://instagram.com")
 
-print(response)
+print(response.text)
