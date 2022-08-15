@@ -3,3 +3,7 @@
 # Check Whether python installed on our OS
 python --version
 # Python 3.8.0
+
+# External modules: pypi.org
+# External modules are generally managed with a command line tool called 'pip'
+# pip is cross-platform tool to install, update, and remove external modules
