@@ -3,5 +3,7 @@ import pandas as pd
 
 response = req.get("http://instagram.com")
 
-print(response.text)
+print(response)
 
+visitors = [1234, 5232, 9223, 8856, 7752]
+errors = [23, 52, 62, 89, 12]
