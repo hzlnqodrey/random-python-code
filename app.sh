@@ -91,3 +91,24 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$  nano are
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ./areas.py
 50.26548245743669
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$
+
+# Import areas.py to reduce code reuse
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import areas
+50.26548245743669
+>>> import areas
+>>> areas.triangle(5, 4)
+10.0
+>>> areas.rectangle(5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: rectangle() missing 1 required positional argument: 'height'
+>>> areas.rectangle(5, 10)
+50
+>>> areas.circle(10)
+314.1592653589793
+>>>
