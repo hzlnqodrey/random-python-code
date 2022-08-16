@@ -118,7 +118,7 @@ TypeError: rectangle() missing 1 required positional argument: 'height'
 
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ls -l /usr/lib/python3/dist-packages/requests
 total 216
--rw-r--r-- 1 root root  3921 May 16  2019 __init__.py
+-rw-r--r-- 1 root root  3921 May 16  2019 __init__.py # every module has this because interpreter will read it first
 drwxr-xr-x 2 root root  4096 Aug 20  2021 __pycache__
 -rw-r--r-- 1 root root   436 May 16  2019 __version__.py
 -rw-r--r-- 1 root root  1096 May 16  2019 _internal_utils.py
@@ -137,3 +137,7 @@ drwxr-xr-x 2 root root  4096 Aug 20  2021 __pycache__
 -rw-r--r-- 1 root root  4129 May 16  2019 status_codes.py
 -rw-r--r-- 1 root root  2981 May 16  2019 structures.py
 -rw-r--r-- 1 root root 30049 May 16  2019 utils.py
+
+
+# sooo, if you have a module split into separate files, and you want the interpreter to recognize the directory has a module
+# we need to create the __init__.py file
