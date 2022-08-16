@@ -18,3 +18,9 @@ print(errors_mean)
 
 
 "hello " * 10 # print on interactive interpreter CLI
+
+import shutil
+du = shutil.disk_usage("/")
+print(du)
+# -> usage(total=269490393088, used=1470783488, free=254258937856)
+
