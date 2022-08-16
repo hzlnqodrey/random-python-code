@@ -51,7 +51,7 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3 h
 # 2. NANO
 
 # This line below tell OS that we want to run script using Python 3
-#!/usr/bin/env python3
+#!/usr/bin/env python3 -> called shebang
 
 print('Hello, World!')
 
