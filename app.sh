@@ -61,4 +61,5 @@ print('Hello, World!')
 chmod +x hello_world.py
 
 # now the hello_world.py can run with the prefix './'
+# the dot '.' in the prefix means represent the current directory, so we're basically telling the OS to find script in the current directory and then execute it.
 # be sure is "#!/usr/bin/env python3" always on the top of the file
