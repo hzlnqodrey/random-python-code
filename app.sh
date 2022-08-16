@@ -63,3 +63,31 @@ chmod +x hello_world.py
 # now the hello_world.py can run with the prefix './'
 # the dot '.' in the prefix means represent the current directory, so we're basically telling the OS to find script in the current directory and then execute it.
 # be sure is "#!/usr/bin/env python3" always on the top of the file
+
+########## exercise - areas.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ touch areas.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ nano areas.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ cat areas.py
+#!/usr/bin/env python3
+import math
+
+def triangle(base, height):
+  return base * height/2
+
+def rectangle(base, height):
+  return base * height
+
+def circle(radius):
+  return math.pi * (radius**2)
+
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ./areas.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ./areas.py print(circle(2))
+-bash: syntax error near unexpected token `('
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3 areas.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3 areas.py circle(2)
+-bash: syntax error near unexpected token `('
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$  nano areas.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ./areas.py
+50.26548245743669
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$
