@@ -59,3 +59,6 @@ print('Hello, World!')
 # this command let us change the file permissions (r,w,x [Read, Write, Execute])
 # marking +r/+w/+x to the hello_world.py
 chmod +x hello_world.py
+
+# now the hello_world.py can run with the prefix './'
+# be sure is "#!/usr/bin/env python3" always on the top of the file
