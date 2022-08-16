@@ -15,3 +15,6 @@ print(df)
 # DataFrame operator method [Mean, Average, Sum, etc]
 errors_mean = df["errors"].mean()
 print(errors_mean)
+
+
+"hello " * 10 # print on interactive interpreter CLI
