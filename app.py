@@ -24,3 +24,5 @@ du = shutil.disk_usage("/")
 print(du)
 # -> usage(total=269490393088, used=1470783488, free=254258937856)
 
+du.free/du.total*100
+# -> 94.34805261238893
