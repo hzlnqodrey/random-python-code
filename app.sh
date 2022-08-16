@@ -141,3 +141,28 @@ drwxr-xr-x 2 root root  4096 Aug 20  2021 __pycache__
 
 # sooo, if you have a module split into separate files, and you want the interpreter to recognize the directory has a module
 # we need to create the __init__.py file
+
+qodri123@DESKTOP-V1LR167:/mnt/c/Windows/system32/programming_exercise$ touch health_check.py
+qodri123@DESKTOP-V1LR167:/mnt/c/Windows/system32/programming_exercise$ vi health_check.py
+qodri123@DESKTOP-V1LR167:/mnt/c/Windows/system32/programming_exercise$ cat health_check.py
+#!/usr/bin/env python3
+import shutil
+import psutil
+
+# to check disk usage, return true if there's more than 20 percent free or false if it's less
+def check_disk_usage(disk):
+    disk_usage = shutil.disk_usage(disk)
+    free = disk_usage.free / disk_usage.total * 100
+    return free > 20
+
+def check_cpu_usage():
+    cpu_usage = psutil.cpu_percent(1)
+    return cpu_usage < 75
+
+if not check_disk_usage("/") or not check_cpu_usage():
+    print("ERROR!")
+else:
+    print("Everything is OK!")
+qodri123@DESKTOP-V1LR167:/mnt/c/Windows/system32/programming_exercise$ ./health_check.py
+Everything is OK!
+qodri123@DESKTOP-V1LR167:/mnt/c/Windows/system32/programming_exercise$
