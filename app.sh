@@ -43,3 +43,9 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ run hello
 ############ to run python file on CLI
 
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3 hello_world.py
+
+
+########## CLI CODE EDITOR on LINUX
+
+# 1. VI (VIM)
+# 2. NANO
