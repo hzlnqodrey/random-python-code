@@ -56,4 +56,6 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3 h
 print('Hello, World!')
 
 # chmod - Linux Command
-# this command let us change the file permissions (r,w,e [Read, Write, Execute])
+# this command let us change the file permissions (r,w,x [Read, Write, Execute])
+# marking +r/+w/+x to the hello_world.py
+chmod +x hello_world.py
