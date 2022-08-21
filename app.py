@@ -71,3 +71,5 @@ file.close() # open-use-close: is a typical way of working with files in most pr
 # with 'with block' Python will automatically close the file 
 with open("spider.txt") as file1:
     print(file1.read())
+
+# Both methods read from the current position. The readline() method reads one line, while read() reads until the end of the file.
