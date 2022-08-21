@@ -91,11 +91,12 @@ with open("spider.txt") as file:
 
 # Good work! Here, we are iterating line by line, and the strip() command is used to remove extra whitespace.
 
+# store file line to list (the element is line by line (each line))
 
-
-
-
-
+file = open("spider.txt")
+lines = file.readlines() # list
+file.close() # eventhough we close it, the lines has the all the infos from file
+print(lines)
 
 
 
