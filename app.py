@@ -61,7 +61,9 @@ else:
 ############################ Reading Files
 
 file = open("spider.txt")
-print(file.readline()) # read the first line
-print(file.readline()) # read the second line
-print(file.readlines()) # read the second line
+# print(file.readline()) # read the first line
+# print(file.readline()) # read the second line
+# print(file.readlines()) # read the second line
+print(file.read()) # read the second line
+
 
