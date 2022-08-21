@@ -89,6 +89,8 @@ with open("spider.txt") as file:
     for line in file:
         print(line.strip().upper())
 
+# Good work! Here, we are iterating line by line, and the strip() command is used to remove extra whitespace.
+
 
 
 
