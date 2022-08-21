@@ -56,3 +56,8 @@ else:
     print("Everything is OK!")
 
 # putty vm
+
+
+############################ Reading Files
+
+file = open("spider.txt")
