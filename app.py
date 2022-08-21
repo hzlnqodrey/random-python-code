@@ -99,7 +99,8 @@ file.close() # eventhough we close it, the lines has the all the infos from file
 print(lines)
 
 ### Write content to file
-# by default the 'open()' use "r" mode to read the file
+# by default the 'open()' use "r" mode to read-only the file
+# the "w" argument is to write-only mode, if the file doesn't exist then Python will create it
 with open("novel.txt", "w") as file:
     file.write("It was a dark and stormy night")
 
