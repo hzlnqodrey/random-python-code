@@ -62,3 +62,4 @@ else:
 
 file = open("spider.txt")
 print(file.readline()) # read the first line
+print(file.readline()) # read the second line
