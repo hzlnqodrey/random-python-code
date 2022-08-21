@@ -102,6 +102,8 @@ print(lines)
 # by default the 'open()' use "r" mode to read-only the file
 # the "w" argument is to write-only mode, if the file doesn't exist then Python will create it
 # then if the file does exist, the current content will be overwritten by whatever we decide to write using our script
+# remember you can't read if the argument is write-only mode, u need to "r+" [read-write] mode
+# if you want to add content at the end of an existing content in file, use "a" (to append) 
 with open("novel.txt", "w") as file:
     file.write("It was a dark and stormy night")
 
