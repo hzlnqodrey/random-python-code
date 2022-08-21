@@ -28,8 +28,8 @@ du.free/du.total*100
 # -> 94.34805261238893
 
 import psutil
-psutil.cpu_percent(1)
-psutil.cpu_percent(1)
+psutil.cpu_percent(.1)
+psutil.cpu_percent(.1)
 0.0
 psutil.cpu_percent(.1)
 0.0
@@ -80,9 +80,14 @@ with open("spider.txt") as file1:
 
 with open("spider.txt") as file:
     for line in file:
-        print(line.upper())
+        print(line.upper()) # this will create a weird a empty line before read the next line
 
+# how to avoid a empty new line?
+# we can use string method: strip() to remove  all surrounding white spaces [including: tabs and new lines]
 
+with open("spider.txt") as file:
+    for line in file:
+        print(line.strip().upper())
 
 
 
