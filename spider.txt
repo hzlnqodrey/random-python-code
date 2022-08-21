@@ -1,0 +1,5 @@
+ini baris satu
+ini baris dua
+
+diatas ada spasi baris
+ini baris terakhir

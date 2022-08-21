@@ -28,8 +28,8 @@ du.free/du.total*100
 # -> 94.34805261238893
 
 import psutil
-psutil.cpu_percentage(1)
-psutil.cpu_percent(10)
+psutil.cpu_percent(1)
+psutil.cpu_percent(1)
 0.0
 psutil.cpu_percent(.1)
 0.0
@@ -61,3 +61,4 @@ else:
 ############################ Reading Files
 
 file = open("spider.txt")
+print(file.readline()) # read the first line
