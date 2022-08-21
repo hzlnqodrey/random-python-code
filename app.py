@@ -67,3 +67,7 @@ file = open("spider.txt")
 print(file.read()) # read the second line
 
 file.close() # open-use-close: is a typical way of working with files in most prog lang
+
+# with 'with block' Python will automatically close the file 
+with open("spider.txt") as file1:
+    print(file1.read())
