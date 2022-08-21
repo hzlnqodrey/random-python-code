@@ -73,3 +73,38 @@ with open("spider.txt") as file1:
     print(file1.read())
 
 # Both methods read from the current position. The readline() method reads one line, while read() reads until the end of the file.
+
+# file object can be iterated the same way as other Python sequences (string, list, dict, set)
+
+# you can do this to uppercase ur text lines:
+
+with open("spider.txt") as file:
+    for line in file:
+        print(line.upper())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
