@@ -107,6 +107,7 @@ print(lines)
 with open("novel.txt", "w") as file:
     file.write("It was a dark and stormy night")
 
+# You nailed it! When using write mode, the old contents get deleted as soon as the file is opened.
 
 
 
