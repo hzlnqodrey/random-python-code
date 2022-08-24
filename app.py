@@ -159,8 +159,10 @@ time_stamp = os.path.getmtime("sayagila.txt")
 datetime.datetime.fromtimestamp(time_stamp)
 # datetime.datetime(2022, 8, 24, 18, 18, 55, 400450) -> output
 
-
-
+# in os.path we can work with absolute and relative paths
+# .abspath() -> to locate where exactly located on dir
+os.path.abspath("sayagila.txt")
+# 'C:\\Users\\<user>\\AppData\\Local\\Programs\\Python\\Python38\\sayagila.txt'
 
 
 
