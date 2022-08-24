@@ -164,8 +164,13 @@ datetime.datetime.fromtimestamp(time_stamp)
 os.path.abspath("sayagila.txt")
 # 'C:\\Users\\<user>\\AppData\\Local\\Programs\\Python\\Python38\\sayagila.txt'
 
+######## How to work with | DIRECTORIES | or folders(?)
 
+# [1] getcwd -> To check which current directory my python program is executing in
+print(os.getcwd())
+# C:\Users\<user>\AppData\Local\Programs\Python\Python38
 
+# [2] mkdir -> to create directory
 
 
 

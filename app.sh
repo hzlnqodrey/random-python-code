@@ -166,3 +166,8 @@ else:
 qodri123@DESKTOP-V1LR167:/mnt/c/Windows/system32/programming_exercise$ ./health_check.py
 Everything is OK!
 qodri123@DESKTOP-V1LR167:/mnt/c/Windows/system32/programming_exercise$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ mkdir folder1
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ls
+__pycache__  areas.py  folder1  health_check.py  hello_world.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$
