@@ -152,7 +152,12 @@ os.path.getsize("sayagila.txt")
 # [2] gettime -> to check when the file was last modified
 os.path.getmtime("sayagila.txt")
 # >>> os.path.getmtime("sayagila.txt")
-# 1661339935.40045
+# 1661339935.40045 -> # Issa UNIX TIMESTAMP and hard to read, convert it to datestamp module
+
+import datetime
+time_stamp = os.path.getmtime("sayagila.txt")
+datetime.datetime.fromtimestamp(time_stamp)
+# datetime.datetime(2022, 8, 24, 18, 18, 55, 400450) -> output
 
 
 
