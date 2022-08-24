@@ -285,9 +285,18 @@ with open("hosts.csv", "w") as hosts_csv:
     writer.writerows(hosts)
 
 
+# Dict Reader
+# -> This reader turn each row of the data in CSV file into a dictionary
 
-
-
+# >>> import csv
+# >>> with open("software.csv") as software:
+# ...   reader = csv.DictReader(software)
+# ...   for row in reader:
+# ...     print(("{} has {} users").format(row["name"], row["users"]))
+# ...
+# Facebook has 28892392992 users
+# MailTree has 23 users
+# SkullHorn has 8 users
 
 
 
