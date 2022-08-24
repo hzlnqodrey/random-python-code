@@ -142,9 +142,12 @@ os.path.exists("spider.txt")
 # True
 
 
+### os.path.[module]
 
-
-
+# [1] getsize -> to check how big the size of the file in bytes
+os.path.getsize("sayagila.txt")
+# >>> os.path.getsize("sayagila.txt")
+# 14
 
 
 
