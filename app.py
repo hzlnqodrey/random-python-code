@@ -174,6 +174,13 @@ print(os.getcwd())
 os.mkdir("new_dir")
 
 # [3] chdir -> change directories
+os.chdir("new_dir")
+
+# [4] rmdir -> remove directory (if empty)
+os.rmdir("new_dir")
+
+# [5] listdir -> return a list of all the files and sub-directories in given directory
+os.listdir("new_dir")
 
 
 
