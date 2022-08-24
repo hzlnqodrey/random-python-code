@@ -123,7 +123,11 @@ os.remove("novel.txt")
 #   File "<stdin>", line 1, in <module>
 # FileNotFoundError: [Errno 2] No such file or directory: 'novel.txt'
 
+# os.rename(arg1, arg2)
+# arg1 -> the old name
+# arg2 -> the new name
 
+os.rename("spider.txt", "tarantula.txt") # it changed!
 
 
 
