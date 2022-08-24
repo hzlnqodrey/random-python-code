@@ -209,7 +209,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ rm 'directory'
 
 # force delete
-qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ rm -f 'directory'
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ rm -rf 'directory'
 
 # list dir
 >>> os.getcwd()
