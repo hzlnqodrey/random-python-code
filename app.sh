@@ -83,10 +83,10 @@ def circle(radius):
 
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ./areas.py
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ./areas.py print(circle(2))
--bash: syntax error near unexpected token `('
+# -bash: syntax error near unexpected token `('
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3 areas.py
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3 areas.py circle(2)
--bash: syntax error near unexpected token `('
+# -bash: syntax error near unexpected token `('
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$  nano areas.py
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ./areas.py
 50.26548245743669
