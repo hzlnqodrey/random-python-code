@@ -203,3 +203,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> os.getcwd()
 '/mnt/c/WINDOWS/system32/programming_exercise/new_dir'
 >>>
+
+# remove dir
+
+# list dir
+>>> os.getcwd()
+'/mnt/c/WINDOWS/system32/programming_exercise/new_dir'
+>>> os.mkdir("newer_dir")
+>>> os.listdir("newer_dir")
+[]
+>>> os.listdir(os.getcwd())
+['newer_dir']
+>>>
