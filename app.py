@@ -110,6 +110,113 @@ with open("novel.txt", "w") as file:
 # You nailed it! When using write mode, the old contents get deleted as soon as the file is opened.
 
 
+############### OS MODULE
+# Delete, Rename, or modified time or else, use os module
+
+# Remove File
+import os
+
+os.remove("novel.txt")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
