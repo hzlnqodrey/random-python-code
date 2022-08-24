@@ -180,3 +180,26 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$
 [1]+  Stopped                 python3
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ls
 __pycache__  areas.py  folder1  health_check.py  hello_world.py  new_dir
+
+# chdir
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3
+Python 3.8.10 (default, Jun 22 2022, 20:18:18)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.chdir("new_dir")
+>>> os.getcwd()
+'/mnt/c/WINDOWS/system32/programming_exercise/new_dir'
+>>>
+[3]+  Stopped                 python3
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3
+Python 3.8.10 (default, Jun 22 2022, 20:18:18)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.getcwd()
+'/mnt/c/WINDOWS/system32/programming_exercise'
+>>> os.chdir("new_dir")
+>>> os.getcwd()
+'/mnt/c/WINDOWS/system32/programming_exercise/new_dir'
+>>>

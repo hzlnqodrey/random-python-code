@@ -171,6 +171,9 @@ print(os.getcwd())
 # C:\Users\<user>\AppData\Local\Programs\Python\Python38
 
 # [2] mkdir -> to create directory
+os.mkdir("new_dir")
+
+# [3] chdir -> change directories
 
 
 
