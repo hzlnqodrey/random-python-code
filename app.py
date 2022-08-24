@@ -129,7 +129,8 @@ os.remove("novel.txt")
 
 os.rename("spider.txt", "tarantula.txt") # it changed!
 
-
+## how do we check if the file is exist or not?
+# submodule of OS [os.path sub-module]
 
 
 
