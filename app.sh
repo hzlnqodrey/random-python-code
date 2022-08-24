@@ -242,3 +242,7 @@ website/favicon.ico is a file
 website/images is a directory
 website/index.html is a file
 >>>
+
+in linux and MacOS, the portions of a file are split using a forward slash (/)
+on Windows, they're split using a backslash (\)
+with using os.path.join work with all operating systems
