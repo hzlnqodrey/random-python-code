@@ -118,7 +118,10 @@ import os
 
 os.remove("novel.txt")
 
-
+# If you try to remove file that you already remove or file that's not even created in the first hand, it will raise an Error
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# FileNotFoundError: [Errno 2] No such file or directory: 'novel.txt'
 
 
 
