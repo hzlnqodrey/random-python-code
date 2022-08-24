@@ -134,7 +134,12 @@ os.remove("novel.txt")
 os.path.exists("tarantula.txt")
 os.path.exists("spider.txt")
 
-
+# >>> with open("sayagila.txt", "w") as newFile:
+# ...   newFile.write("sayaaaaaaaaaaa")
+# ...
+# 14
+# >>> os.path.exists("sayagila.txt")
+# True
 
 
 
