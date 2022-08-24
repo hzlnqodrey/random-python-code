@@ -269,7 +269,7 @@ f_csv = csv.reader(f)
 for row in f_csv:
     print(row)
 
-
+# the reader() function of the CSV module will interpret the file as a CSV.
 
 
 
