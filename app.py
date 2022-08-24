@@ -1,3 +1,4 @@
+from dataclasses import field
 import requests as req
 import pandas as pd
 
@@ -298,7 +299,23 @@ with open("hosts.csv", "w") as hosts_csv:
 # MailTree has 23 users
 # SkullHorn has 8 users
 
+# Dict Writer
 
+# so we have list of dictionaries
+users = [
+    {"name": "Sol Mansi", "username": "solm", "departement": "IT Infrastructure"},
+    {"name": "Lio Nelson", "username": "lion", "departement": "User Experience Research"},
+    {"name": "Charlie Grey", "username": "greyc", "departement": "Development"}
+]
+
+# define keys/column
+keys = ["name", "username", "departement"]
+
+# writing them to csv file
+with open("by_departement.csv", "w") as by_departement:
+    writer = csv.DictWriter(by_departement, fieldnames=keys)
+    writer.writeheader() # will create the first line on csv based on keys we passed in fieldnames
+    writer.writerows(users)
 
 
 
