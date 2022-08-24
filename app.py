@@ -271,7 +271,16 @@ for row in f_csv:
 
 # the reader() function of the CSV module will interpret the file as a CSV.
 
+file = open("employees.txt")
+file_csv = csv.reader(file)
+for row in file_csv:
+    name, phone, role = row
+    print("Name: {}, Phone: {}, Role: {}".format(name, phone, role))
 
+# output:
+# Name: Hazlan, Phone: 0815, Role: Backend Engineer
+# Name: Rivano, Phone: 9823, Role: Android Developer
+# Name: Riko, Phone: 4823, Role: Frontend Engineer
 
 
 

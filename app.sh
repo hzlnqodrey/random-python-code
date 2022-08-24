@@ -268,3 +268,16 @@ SyntaxError: invalid syntax
 ['Rivano', '9823', 'Android Developer']
 ['Riko', '4823', 'Frontend Engineer']
 >>>
+
+>>> file = open("employees.txt")
+.reader(file)
+for row in file_csv:
+    name, phone, role = row
+    p>>> file_csv = csv.reader(file)
+rint(">>> for row in file_csv:
+Name: ...     name, phone, role = row
+...     print("Name: {}, Phone: {}, Role: {}".format(name, phone, role))
+...
+Name: Hazlan, Phone: 0815, Role: Backend Engineer
+Name: Rivano, Phone: 9823, Role: Android Developer
+Name: Riko, Phone: 4823, Role: Frontend Engineer
