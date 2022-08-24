@@ -149,7 +149,10 @@ os.path.getsize("sayagila.txt")
 # >>> os.path.getsize("sayagila.txt")
 # 14
 
-
+# [2] gettime -> to check when the file was last modified
+os.path.getmtime("sayagila.txt")
+# >>> os.path.getmtime("sayagila.txt")
+# 1661339935.40045
 
 
 
