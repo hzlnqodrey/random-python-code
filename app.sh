@@ -220,3 +220,25 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ rm -rf 'd
 >>> os.listdir(os.getcwd())
 ['newer_dir']
 >>>
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ls
+__pycache__  areas.py  folder1  health_check.py  hello_world.py  website
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ python3
+Python 3.8.10 (default, Jun 22 2022, 20:18:18)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.listdir("website")
+['favicon.ico', 'images', 'index.html']
+>>> dir = "website"
+>>> for name in os.listdir(dir):
+...   fullname = os.path.join(dir, name)
+...   if os.path.isdir(fullname):
+...     print("{} is a directory".format(fullname))
+...   else:
+...     print("{} is a file".format(fullname))
+...
+website/favicon.ico is a file
+website/images is a directory
+website/index.html is a file
+>>>
