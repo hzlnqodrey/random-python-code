@@ -254,7 +254,20 @@ def parent_directory():
 print(parent_directory())
 
 
+#### CSV Files
 
+# Parsing
+# -> Analyzing a file's content to correctly structure the data
+
+# CSV module
+
+import csv
+# open a file first
+f = open("employees.txt")
+# parsing txt to csv format
+f_csv = csv.reader(f)
+for row in f_csv:
+    print(row)
 
 
 

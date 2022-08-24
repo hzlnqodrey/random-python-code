@@ -246,3 +246,25 @@ website/index.html is a file
 in linux and MacOS, the portions of a file are split using a forward slash (/)
 on Windows, they're split using a backslash (\)
 with using os.path.join work with all operating systems
+
+>>> import csv
+>>> f = open("employees.txt")
+>>> csv_read = csv.reader(f)
+>>> print(csv_read)
+<_csv.reader object at 0x7f574ff2fcf0>
+>>> print(csv_read.name)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: '_csv.reader' object has no attribute 'name'
+>>> print(csv_read.[0])
+  File "<stdin>", line 1
+    print(csv_read.[0])
+                   ^
+SyntaxError: invalid syntax
+>>> for row in csv_read:
+...   print(row)
+...
+['Hazlan', '0815', 'Backend Engineer']
+['Rivano', '9823', 'Android Developer']
+['Riko', '4823', 'Frontend Engineer']
+>>>
