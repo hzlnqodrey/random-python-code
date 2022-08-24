@@ -127,11 +127,12 @@ os.remove("novel.txt")
 # arg1 -> the old name
 # arg2 -> the new name
 
-os.rename("spider.txt", "tarantula.txt") # it changed!
+# os.rename("spider.txt", "tarantula.txt") # it changed!
 
 ## how do we check if the file is exist or not?
 # submodule of OS [os.path sub-module]
-
+os.path.exists("tarantula.txt")
+os.path.exists("spider.txt")
 
 
 
