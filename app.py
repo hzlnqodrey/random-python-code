@@ -277,10 +277,13 @@ for row in file_csv:
     name, phone, role = row
     print("Name: {}, Phone: {}, Role: {}".format(name, phone, role))
 
-# output:
-# Name: Hazlan, Phone: 0815, Role: Backend Engineer
-# Name: Rivano, Phone: 9823, Role: Android Developer
-# Name: Riko, Phone: 4823, Role: Frontend Engineer
+# Generating a CSV file 
+hosts = [["workstation.local", "192.168.25.46"], ["webserver.cloud", "10.2.5.6"]]
+
+with open("hosts.csv", "w") as hosts_csv:
+    writer = csv.writer(hosts_csv)
+    writer.writerows(hosts)
+
 
 
 

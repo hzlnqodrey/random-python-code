@@ -244,7 +244,7 @@ website/index.html is a file
 >>>
 
 in linux and MacOS, the portions of a file are split using a forward slash (/)
-on Windows, they're split using a backslash (\)
+on Windows, theyre split using a backslash (\)
 with using os.path.join work with all operating systems
 
 >>> import csv
@@ -274,10 +274,30 @@ SyntaxError: invalid syntax
 for row in file_csv:
     name, phone, role = row
     p>>> file_csv = csv.reader(file)
-rint(">>> for row in file_csv:
+print(>>> for row in file_csv:
 Name: ...     name, phone, role = row
 ...     print("Name: {}, Phone: {}, Role: {}".format(name, phone, role))
 ...
 Name: Hazlan, Phone: 0815, Role: Backend Engineer
 Name: Rivano, Phone: 9823, Role: Android Developer
 Name: Riko, Phone: 4823, Role: Frontend Engineer
+
+# generate csv files
+...
+>>> file = open("hosts.csv")
+>>> print(csv.reader(file))
+<_csv.reader object at 0x7f2fd4675580>
+>>> file_csv = csv.reader(file)
+>>> for row in file_csv:
+...   print(row)
+...
+['workstation.local', '192.168.25.46']
+['webserver.cloud', '10.2.5.6']
+>>>
+[3]+  Stopped                 python3
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/August$ ls
+employees.txt  hosts.csv
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/August$ cat hosts.csv
+workstation.local,192.168.25.46
+webserver.cloud,10.2.5.6
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/August$
