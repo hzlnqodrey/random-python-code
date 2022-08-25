@@ -16,4 +16,20 @@ def read_employees(csv_file_location):
   return employee_list
 
 employee_list = read_employees('/home/student-04-2675d58b4395/user/data/employees.csv')
-print(employee_list)
+
+def process_data(employee_list):
+    departement_list = []
+
+    for employee_data in employee_list:
+        departement_list.append(employee_data["departement"])
+
+# The department_list should now have a redundant list of all the department names. We now have to remove the redundancy and return a dictionary. We will return this dicationary in the format department:amount, where amount is the number of employees in that particular department.
+
+    departement_data = {}
+
+    # This uses the set() method, which converts iterable elements to distinct elements.
+    for departement_name in set(departement_list):
+        departement_data[departement_name] = departement_list.count(departement_name)
+
+dictionary = process_data(employee_list)
+print(dictionary)
