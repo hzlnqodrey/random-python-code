@@ -23,4 +23,11 @@ def process_data(employee_list):
     return department_data
 
 dictionary = process_data(employee_list)
-print(dictionary)
+
+def write_report(dictionary, report_file):
+    with open(report_file, "w+") as f:
+        for k in sorted(dictionary):
+            f.write(str(k) + ':' + str(dictionary[k]) + '\n')
+        f.close()
+
+write_report(dictionary, '/home/student-04-2675d58b4395/data/report.txt')
