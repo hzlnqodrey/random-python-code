@@ -301,3 +301,51 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/August$ ca
 workstation.local,192.168.25.46
 webserver.cloud,10.2.5.6
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/August$
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+student-04-2675d58b4395@linux-instance:~$ ls
+data  scripts
+student-04-2675d58b4395@linux-instance:~$ cd data
+student-04-2675d58b4395@linux-instance:~/data$ ls
+employees.csv
+student-04-2675d58b4395@linux-instance:~/data$ cat employees.csv
+Full Name, Username, Department
+Audrey Miller, audrey, Development
+Arden Garcia, ardeng, Sales
+Bailey Thomas, baileyt, Human Resources
+Blake Sousa, sousa, IT infrastructure
+Cameron Nguyen, nguyen, Marketing
+Charlie Grey, greyc, Development
+Chris Black, chrisb, User Experience Research
+Courtney Silva, silva, IT infrastructure
+Darcy Johnsonn, darcy, IT infrastructure
+Elliot Lamb, elliotl, Development
+Emery Halls, halls, Sales
+Flynn McMillan, flynn, Marketing
+Harley Klose, harley, Human Resources
+Jean May Coy, jeanm, Vendor operations
+Kay Stevens, kstev, Sales
+Lio Nelson, lion, User Experience Research
+Logan Tillas, tillas, Vendor operations
+Micah Lopes, micah, Development
+Sol Mansi, solm, IT infrastructure
+student-04-2675d58b4395@linux-instance:~/data$
+
+# You will write your python script in this generate_report.py file. 
+# This script begins with a line containing 
+#  the '#!' character combination, which is commonly called hash bang or shebang, 
+# and continues with the path to the interpreter. 
+# If the kernel finds that the first two bytes are '#!' 
+# then it uses the rest of the line as an interpreter and passes the file as an argument. 
+# We will use the following shebang in this script:
+
+#!/usr/bin/env python3
+
+# We also need to pass a dialect as a parameter to this function. There isn't a well-defined standard for comma-separated value files, so the parser needs to be flexible. Flexibility here means that there are many parameters to control how csv parses or writes data. Rather than passing each of these parameters to the reader and writer separately, we group them together conveniently into a dialect object.
+
+# Dialect classes can be registered by name so that callers of the CSV module don't need to know the parameter settings in advance. We will now register a dialect empDialect.
+
+  csv.register_dialect('empDialect', skipinitialspace=True, strict=True)
+# Copied!
+# The main purpose of this dialect is to remove any leading spaces while parsing the CSV file.
