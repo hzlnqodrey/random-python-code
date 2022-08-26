@@ -319,12 +319,10 @@ with open("by_departement.csv", "w") as by_departement:
 
 
 
-# Regular Expression [REGEX]
+# Regular Expression [REGEX  or REGEXP]
+## so what are these expression and why are they regular? (lol)
 
-
-
-
-
+# -> is essentially a search query for text that's expressed by STRING PATTERN
 
 
 
