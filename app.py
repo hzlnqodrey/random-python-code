@@ -328,7 +328,9 @@ import re
 
 log = "July 31 mycomputer bad_processes[12345]: ERROR Performing package upgrade"
 
-regex = r"\[(\d+)\]"
+regex = r"\[(\d+)\]" # this means: d means integer - "\[...\]" means marked by square brackets
+# full meaning of the regex symbol: As long as there's a single sequence of number in the string marked by square brackets
+# the regex will extract those numbers for us
 
 result = re.search(regex, log)
 
