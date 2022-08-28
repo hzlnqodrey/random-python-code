@@ -343,7 +343,7 @@ print(result[0])
 
 # use '-i' to match a string regardless of case,
 
-# RESERVED CHARACTERS [. etc]
+# RESERVED CHARACTERS [., +, *, ?, ^, $, (, ), [, ], {, }, |, \. etc]
 
 # CLI: grep l.rts /usr/share/dict/words
 # output:
