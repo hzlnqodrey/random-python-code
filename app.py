@@ -336,6 +336,12 @@ result = re.search(regex, log)
 
 print(result[0])
 
+## Basic Matching with grep
+# CLI: grep thon /usr/share/dict/words
+
+# GREP is case sensitive
+
+# use '-i' to match a string regardless of case,
 
 
 
