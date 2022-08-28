@@ -351,7 +351,9 @@ print(result[0])
 # blurts
 # flirts
 
-
+# Using the terminal, which of the following commands will correctly use grep to find the words “sling” and “sting” (assuming they are in our file, file.txt)?
+# Correct Answer: user@ubuntu:~$ grep s.ing /usr/file.txt
+# Nice work! In regex, a dot is a wildcard, so it can represent any character. This command will print both “sting” and “sling”, if they are in the file.
 
 
 
