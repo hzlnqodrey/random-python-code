@@ -317,14 +317,22 @@ with open("by_departement.csv", "w") as by_departement:
     writer.writeheader() # will create the first line on csv based on keys we passed in fieldnames
     writer.writerows(users)
 
-
+##########################################################################################
 
 # Regular Expression [REGEX  or REGEXP]
 ## so what are these expression and why are they regular? (lol)
 
 # -> is essentially a search query for text that's expressed by STRING PATTERN
 
+import re 
 
+log = "July 31 mycomputer bad_processes[12345]: ERROR Performing package upgrade"
+
+regex = r"\[(\d+)\]"
+
+result = re.search(regex, log)
+
+print(result[0])
 
 
 
