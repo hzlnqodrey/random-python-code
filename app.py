@@ -356,13 +356,17 @@ print(result[0])
 # Nice work! In regex, a dot is a wildcard, so it can represent any character. This command will print both “sting” and “sling”, if they are in the file.
 
 # Circumflex (^) is the beginning and dollar sign ($) is the end
-# Circumflex (^) will return the matches pattern with fruit in the beginning of word/sentence
+# Circumflex (^) will return the matches pattern with sub-word in the beginning of word/sentence
 # example: ^fruit
 # grep ^fruit /usr/share/dict/words
 # output:
 # fruit, fruit's, fruitless, fruitier, etc
 
-
+# dollar sign ($) will return the matches pattern with sub-word in the end of word/sentence
+# example: cat$
+# grep cat$ /usr/share/dict/words
+# output:
+# muscat, cat, tomcat, copycat, ducat, lolcat, pussycat, etc
 
 
 
