@@ -375,18 +375,18 @@ print(result[0])
 # Simple Mathing
 
 import re
-result = re.search(r"aza", "plaza") # 'r' indicates RAWSTRING
+result = re.search(r"aza", "plaza") # 'r' indicates RAWSTRING [No Special Characters (!*&@%$!^*@#*!@#^)]
 print(result)
 
 # substring in different location
-result = re.search(r"aza", "bazaar") # 'r' indicates RAWSTRING
+result = re.search(r"aza", "bazaar") # 'r' indicates RAWSTRING [No Special Characters (!*&@%$!^*@#*!@#^)]
 print(result)
 
 # no matching
-result = re.search(r"aza", "Turmoil") # 'r' indicates RAWSTRING
+result = re.search(r"aza", "Turmoil") # 'r' indicates RAWSTRING [No Special Characters (!*&@%$!^*@#*!@#^)]
 print(result) # None
 
-
+## Simple Matching with Special Character
 
 
 

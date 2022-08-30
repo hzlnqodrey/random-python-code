@@ -349,3 +349,35 @@ student-04-2675d58b4395@linux-instance:~/data$
   csv.register_dialect('empDialect', skipinitialspace=True, strict=True)
 # Copied!
 # The main purpose of this dialect is to remove any leading spaces while parsing the CSV file.
+
+## Basic Matching with grep
+# CLI: grep [word] /usr/share/dict/words
+
+# GREP is case sensitive
+
+# use '-i' to match a string regardless of case,
+
+# RESERVED CHARACTERS [., +, *, ?, ^, $, (, ), [, ], {, }, |, \. etc]
+
+CLI: grep l.rts /usr/share/dict/words
+output:
+alerts
+blurts
+flirts
+
+# Using the terminal, which of the following commands will correctly use grep to find the words “sling” and “sting” (assuming they are in our file, file.txt)?
+# Correct Answer: user@ubuntu:~$ grep s.ing /usr/file.txt
+# Nice work! In regex, a dot is a wildcard, so it can represent any character. This command will print both “sting” and “sling”, if they are in the file.
+
+# Circumflex (^) is the beginning and dollar sign ($) is the end
+# Circumflex (^) will return the matches pattern with sub-word in the beginning of the line
+# example: ^fruit
+grep ^fruit /usr/share/dict/words
+output:
+fruit, fruits, fruitless, fruitier, etc
+
+# dollar sign ($) will return the matches pattern with sub-word in the end of the line
+# example: cat$
+grep cat$ /usr/share/dict/words
+output:
+muscat, cat, tomcat, copycat, ducat, lolcat, pussycat, etc
