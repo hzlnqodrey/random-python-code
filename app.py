@@ -368,6 +368,14 @@ print(result[0])
 # output:
 # muscat, cat, tomcat, copycat, ducat, lolcat, pussycat, etc
 
+#####################################################################
+
+## Basic Regular Expression
+
+# Simple Mathing
+
+import re
+result = re.search(r"aza", "plaza") # 'r' indicates RAWSTRING
 
 
 
