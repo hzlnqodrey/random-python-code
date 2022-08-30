@@ -406,7 +406,7 @@ for w in word:
 # Fill in the code to check if the text passed contains the vowels a, e and i, with exactly one occurrence of any other character in between.
 import re
 def check_aei(text):
-  result = re.search(r"a.e.i.", text)
+  result = re.search(r"a.e.i.", text) # another solution: r"([aei]).\1"
   return result != None
 
 print(check_aei("academia")) # True
@@ -420,7 +420,14 @@ print(check_aei("paramedic")) # True
 
 # Great work! You've written your first regular expression!
 
+# to Ignore the case use -> re.IGNORECASE
+word = ["Pangaea", "penguin", "ping", "Absolutely", "Holy ping", "Clapping", "Sponge", "Rapping"]
+print(re.search(r"p.ng", word[1]))
 
+for w in word:
+  comp = re.search(r"p.ng", w, re.IGNORECASE)
+  if comp:
+    print(comp)
 
 
 
