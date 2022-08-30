@@ -394,9 +394,13 @@ print(re.search(r"^x", "xenon"))
 # <re.Match object; span=(0, 1), match='x'>
 
 # Dot (.)
-word = ["penguin", "ping"]
+word = ["penguin", "ping", "Absolutely", "Holy ping"]
 print(re.search(r"p.ng", word[1]))
 
+for w in word:
+  comp = re.search(r"p.ng", w)
+  if comp:
+    print(comp)
 
 
 
