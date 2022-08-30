@@ -388,7 +388,10 @@ print(result) # None
 
 ## Simple Matching with Special Character
 
+# Circumflex
 
+print(re.search(r"^x", "xenon"))
+# <re.Match object; span=(0, 1), match='x'>
 
 
 
