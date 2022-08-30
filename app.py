@@ -438,7 +438,8 @@ for w in word:
 # example:
 print(re.search(r"[Pp]ython", "Python"))
 
-
+# to range a character alphabetically use dash (-) -> REGEX TOKEN: [a-z]
+print(re.search(r"[a-z]way", "The end of the highway")) # hway
 
 
 
