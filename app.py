@@ -431,6 +431,12 @@ for w in word:
 
 
 
+## Wildcards and Character Classes
+
+# Wildcards like dot syntax is WILD, if you want more stricter matches use: CHARACTER CLASSES
+# Characters Classes: Written in Square Brackets [], and let us list the character we want to match inside of those brackets.
+# example:
+print(re.search(r"[Pp]ython", "Python"))
 
 
 
