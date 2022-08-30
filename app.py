@@ -376,8 +376,15 @@ print(result[0])
 
 import re
 result = re.search(r"aza", "plaza") # 'r' indicates RAWSTRING
+print(result)
 
+# substring in different location
+result = re.search(r"aza", "bazaar") # 'r' indicates RAWSTRING
+print(result)
 
+# no matching
+result = re.search(r"aza", "Turmoil") # 'r' indicates RAWSTRING
+print(result) # None
 
 
 
