@@ -445,8 +445,39 @@ print(re.search(r"[a-z]way", "What a way to go")) # hway
 print(re.search(r"cloud[a-zA-Z0-9]", "cloudy"))
 print(re.search(r"cloud[a-zA-Z0-9]", "cloud9"))
 
+# Short Quiz: Wildcards and Character Classes
+# Fill in the code to check if the text passed contains punctuation symbols: commas, periods, colons, semicolons, question marks, and exclamation points.
 
+import re
+def check_punctuation (text):
+  result = re.search(r"[^a-zA-Z0-9\s]+", text)
+  return result != None
 
+print(check_punctuation("This is a sentence that ends with a period.")) # True
+print(check_punctuation("This is a sentence fragment without a period")) # False
+print(check_punctuation("Aren't regular expressions awesome?")) # True
+print(check_punctuation("Wow! We're really picking up some steam now!")) # True
+print(check_punctuation("End of the line")) # False
+
+# Here is your output:
+# True
+# False
+# True
+# True
+# False
+
+# Right on! You're seeing the flexibility of character classes in regular expressions!
+
+## [^a-zA-Z0-9\s]+ Explanation (from regex101.com):
+# [^a-zA-Z0-9\s]+/g
+# Match a single character not present in the list below [^a-zA-Z0-9\s]
+# + matches the previous token between one and unlimited times, as many times as possible, giving back as needed (greedy)
+# a-z matches a single character in the range between a (index 97) and z (index 122) (case sensitive)
+# A-Z matches a single character in the range between A (index 65) and Z (index 90) (case sensitive)
+# 0-9 matches a single character in the range between 0 (index 48) and 9 (index 57) (case sensitive)
+# \s matches any whitespace character (equivalent to [\r\n\t\f\v ])
+# Global pattern flags 
+# g modifier: global. All matches (don't return after first match)
 
 
 
