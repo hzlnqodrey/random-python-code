@@ -439,8 +439,11 @@ for w in word:
 print(re.search(r"[Pp]ython", "Python"))
 
 # to range a character alphabetically use dash (-) -> REGEX TOKEN: [a-z]
-print(re.search(r"[a-z]way", "The end of the highway")) # hway
+print(re.search(r"[a-z]way", "What a way to go")) # hway
 
+# combine a lower/upper case alpha and numeric
+print(re.search(r"cloud[a-zA-Z0-9]", "cloudy"))
+print(re.search(r"cloud[a-zA-Z0-9]", "cloud9"))
 
 
 
