@@ -482,7 +482,9 @@ print(check_punctuation("End of the line")) # False
 print(re.search(r"[^a-zA-Z]", "This is sentence with spaces."))
 print(re.search(r"[^a-zA-Z ]", "This is sentence with spaces.")) # to exlude space just add white space inside square bracket
 
-
+## Use pipe syntax [ | ] to compare between regex expressions
+print(re.search(r"cat|dog", "I like cats."))
+print(re.search(r"cat|dog", "I like tiger and dogs"))
 
 
 
