@@ -479,7 +479,8 @@ print(check_punctuation("End of the line")) # False
 # Global pattern flags 
 # g modifier: global. All matches (don't return after first match)
 
-
+print(re.search(r"[^a-zA-Z]", "This is sentence with spaces."))
+print(re.search(r"[^a-zA-Z ]", "This is sentence with spaces.")) # to exlude space just add white space inside square bracket
 
 
 
