@@ -485,7 +485,11 @@ print(re.search(r"[^a-zA-Z ]", "This is sentence with spaces.")) # to exlude spa
 ## Use pipe syntax [ | ] to compare between regex expressions
 print(re.search(r"cat|dog", "I like cats."))
 print(re.search(r"cat|dog", "I like tiger and dogs"))
+print(re.search(r"cat|dog", "I like cats and dogs")) # re.search will return the first occurence of matching
 
+# use re.findall() to return any matches | it will return a LIST of strings.
+print(re.findall(r"cat|dog", "I like both cats and dogs"))
+# output: ['cat', 'dog']
 
 
 
