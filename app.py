@@ -617,3 +617,8 @@ pattern = r"^[a-zA-Z_][a-zA-Z0-9_]*$"
 
 print(re.search(pattern, "_this_is_a_valid_variable_name_"))
 # <re.Match object; span=(0, 31), match='_this_is_a_valid_variable_name_'>
+
+print(re.search(pattern, "This isn't a valid variable")) # None. Whitespaces is not in the pattern
+print(re.search(pattern, "my_variable01")) # Valid
+# <re.Match object; span=(0, 13), match='my_variable01'>
+print(re.search(pattern, "2my_variable01")) # None. Invalid
