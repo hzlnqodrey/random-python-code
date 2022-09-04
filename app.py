@@ -501,9 +501,11 @@ print(re.search(r"Py.*n", "Python Programming"))
 print(re.search(r"Py[a-z]*n", "Python Programming")) # use character class to just only word mathes
 # <re.Match object; span=(0, 6), match='Python'>
 
-print(re.search(r"Py[a-z]*n", "Pyn")) # (*) is mean 0 or 1 or more than 1
+print(re.search(r"Py[a-z]*n", "Pyn")) # (*) is mean 0 or 1 or more occurences
 
-
+# (+) is mean mathing character one or more occurences of the character that comes before it
+print(re.search(r"o+l+", "goldfish"))
+# <re.Match object; span=(1, 3), match='ol'>
 
 
 
