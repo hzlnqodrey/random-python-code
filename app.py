@@ -538,9 +538,9 @@ print(repeating_letter_a("A is for apple")) # True
 # be, when we're working with lots of different text!
 
 
-
-
-
+## (?) is mean matching character ZERO or ONE occurences of the character that comes before it
+print(re.search(r"p?each", "To each of their own")) # it means it might be ZERO P or ONE P is matches
+# <re.Match object; span=(3, 7), match='each'>
 
 
 
