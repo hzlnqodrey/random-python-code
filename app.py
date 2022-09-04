@@ -611,3 +611,6 @@ print(re.search(r"^A.*a$", "Ajerbaizan")) # None
 print(re.search(r"^A.*a$", "Argentina")) # <re.Match object; span=(0, 9), match='Argentina'>
 print(re.search(r"^A.*a$", "Australia")) # <re.Match object; span=(0, 9), match='Australia'>
 
+## example: the variable rule in python (no number in the beginning, only underspaces and letters)
+
+pattern = r"^[a-zA-Z_][a-zA-Z0-9_]*$"
