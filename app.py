@@ -750,3 +750,15 @@ print(result[1]) # return string of the first element
 # Lovelace
 print(result[2]) # return string of the second element, and so on
 # Ada
+
+# More Example:
+
+def rearrange_name(name):
+    result = re.search(r"^(\w*), (\w*)$", name)
+    if result is None:
+        return name
+    return "{} {}".format(result[2], result[1])
+
+rearrange_name("Lovelace, Ada") # 'Ada Lovelace'
+rearrange_name("Qodrey, Hazlan") # 'Hazlan Qodrey'
+rearrange_name("Hansel, Timotius") # 'Timotius Hansel'
