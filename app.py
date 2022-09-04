@@ -498,6 +498,11 @@ print(re.search(r"Py.*n", "Pygmalion"))
 print(re.search(r"Py.*n", "Python Programming"))
 # <re.Match object; span=(0, 17), match='Python Programmin'> # -> Greedy Behavior
 
+print(re.search(r"Py[a-z]*n", "Python Programming")) # use character class to just only word mathes
+# <re.Match object; span=(0, 6), match='Python'>
+
+print(re.search(r"Py[a-z]*n", "Pyn")) # (*) is mean 0 or 1 or more than 1
+
 
 
 
