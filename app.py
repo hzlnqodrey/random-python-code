@@ -552,7 +552,12 @@ print(re.search(r"p?each", "I like the peaches")) # IT HAS ONE P, so it will mat
 print(re.search(r".com", "Welcome"))
 # <re.Match object; span=(2, 6), match='lcom'>
 
+# If we use escaping characters
+print(re.search(r"\.com", "Welcome"))
+# None. Nice!
 
+print(re.search(r"\.com", "temandisabilitas.com"))
+# <re.Match object; span=(16, 20), match='.com'>
 
 
 
