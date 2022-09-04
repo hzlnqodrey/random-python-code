@@ -596,3 +596,17 @@ print(check_character_groups("shopping_list: milk, bread, eggs.")) # False
 
 # You got it! There's no escaping your regular expression
 # expertise!
+
+
+### Regular Expression in Real World Cases [in Action!]
+
+## if we wanna match the Country with start A and end a
+print(re.search(r"A.*a", "Argentina"))
+# <re.Match object; span=(0, 9), match='Argentina'>
+print(re.search(r"A.*a", "Ajerbaizan"))
+# <re.Match object; span=(0, 9), match='Ajerbaiza'>
+
+## we need to more stricter about our pattern, add ^ and $
+print(re.search(r"^A.*a$", "Ajerbaizan")) # None
+print(re.search(r"^A.*a$", "Argentina")) # <re.Match object; span=(0, 9), match='Argentina'>
+
