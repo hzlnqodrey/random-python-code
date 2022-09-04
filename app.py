@@ -738,3 +738,15 @@ print(check_zip_code("The Parliament of Canada is at 111 Wellington St, Ottawa, 
 result = re.search(r"^(\w*), (\w*)$", "Lovelace, Ada")
 print(result)
 # <re.Match object; span=(0, 13), match='Lovelace, Ada'>
+
+## Let's look up into groups method of re
+print(result.groups()) 
+# ('Lovelace', 'Ada') # Apparently it will return Tuple of matches elements.
+
+# Accessing the Elements
+print(result[0]) # return strings of all elements
+# Lovelace, Ada
+print(result[1]) # return string of the first element
+# Lovelace
+print(result[2]) # return string of the second element, and so on
+# Ada
