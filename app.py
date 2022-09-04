@@ -573,3 +573,26 @@ print(re.search(r"\w*", "And_this_is_example"))
 # [\d] for matching number
 # [\s] for matching whitespaces
 # [\b] for word boundaries (the location of word the word in the substring or subsentence)
+
+# Short Quiz: Escaping Characters
+# Question
+# Fill in the code to check if the text passed has at least 2 groups of alphanumeric characters (including letters, numbers, and underscores) separated by one or more whitespace characters.
+
+import re
+def check_character_groups(text):
+  result = re.search(r"[\w*]\s", text)
+  return result != None
+
+print(check_character_groups("One")) # False
+print(check_character_groups("123  Ready Set GO")) # True
+print(check_character_groups("username user_01")) # True
+print(check_character_groups("shopping_list: milk, bread, eggs.")) # False
+
+# Here is your output:
+# False
+# True
+# True
+# False
+
+# You got it! There's no escaping your regular expression
+# expertise!
