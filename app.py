@@ -491,7 +491,7 @@ print(re.search(r"cat|dog", "I like cats and dogs")) # re.search will return the
 print(re.findall(r"cat|dog", "I like both cats and dogs"))
 # output: ['cat', 'dog']
 
-## Repeated Qualifiers [.*]
+### Repeated Qualifiers [.*]
 
 print(re.search(r"Py.*n", "Pygmalion"))
 
@@ -503,10 +503,30 @@ print(re.search(r"Py[a-z]*n", "Python Programming")) # use character class to ju
 
 print(re.search(r"Py[a-z]*n", "Pyn")) # (*) is mean 0 or 1 or more occurences
 
-# (+) is mean mathing character one or more occurences of the character that comes before it
+## (+) is mean mathing character one or more occurences of the character that comes before it
 print(re.search(r"o+l+", "goldfish"))
 # <re.Match object; span=(1, 3), match='ol'>
 
+print(re.search(r"o+l+", "woolly"))
+# <re.Match object; span=(1, 5), match='ooll'>
+
+print(re.search(r"o+l+", "boil"))
+# None
+
+# Short Quiz
+
+# Question
+# The repeating_letter_a function checks if the text passed includes the letter "a" (lowercase or uppercase) at least twice. For example, repeating_letter_a("banana") is True, while repeating_letter_a("pineapple") is False. Fill in the code to make this work. 
+
+import re
+def repeating_letter_a(text):
+  result = re.search(r"a.*a", text, re.IGNORECASE)
+  return result != None
+
+print(repeating_letter_a("banana")) # True
+print(repeating_letter_a("pineapple")) # False
+print(repeating_letter_a("Animal Kingdom")) # True
+print(repeating_letter_a("A is for apple")) # True
 
 
 
