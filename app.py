@@ -495,6 +495,8 @@ print(re.findall(r"cat|dog", "I like both cats and dogs"))
 
 print(re.search(r"Py.*n", "Pygmalion"))
 
+print(re.search(r"Py.*n", "Python Programming"))
+# <re.Match object; span=(0, 17), match='Python Programmin'> # -> Greedy Behavior
 
 
 
