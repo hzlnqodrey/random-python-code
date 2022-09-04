@@ -491,6 +491,10 @@ print(re.search(r"cat|dog", "I like cats and dogs")) # re.search will return the
 print(re.findall(r"cat|dog", "I like both cats and dogs"))
 # output: ['cat', 'dog']
 
+## Repeated Qualifiers [.*]
+
+print(re.search(r"Py.*n", "Pygmalion"))
+
 
 
 
