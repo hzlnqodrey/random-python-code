@@ -609,4 +609,5 @@ print(re.search(r"A.*a", "Ajerbaizan"))
 ## we need to more stricter about our pattern, add ^ and $
 print(re.search(r"^A.*a$", "Ajerbaizan")) # None
 print(re.search(r"^A.*a$", "Argentina")) # <re.Match object; span=(0, 9), match='Argentina'>
+print(re.search(r"^A.*a$", "Australia")) # <re.Match object; span=(0, 9), match='Australia'>
 
