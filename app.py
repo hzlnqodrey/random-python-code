@@ -546,7 +546,11 @@ print(re.search(r"p?each", "To each of their own")) # it means it might be ZERO 
 print(re.search(r"p?each", "I like the peaches")) # IT HAS ONE P, so it will matches
 # <re.Match object; span=(11, 16), match='peach'>
 
+## Escaping Characters [if we wanna match the SPECIAL CHARACTERS/RESERVED CHARACTERS]
 
+# If we don't use escape characters
+print(re.search(r".com", "Welcome"))
+# <re.Match object; span=(2, 6), match='lcom'>
 
 
 
