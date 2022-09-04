@@ -622,3 +622,28 @@ print(re.search(pattern, "This isn't a valid variable")) # None. Whitespaces is 
 print(re.search(pattern, "my_variable01")) # Valid
 # <re.Match object; span=(0, 13), match='my_variable01'>
 print(re.search(pattern, "2my_variable01")) # None. Invalid
+
+# Short Quiz: Regular Expressions in Action
+# Question
+# Fill in the code to check if the text passed looks like a standard sentence, meaning that it starts with an uppercase letter, followed by at least some lowercase letters or a space, and ends with a period, question mark, or exclamation point.  
+
+import re
+def check_sentence(text):
+  result = re.search(r"___", text)
+  return result != None
+
+print(check_sentence("Is this is a sentence?")) # True
+print(check_sentence("is this is a sentence?")) # False
+print(check_sentence("Hello")) # False
+print(check_sentence("1-2-3-GO!")) # False
+print(check_sentence("A star is born.")) # True
+
+# Here is your output:
+# True
+# False
+# False
+# False
+# True
+
+# Awesome! You're becoming a regular "regular expression"
+# writer!
