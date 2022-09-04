@@ -569,3 +569,7 @@ print(re.search(r"\w*", "This is an example"))
 # <re.Match object; span=(0, 4), match='This'>
 print(re.search(r"\w*", "And_this_is_example"))
 # <re.Match object; span=(0, 19), match='And_this_is_example'>
+
+# [\d] for matching number
+# [\s] for matching whitespaces
+# [\b] for word boundaries (the location of word the word in the substring or subsentence)
