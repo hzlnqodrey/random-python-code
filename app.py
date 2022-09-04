@@ -559,5 +559,13 @@ print(re.search(r"\.com", "Welcome"))
 print(re.search(r"\.com", "temandisabilitas.com"))
 # <re.Match object; span=(16, 20), match='.com'>
 
+## Special String Characters
 
+# [\n] is new line
+# [\t] is tab
 
+# [\w] will match any ALPHANUMERIC character including letters, numbers and underscores
+print(re.search(r"\w*", "This is an example"))
+# <re.Match object; span=(0, 4), match='This'>
+print(re.search(r"\w*", "And_this_is_example"))
+# <re.Match object; span=(0, 19), match='And_this_is_example'>
