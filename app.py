@@ -528,7 +528,14 @@ print(repeating_letter_a("pineapple")) # False
 print(repeating_letter_a("Animal Kingdom")) # True
 print(repeating_letter_a("A is for apple")) # True
 
+# Here is your output:
+# True
+# False
+# True
+# True
 
+# You get an A! See how handy the repetition qualifiers can
+# be, when we're working with lots of different text!
 
 
 
