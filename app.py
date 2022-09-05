@@ -789,6 +789,13 @@ print(name)
 
 # example:
 print(re.search(r"[a-zA-Z]{5}", "A ghost, a tales, and folklore")) # Match the first occurence of 5 letter of word
-
+# <re.Match object; span=(2, 7), match='ghost'>
 # use findall method to return all the matches
 print(re.findall(r"[a-zA-Z]{5}", "A ghost, a tales, and folklore kills")) # Match all of word that have 5 or more letter
+# ['ghost', 'tales', 'folkl', 'kills']
+
+# Hmm, seems folkl is getting involved, how to match exactly 5 letters?
+# use \b [Word Boundaries]
+# example:
+print(re.findall(r"\b[a-zA-Z]{5}\b", "A scary ghost appeared, and the story of the saint folklore happened"))
+# ['scary', 'ghost', 'story', 'saint'] | Nice!
