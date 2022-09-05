@@ -782,3 +782,10 @@ print(name)
 
 # Nice work! You're doing well using regular expressions to
 # capture groups.
+
+
+## More of Repetition Qualifiers
+# {} -> specifying a range of repetition
+
+# example:
+print(re.search(r"[a-zA-Z]{5}", "A ghost, a tales, and folklore")) # Match the first occurence of 5 letter of word
