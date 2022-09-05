@@ -381,3 +381,29 @@ fruit, fruits, fruitless, fruitier, etc
 grep cat$ /usr/share/dict/words
 output:
 muscat, cat, tomcat, copycat, ducat, lolcat, pussycat, etc
+
+student-04-97715962a5ea@linux-instance:~$ cd data
+student-04-97715962a5ea@linux-instance:~/data$ ls
+user_emails.csv
+student-04-97715962a5ea@linux-instance:~/data$ cat user_emails.csv
+Full Name, Email Address
+Blossom Gill, blossom@abc.edu
+Hayes Delgado, nonummy@utnisia.com
+Petra Jones, ac@abc.edu
+Oleg Noel, noel@liberomauris.ca
+Ahmed Miller, ahmed.miller@nequenonquam.co.uk
+Macaulay Douglas, mdouglas@abc.edu
+Aurora Grant, enim.non@abc.edu
+Madison Mcintosh, mcintosh@nisiaenean.net
+Montana Powell, montanap@semmagna.org
+Rogan Robinson, rr.robinson@abc.edu
+Simon Rivera, sri@abc.edu
+Benedict Pacheco, bpacheco@abc.edu
+Maisie Hendrix, mai.hendrix@abc.edu
+Xaviera Gould, xlg@utnisia.net
+Oren Rollins, oren@semmagna.com
+Flavia Santiago, flavia@utnisia.net
+Jackson Owens, jackowens@abc.edu
+Britanni Humphrey, britanni@ut.net
+Kirk Nixon, kirknixon@abc.edu
+Bree Campbell, breee@utnisia.net
