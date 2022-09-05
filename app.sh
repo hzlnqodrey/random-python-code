@@ -454,3 +454,25 @@ name = input("Please enter your name: ")
 print("Hello, " + name)
 
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$
+
+### Time Conversion User Input
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$ nano seconds.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$ sudo chmod 777 seconds.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$ nano seconds.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$ ./seconds.py
+Welcome to this thime converter program
+Enter the number of hours: 2
+Enter the number of minutes: 30
+Enter the number of seconds: 45
+That's 9045 seconds
+
+Do you want to do another conversion? [y to continue] Y
+Enter the number of hours: 100
+Enter the number of minutes: 60
+Enter the number of seconds: 60
+That's 363660 seconds
+
+Do you want to do another conversion? [y to continue] n
+Good bye!
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$
