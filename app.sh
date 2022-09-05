@@ -432,3 +432,25 @@ Jackson Owens, jackowens@xyz.edu
 Britanni Humphrey, britanni@ut.net
 Kirk Nixon, kirknixon@xyz.edu
 Bree Campbell, breee@utnisia.net
+
+############################################################# Reading Data Interactively
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$ sudo chmod 777 hello.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$ nano hello.py
+
+
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano hello.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$ fg
+nano hello.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$ ./hello.py
+Please enter your name: Qodrey
+Hello, Qodrey
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$ cat hello.py
+#!/usr/bin/env python3
+
+name = input("Please enter your name: ")
+print("Hello, " + name)
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September$
