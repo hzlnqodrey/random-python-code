@@ -799,3 +799,7 @@ print(re.findall(r"[a-zA-Z]{5}", "A ghost, a tales, and folklore kills")) # Matc
 # example:
 print(re.findall(r"\b[a-zA-Z]{5}\b", "A scary ghost appeared, and the story of the saint folklore happened"))
 # ['scary', 'ghost', 'story', 'saint'] | Nice!
+
+# Curly Brackets Ranges { from , to [can be null or open ended] } 
+print(re.findall(r"\w{5,10}", "I really like strowberry shortcake!"))
+# ['really', 'strowberry', 'shortcake']
