@@ -846,3 +846,16 @@ regex = "\[(\d+)\]"
 result = re.search(regex, log)
 print(result[1]) # 12345
 
+# Extract PID function (return PID if matched, return None if not matched)
+
+def extract_pid(log_lines):
+    regex = r"\[(\d+)\]"
+    result = re.search(regex, log_lines)
+    if result is None:
+        return ""
+    return result[1]
+
+log = extract_pid("saya siapa kamu dimana dia siapa [popo]")
+print(log) # 
+log1 = extract_pid("99 Matters of time like the hilling tree as we used before [32456]")
+print(log1) # 32456
