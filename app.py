@@ -807,3 +807,9 @@ print(re.findall(r"\w{5,10}", "I really like strowberry shortcake!"))
 # Open ended upper bracket
 print(re.findall(r"\w{5,}", "I really like strowberry shortcake sooooooooo muchhhhhhhhhhhhhhhhh!"))
 # ['really', 'strowberry', 'shortcake', 'sooooooooo', 'muchhhhhhhhhhhhhhhhh']
+
+# More example: We search a pattern of the letter S followed by up to 20 alphanumeric characters
+print(re.findall(r"s\w{,20}", "I really like strowberry shortcake sooooooooo muchhhhhhhhhhhhhhhhh!"))
+# ['strowberry', 'shortcake', 'sooooooooo']
+print(re.search(r"s\w{,20}", "I really like strowberry shortcake sooooooooo muchhhhhhhhhhhhhhhhh!"))
+# <re.Match object; span=(14, 24), match='strowberry'>
