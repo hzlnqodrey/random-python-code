@@ -789,3 +789,6 @@ print(name)
 
 # example:
 print(re.search(r"[a-zA-Z]{5}", "A ghost, a tales, and folklore")) # Match the first occurence of 5 letter of word
+
+# use findall method to return all the matches
+print(re.findall(r"[a-zA-Z]{5}", "A ghost, a tales, and folklore kills")) # Match all of word that have 5 or more letter
