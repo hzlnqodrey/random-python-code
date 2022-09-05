@@ -803,3 +803,7 @@ print(re.findall(r"\b[a-zA-Z]{5}\b", "A scary ghost appeared, and the story of t
 # Curly Brackets Ranges { from , to [can be null or open ended] } 
 print(re.findall(r"\w{5,10}", "I really like strowberry shortcake!"))
 # ['really', 'strowberry', 'shortcake']
+
+# Open ended upper bracket
+print(re.findall(r"\w{5,}", "I really like strowberry shortcake sooooooooo muchhhhhhhhhhhhhhhhh!"))
+# ['really', 'strowberry', 'shortcake', 'sooooooooo', 'muchhhhhhhhhhhhhhhhh']
