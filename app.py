@@ -906,4 +906,6 @@ re.sub(r"([\w .-]*), ([\w .-]*)", r"\2 \1", "Lovelace, Ada")
 # Explanation:
 # First Parameter is the pattern we look up for
 # Second Parameter is the subtitute matches we gonna change for the Third Parameter
+# Second Parameter: when we used capturing group in first param, 
+# a number in second param indicates the corresponding captured group in first param
 # 'Ada Lovelace'
