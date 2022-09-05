@@ -813,3 +813,26 @@ print(re.findall(r"s\w{,20}", "I really like strowberry shortcake sooooooooo muc
 # ['strowberry', 'shortcake', 'sooooooooo']
 print(re.search(r"s\w{,20}", "I really like strowberry shortcake sooooooooo muchhhhhhhhhhhhhhhhh!"))
 # <re.Match object; span=(14, 24), match='strowberry'>
+
+
+## Short Quiz: More of Repetition Qualifiers
+# Question
+# The long_words function returns all words that are at least 7 characters. Fill in the regular expression to complete this function.
+import re
+def long_words(text):
+  pattern = r"[a-zA-Z]{7,}"
+  result = re.findall(pattern, text)
+  return result
+
+print(long_words("I like to drink coffee in the morning.")) # ['morning']
+print(long_words("I also have a taste for hot chocolate in the afternoon.")) # ['chocolate', 'afternoon']
+print(long_words("I never drink tea late at night.")) # []
+
+
+# Here is your output:
+# ['morning']
+# ['chocolate', 'afternoon']
+# []
+
+# Nice job! Your regular expressions are getting more and more
+# sophisticated!
