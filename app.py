@@ -909,3 +909,7 @@ re.sub(r"([\w .-]*), ([\w .-]*)", r"\2 \1", "Lovelace, Ada")
 # Second Parameter: when we used capturing group in first param, 
 # a number in second param indicates the corresponding captured group in first param
 # 'Ada Lovelace'
+
+# more example: [Change Date Format]
+re.sub(r"([0-9]{4})-([0-9]{2})-([0-9]{2})", r"\3/\2/\1", "2022-09-05")
+# '05/09/2022'
