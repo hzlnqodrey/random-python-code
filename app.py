@@ -859,3 +859,28 @@ log = extract_pid("saya siapa kamu dimana dia siapa [popo]")
 print(log) # 
 log1 = extract_pid("99 Matters of time like the hilling tree as we used before [32456]")
 print(log1) # 32456
+
+## Short Quiz: Extracting a PID Using regexes in Python
+# Question
+# Add to the regular expression used in the extract_pid function, to return the uppercase message in parenthesis, after the process id.
+
+def extracting_pid(logging_lines):
+    regex = r"\[(\d+)\]: (\b[A-Z]+\b)"
+    result = re.search(regex, logging_lines)
+    if result is None:
+        return None
+    return "{} ({})".format(result[1], result[2])
+
+print(extracting_pid("July 31 07:51:48 mycomputer bad_process[12345]: ERROR Performing package upgrade")) # 12345 (ERROR)
+print(extracting_pid("99 elephants in a [cage]")) # None
+print(extracting_pid("A string that also has numbers [34567] but no uppercase message")) # None
+print(extracting_pid("July 31 08:08:08 mycomputer new_process[67890]: RUNNING Performing backup")) # 67890 (RUNNING)
+
+# Here is your output:
+# 12345 (ERROR)
+# None
+# None
+# 67890 (RUNNING)
+
+# You nailed it! You're using the tools you've learned in the
+# previous lessons, and it shows!
