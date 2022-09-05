@@ -820,7 +820,7 @@ print(re.search(r"s\w{,20}", "I really like strowberry shortcake sooooooooo much
 # The long_words function returns all words that are at least 7 characters. Fill in the regular expression to complete this function.
 import re
 def long_words(text):
-  pattern = r"[a-zA-Z]{7,}"
+  pattern = r"[a-zA-Z]{7,}" # another solution: "\w{7,}"
   result = re.findall(pattern, text)
   return result
 
