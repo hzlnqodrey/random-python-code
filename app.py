@@ -900,3 +900,10 @@ re.split(r"([.?!])", "One Sentence. Another one? And the last one!")
 
 re.sub(r"[\w.%+-]+@[\w.-]+", "[REDACTED]", "Received an email from hazlanqodri2020work@gmail.com")
 # 'Received an email from [REDACTED]'
+
+# more example: [fam name, first name case]:
+re.sub(r"([\w .-]*), ([\w .-]*)", r"\2 \1", "Lovelace, Ada")
+# Explanation:
+# First Parameter is the pattern we look up for
+# Second Parameter is the subtitute matches we gonna change for the Third Parameter
+# 'Ada Lovelace'
