@@ -884,3 +884,13 @@ print(extracting_pid("July 31 08:08:08 mycomputer new_process[67890]: RUNNING Pe
 
 # You nailed it! You're using the tools you've learned in the
 # previous lessons, and it shows!
+
+
+## More of Re Modules (Splitting and Replacing)
+
+re.split(r"[.?!]", "One Sentence. Another one? And the last one!")
+# ['One Sentence', ' Another one', ' And the last one', ''] # The notation mark that we putting in the matches table were not in 
+
+# if we want to include the notation mark -> use capturing parentheses
+re.split(r"([.?!])", "One Sentence. Another one? And the last one!")
+# ['One Sentence', '.', ' Another one', '?', ' And the last one', '!', ''] | Good
