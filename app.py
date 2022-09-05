@@ -894,3 +894,9 @@ re.split(r"[.?!]", "One Sentence. Another one? And the last one!")
 # if we want to include the notation mark -> use capturing parentheses
 re.split(r"([.?!])", "One Sentence. Another one? And the last one!")
 # ['One Sentence', '.', ' Another one', '?', ' And the last one', '!', ''] | Good
+
+# SUB method (replacing the matches string to subtitute string)
+# example:
+
+re.sub(r"[\w.%+-]+@[\w.-]+", "[REDACTED]", "Received an email from hazlanqodri2020work@gmail.com")
+# 'Received an email from [REDACTED]'
