@@ -913,3 +913,13 @@ re.sub(r"([\w .-]*), ([\w .-]*)", r"\2 \1", "Lovelace, Ada")
 # more example: [Change Date Format]
 re.sub(r"([0-9]{4})-([0-9]{2})-([0-9]{2})", r"\3/\2/\1", "2022-09-05")
 # '05/09/2022'
+
+## Short Quiz: Splitting and Replacing
+
+# Question
+# We want to split a piece of text by either the word "a" or "the", as implemented in the following code. What is the resulting split list?
+
+re.split(r"the|a", "One sentence. Another one? And the last one!")
+
+# Correct
+# Well done! This regular expression uses "the" and "a" as delimiters, no matter where they are in the text, even in the middle of other words like "Another" and "last".
