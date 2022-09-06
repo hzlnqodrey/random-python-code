@@ -571,3 +571,13 @@ FRUIT: Pineapple
 # -> Parameters that are passed to a program when it's started
 # really useful for system administator tasks
 # That's because we can specify the information that we want our program to use before it even starts
+
+## argv | sys
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ cat parameters.py
+#!/usr/bin/env python3
+import sys
+print(sys.argv)
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ./parameters.py
+['./parameters.py'] # The name of the program/command that we just executed 
