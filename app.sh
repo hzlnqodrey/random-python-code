@@ -597,3 +597,10 @@ Nice job! The list of arguments are stored in the sys module.
 # -> the value returned by a program to the shell
 
 # exit status 0 is succeded program, other than 0 is error | each number specify what its error
+
+# to check Exit status, use Question Mark variabel (?), 
+# and to see the contents use dolar sign, we use $?
+
+# wc (word counts)
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ wc variables.py
+  8  19 175 variables.py
