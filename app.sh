@@ -504,3 +504,11 @@ print("Good bye!")
 data = input("This will come from STDIN: ")
 print("Now we write it to STDOUT: " + data)
 print("Now we generate an error to STDERR" + data + 1) # output is might be error, because if data is string, u can't added up directly with one
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ./streams.py
+This will come from STDIN: Saya
+Now we write it to STDOUT: Saya
+Traceback (most recent call last):
+  File "./streams.py", line 5, in <module>
+    print("Now we generate an error to STDERR" + data + 1)
+TypeError: can only concatenate str (not "int") to str
