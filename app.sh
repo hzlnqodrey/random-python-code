@@ -581,3 +581,6 @@ print(sys.argv)
 
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ./parameters.py
 ['./parameters.py'] # The name of the program/command that we just executed 
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ./parameters.py one two three
+['./parameters.py', 'one', 'two', 'three']
