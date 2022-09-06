@@ -604,3 +604,7 @@ Nice job! The list of arguments are stored in the sys module.
 # wc (word counts)
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ wc variables.py
   8  19 175 variables.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ $?
+0: command not found
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ $?
+127: command not found
