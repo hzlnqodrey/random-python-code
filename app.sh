@@ -565,3 +565,9 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 HOME: /home/qodri123
 SHELL: /bin/bash
 FRUIT: Pineapple
+
+
+## Command-Line Arguments and Exit Status
+# -> Parameters that are passed to a program when it's started
+# really useful for system administator tasks
+# That's because we can specify the information that we want our program to use before it even starts
