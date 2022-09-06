@@ -608,3 +608,22 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 0: command not found # run zero because wc run successfully
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ $?
 127: command not found # Exit code 127 means job's command can not be found or executed.
+
+### create_file.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ cat create_file.py
+#!/usr/bin/env python3
+
+import os
+import sys
+
+filename=sys.argv[1]
+
+if not os.path.exists(filename):
+        with open(filename, "w") as f:
+                f.write("New file created\n")
+else:
+        print("Error, the file {} already exists!".format(filename))
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ./create_file.py test-1.txt
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ls
+create_file.py  parameters.py  streams.py  test-1.txt  variables.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$
