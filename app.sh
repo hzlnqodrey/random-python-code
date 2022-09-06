@@ -591,3 +591,9 @@ Where are the command line arguments stored?
 
 Correct
 Nice job! The list of arguments are stored in the sys module.
+
+### Exit status/Return Code
+# -> a bridge between a shell and program that gets executed inside of it
+# -> the value returned by a program to the shell
+
+# exit status 0 is succeded program, other than 0 is error | each number specify what its error
