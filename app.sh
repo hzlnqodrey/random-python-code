@@ -554,3 +554,14 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 HOME: /home/qodri123
 SHELL: /bin/bash
 FRUIT:
+
+# Why value of fruit is missing?
+# because the value of the key "FRUIT" is not present in ENVIRONMENT variables in Shell
+# we need to do this to set the key and value into shell (check below)
+
+# Export command
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ export FRUIT=Pineapple
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ./variables.py
+HOME: /home/qodri123
+SHELL: /bin/bash
+FRUIT: Pineapple
