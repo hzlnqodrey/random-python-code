@@ -623,7 +623,11 @@ if not os.path.exists(filename):
                 f.write("New file created\n")
 else:
         print("Error, the file {} already exists!".format(filename))
+        sys.exit(1) # generate exit code 1
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ./create_file.py test-1.txt
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ls
 create_file.py  parameters.py  streams.py  test-1.txt  variables.py
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ./create_file.py test-1.txt
+Error, the file test-1.txt already exists!
