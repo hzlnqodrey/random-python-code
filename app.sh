@@ -540,3 +540,13 @@ _=/usr/bin/env
 ######## ENV PATH VARIALBE
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ echo $PATH
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin:/mnt/c/Users/HAZLAN M QODRI/AppData/Roaming/Python/Python37/Scripts:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files/MongoDB/Server/4.4/bin:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/Programs/Python/Python39-32/Scripts:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/Programs/Python/Python39-32:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/Programs/Python/Python38/:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Program Files/Cloudflare/Cloudflare WARP/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/HAZLAN M QODRI/.dotnet/tools:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/HAZLAN M QODRI/AppData/Roaming/npm:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin:/mnt/c/Users/HAZLAN M QODRI/AppData/Local/atom/bin:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2022.2/bin:/mnt/c/Users/HAZLAN M QODRI/go/bin:/mnt/c/Program Files/heroku/bin:/snap/bin
+
+######## ENVIRON DICTIONARY OF OS MODULE
+#!/usr/bin/env python3
+
+import os
+
+print("HOME: " + os.environ.get("HOME", ""))
+print("SHELL: " + os.environ.get("SHELL", ""))
+print("FRUIT: " + os.environ.get("FRUIT", ""))
+
