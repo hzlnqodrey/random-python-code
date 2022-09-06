@@ -605,6 +605,6 @@ Nice job! The list of arguments are stored in the sys module.
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ wc variables.py
   8  19 175 variables.py
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ $?
-0: command not found
+0: command not found # run zero because wc run successfully
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ $?
-127: command not found
+127: command not found # Exit code 127 means job's command can not be found or executed.
