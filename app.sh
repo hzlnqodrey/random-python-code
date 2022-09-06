@@ -584,3 +584,10 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ./parameters.py one two three
 ['./parameters.py', 'one', 'two', 'three']
+
+Where are the command line arguments stored?
+
+>sys
+
+Correct
+Nice job! The list of arguments are stored in the sys module.
