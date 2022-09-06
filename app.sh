@@ -495,3 +495,12 @@ while(cont.lower() == 'y'):
         cont = input("Do you want to do another conversion? [y to continue] ")
 
 print("Good bye!")
+
+
+## STDIN | STDOUT | STDERR [Input | Output | Error]
+
+#!/usr/bin/env.python3
+
+data = input("This will come from STDIN: ")
+print("Now we write it to STDOUT: " + data)
+print("Now we generate an error to STDERR" + data + 1) # output is might be error, because if data is string, u can't added up directly with one
