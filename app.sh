@@ -550,3 +550,7 @@ print("HOME: " + os.environ.get("HOME", ""))
 print("SHELL: " + os.environ.get("SHELL", ""))
 print("FRUIT: " + os.environ.get("FRUIT", ""))
 
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ./variables.py
+HOME: /home/qodri123
+SHELL: /bin/bash
+FRUIT:
