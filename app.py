@@ -1170,4 +1170,8 @@ print(result.returncode)
 import subprocess
 result = subprocess.run(["host", "8.8.8.8"], capture_output=True)
 print(result.returncode)
-print(result.stdout)
+print(result.stdout) # the result was a raw array of bytes, because we don't decode the encoding utf-8 parse
+
+# so use DECODE method
+# this method applies an encoding to transform the bytes into a string
+# by default, it uses a UTF-8 encoding 
