@@ -1225,3 +1225,8 @@ result = subprocess.run(["myapp"], env=my_env)
 
 # Correct
 # Awesome! Calling this method of the os.environ dictionary will copy the current environment variables to store and prepare a new environment.
+
+
+################## Processing Log Files
+
+## use REGEX to extract info in text based file
