@@ -663,3 +663,8 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ./host.py
 0
 ['8.8.8.8.in-addr.arpa', 'domain', 'name', 'pointer', 'dns.google.']
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ./host.py
+0
+['8.8.8.8.in-addr.arpa', 'domain', 'name', 'pointer', 'dns.google.']
+1 # RM command is failed, because saya_gila.txt is nowhere to be found

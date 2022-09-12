@@ -1184,3 +1184,10 @@ print(result.stdout.decode().split())
 
 # Correct
 # Woohoo! This encoding is part of the Unicode standard that can transform an array of bytes into a string.
+
+## What if there is any error in capture_output parameter? use STDERR
+
+# example: use RM command to remove non-existing file
+
+result = subprocess.run(["rm", "saya_gila.txt"], capture_output=True)
+print(result.returncode) 
