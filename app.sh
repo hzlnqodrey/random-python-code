@@ -633,3 +633,14 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 Error, the file test-1.txt already exists!
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ $?
 1: command not found
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ mkdir Subprocess
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ ls
+Subprocess  create_file.py  parameters.py  streams.py  test-1.txt  variables.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively$ cd Subprocess/
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ touch main.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ nano main.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ sudo chmod 777 main.py
+[sudo] password for qodri123:
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ./main.py
+Mon Sep 12 16:09:24 WIB 2022

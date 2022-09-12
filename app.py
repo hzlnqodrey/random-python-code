@@ -1141,3 +1141,12 @@ def main():
 
 
 main()
+
+################################################################
+
+### Subprocess Module
+
+# inside ../September/../main.py
+
+import subprocess
+subprocess.run(['date'])
