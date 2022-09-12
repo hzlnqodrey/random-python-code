@@ -1236,6 +1236,7 @@ result = subprocess.run(["myapp"], env=my_env)
 #!/usr/bin/env python3
 
 import sys
+import re
 
 logfile = sys.argv[1] # to get the second argument in CLI
 
@@ -1244,7 +1245,9 @@ with open(logfile) as f:
         # Check whether "CRON" letter is in logfile
         if "CRON" not in line:
             continue
-        
+        pattern = r"USER \((\w+)\)$"
+        result = re.search(pattern, line)
+        print(result[1]) # the first capturing group
         print(line.strip())
 
 ## CRON JOB is used to schedule scripts on UNIX-based OS
