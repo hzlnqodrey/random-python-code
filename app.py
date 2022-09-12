@@ -1209,3 +1209,9 @@ my_env = os.environ.copy()
 my_env["PATH"] = os.pathsep.join(["/opt/myapp/", my_env["PATH"]])
 
 result = subprocess.run(["myapp"], env=my_env)
+
+## CWD command
+# -> change the Current Working Directory
+
+## timeout parameter on .run() method
+# -> this will cause the run function to kill the process if it takes longer than a given number of seconds to finish
