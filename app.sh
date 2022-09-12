@@ -656,3 +656,10 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 0
 b'8.8.8.8.in-addr.arpa domain name pointer dns.google.\n'
 
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ./host.py
+0
+8.8.8.8.in-addr.arpa domain name pointer dns.google. # String output, good
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ./host.py
+0
+['8.8.8.8.in-addr.arpa', 'domain', 'name', 'pointer', 'dns.google.']

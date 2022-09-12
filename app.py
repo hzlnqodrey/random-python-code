@@ -1175,3 +1175,4 @@ print(result.stdout) # the result was a raw array of bytes, because we don't dec
 # so use DECODE method
 # this method applies an encoding to transform the bytes into a string
 # by default, it uses a UTF-8 encoding 
+print(result.stdout.decode().split()) 
