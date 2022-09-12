@@ -1215,3 +1215,6 @@ result = subprocess.run(["myapp"], env=my_env)
 
 ## timeout parameter on .run() method
 # -> this will cause the run function to kill the process if it takes longer than a given number of seconds to finish
+
+## Shell parameter on .run() method [True/False]
+# -> python will first execute an instance of the default system shell and then run the given command inside of it
