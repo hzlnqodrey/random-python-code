@@ -1156,3 +1156,6 @@ subprocess.run(["sleep", "5"]) # this will blocked out CLI for 5 sec
 
 result = subprocess.run(['ls', 'this_file_does_not_exist'])
 print(result.returncode)
+
+### WHO command
+# -> which prints the users currently logged into a computer
