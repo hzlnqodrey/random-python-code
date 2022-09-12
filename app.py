@@ -1218,3 +1218,10 @@ result = subprocess.run(["myapp"], env=my_env)
 
 ## Shell parameter on .run() method [True/False]
 # -> python will first execute an instance of the default system shell and then run the given command inside of it
+
+# Which method do you use to prepare a new environment to modify environment variables?
+
+# Correct answer: copy
+
+# Correct
+# Awesome! Calling this method of the os.environ dictionary will copy the current environment variables to store and prepare a new environment.
