@@ -1162,3 +1162,5 @@ print(result.returncode)
 # -> To be able to process the output of the command,
 # -> We'll set a parameter called [capture_output] to True when calling the run function
 
+### HOST command
+# -> which can convert a host name to an IP address, pass a parameter capture_output to True
