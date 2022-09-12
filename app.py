@@ -1230,3 +1230,17 @@ result = subprocess.run(["myapp"], env=my_env)
 ################## Processing Log Files
 
 ## use REGEX to extract info in text based file
+
+## Filtering log files with Regular Expressions
+
+#!/usr/bin/env python3
+
+import sys
+
+logfile = sys.argv[1] # to get the second argument in CLI
+
+with open(logfile) as f:
+    for line in f:
+        print(line.strip())
+
+## CRON JOB is used to schedule scripts on UNIX-based OS
