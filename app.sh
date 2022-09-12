@@ -644,3 +644,8 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 [sudo] password for qodri123:
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ./main.py
 Mon Sep 12 16:09:24 WIB 2022
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ./main.py
+Mon Sep 12 16:19:23 WIB 2022
+ls: cannot access 'this_file_does_not_exist': No such file or directory
+2 # Return Code of failed LS fetch file

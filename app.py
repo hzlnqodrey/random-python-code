@@ -1153,3 +1153,6 @@ main()
 import subprocess
 subprocess.run(["date"])
 subprocess.run(["sleep", "5"]) # this will blocked out CLI for 5 sec
+
+result = subprocess.run(['ls', 'this_file_does_not_exist'])
+print(result.returncode)
