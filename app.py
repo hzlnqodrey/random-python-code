@@ -1159,3 +1159,6 @@ print(result.returncode)
 
 ### WHO command
 # -> which prints the users currently logged into a computer
+# -> To be able to process the output of the command,
+# -> We'll set a parameter called [capture_output] to True when calling the run function
+
