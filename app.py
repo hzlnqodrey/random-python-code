@@ -1176,3 +1176,11 @@ print(result.stdout) # the result was a raw array of bytes, because we don't dec
 # this method applies an encoding to transform the bytes into a string
 # by default, it uses a UTF-8 encoding 
 print(result.stdout.decode().split()) 
+
+# Short Quiz
+# Which of the following is a Unicode standard used to convert an array of bytes into a string?
+
+# UTF-8
+
+# Correct
+# Woohoo! This encoding is part of the Unicode standard that can transform an array of bytes into a string.
