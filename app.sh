@@ -676,3 +676,19 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 b''
 b"rm: cannot remove 'saya_gila.txt': No such file or directory\n"
 rm: cannot remove 'saya_gila.txt': No such file or directory
+
+## IF rm command was succesfully
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ nano will_delete.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ls
+host.py  main.py  will_delete.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ./host.py
+0
+['8.8.8.8.in-addr.arpa', 'domain', 'name', 'pointer', 'dns.google.']
+0
+b''
+b''
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ls
+host.py  main.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$
