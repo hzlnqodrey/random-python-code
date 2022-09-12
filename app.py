@@ -1164,3 +1164,10 @@ print(result.returncode)
 
 ### HOST command
 # -> which can convert a host name to an IP address, pass a parameter capture_output to True
+
+#!/usr/bin/env python3
+
+import subprocess
+result = subprocess.run(["host", "8.8.8.8"], capture_output=True)
+print(result.returncode)
+print(result.stdout)

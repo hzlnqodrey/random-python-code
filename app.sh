@@ -649,3 +649,10 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 Mon Sep 12 16:19:23 WIB 2022
 ls: cannot access 'this_file_does_not_exist': No such file or directory
 2 # Return Code of failed LS fetch file
+
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ nano host.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ./host.py
+0
+b'8.8.8.8.in-addr.arpa domain name pointer dns.google.\n'
+
