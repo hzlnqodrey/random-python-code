@@ -1241,6 +1241,10 @@ logfile = sys.argv[1] # to get the second argument in CLI
 
 with open(logfile) as f:
     for line in f:
+        # Check whether "CRON" letter is in logfile
+        if "CRON" not in line:
+            continue
+        
         print(line.strip())
 
 ## CRON JOB is used to schedule scripts on UNIX-based OS
