@@ -1148,5 +1148,8 @@ main()
 
 # inside ../September/../main.py
 
+#!/usr/bin/env python3
+
 import subprocess
-subprocess.run(['date'])
+subprocess.run(["date"])
+subprocess.run(["sleep", "5"]) # this will blocked out CLI for 5 sec
