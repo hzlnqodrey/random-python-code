@@ -1190,4 +1190,7 @@ print(result.stdout.decode().split())
 # example: use RM command to remove non-existing file
 
 result = subprocess.run(["rm", "saya_gila.txt"], capture_output=True)
-print(result.returncode) 
+print(result.returncode)
+print(result.stdout)
+print(result.stderr)
+print(result.stderr.decode())

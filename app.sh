@@ -668,3 +668,11 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 0
 ['8.8.8.8.in-addr.arpa', 'domain', 'name', 'pointer', 'dns.google.']
 1 # RM command is failed, because saya_gila.txt is nowhere to be found
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ./host.py
+0
+['8.8.8.8.in-addr.arpa', 'domain', 'name', 'pointer', 'dns.google.']
+1
+b''
+b"rm: cannot remove 'saya_gila.txt': No such file or directory\n"
+rm: cannot remove 'saya_gila.txt': No such file or directory
