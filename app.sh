@@ -758,3 +758,21 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 Ran 3 tests in 0.000s
 
 OK
+
+## 4th Cases
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ ./rearrange_test.py
+...F
+======================================================================
+FAIL: test_one_name (__main__.TestRearrange)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./rearrange_test.py", line 29, in test_one_name
+    self.assertEqual(rearrange_name(testcase), expected)
+AssertionError: '' != 'Voltaire'
++ Voltaire
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+FAILED (failures=1)
