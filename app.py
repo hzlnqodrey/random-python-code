@@ -1378,3 +1378,15 @@ class TestRearrange(unittest.TestCase):
         # assertEqual to verify what we expected is exactly what we got
 
 unittest.main()
+
+# Short Quiz: Writing Unit Tests in Python
+
+# Question
+# What module can you load to use a bunch of testing methods for your unit tests?
+
+
+# Correct Answer: unittest
+
+
+# Correct
+# Nice job! This module provides a TestCase class with a bunch of testing methods.
