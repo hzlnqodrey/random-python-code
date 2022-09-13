@@ -1287,3 +1287,18 @@ print(show_time_of_pid("Jul 6 14:05:01 computer.name CRON[29440]: USER (naughty_
 
 # You got it! You're parsing the syslog and extracting just
 # the information that we need, with nothing extra!
+
+
+## Making Sense out of the Data
+
+# use dictionary to store specific log data we want
+
+usernames = {}
+
+name = "jinx_user"
+
+usernames[name] = usernames.get(name, 0) + 1
+
+print(usernames)
+usernames[name] = usernames.get(name, 0) + 1
+print(usernames)
