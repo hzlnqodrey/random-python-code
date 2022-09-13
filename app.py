@@ -1349,3 +1349,18 @@ print(usernames)
 
 # Correct
 # Nice job! Unit tests test the piece of code they target.
+
+## Python has a test module. It's unittest
+
+#!/usr/bin/env python3
+
+import unittest
+
+# inherit the TestCase class
+class TestRearrange(unittest.TestCase):
+        # ready to write first test case
+        def test_basic(self):
+                # we setting up our expected inputs and outputs
+                testcase = "Lovelace, Ada"
+                expected = "Ada Lovelace"
+                self.assertEqual(rearrange_name(testcase), expected)
