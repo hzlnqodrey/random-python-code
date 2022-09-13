@@ -1341,3 +1341,11 @@ print(usernames)
 
 ## Unit Test
 # -> Used to verify that small, isolated parts of a program are correct
+
+# An important characteristic of a unit test is ___. 
+
+
+# Correct Answer: Isolation.
+
+# Correct
+# Nice job! Unit tests test the piece of code they target.
