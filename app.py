@@ -1338,3 +1338,6 @@ print(usernames)
 
 # Correct
 # Right on! You want to find errors and defects when testing software. 
+
+## Unit Test
+# -> Used to verify that small, isolated parts of a program are correct
