@@ -711,3 +711,14 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> rearrange_name("Qodrey, Hazlan")
 'Hazlan Qodrey'
 >>>
+
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ nano rearrange_test.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ chmod +x rearrange_test.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ ./rearrange_test.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$

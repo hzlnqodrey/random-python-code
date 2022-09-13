@@ -1365,10 +1365,9 @@ print(usernames)
 # Python has a test module. It's unittest
 
 #!/usr/bin/env python3
-
-
+from rearrange import rearrange_name
+import unittest
 # inherit the TestCase class
-
 class TestRearrange(unittest.TestCase):
     # ready to write first test case
     def test_basic(self):
@@ -1377,3 +1376,5 @@ class TestRearrange(unittest.TestCase):
         expected = "Ada Lovelace"
         self.assertEqual(rearrange_name(testcase), expected)
         # assertEqual to verify what we expected is exactly what we got
+
+unittest.main()
