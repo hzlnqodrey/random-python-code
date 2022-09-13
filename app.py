@@ -1392,6 +1392,11 @@ unittest.main()
 # Nice job! This module provides a TestCase class with a bunch of testing methods.
 
 ## Edge Cases
+# -> Inputs to our code that produce unexpected results, and are found at the extreme ends,
+# -> of the ranges of input we imagine our programs will typically work with
+# -> Edge case need special "handling" in scripts in order for the code to continue to behave correctly
+
+# you want your program to crash most likely, rather then nothing happened/error silently
 
 #!/usr/bin/env python3
 from rearrange import rearrange_name
@@ -1413,3 +1418,14 @@ class TestRearrange(unittest.TestCase):
         self.assertEqual(rearrange_name(testcase), expected)
         
 unittest.main()
+
+#!/usr/bin/env python3
+
+import re
+
+def rearrange_name(name):
+        result = re.search(r"^([\w .]*), ([\w .]*)$", name)
+        # add this block to basically check whether result is None or not
+        if result is None:
+            return ""
+        return "{} {}".format(result[2], result[1])
