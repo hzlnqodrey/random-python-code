@@ -740,3 +740,12 @@ TypeError: 'NoneType' object is not subscriptable
 Ran 2 tests in 0.016s
 
 FAILED (errors=1)
+
+## after we manually error handling in rearrange.py
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ ./rearrange_test.py
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
