@@ -1,3 +1,6 @@
+import unittest
+import sys
+import subprocess
 import re
 import csv
 import datetime
@@ -1144,38 +1147,37 @@ main()
 
 ################################################################
 
-### Subprocess Module
+# Subprocess Module
 
 # inside ../September/../main.py
 
 #!/usr/bin/env python3
 
-import subprocess
 subprocess.run(["date"])
-subprocess.run(["sleep", "5"]) # this will blocked out CLI for 5 sec
+subprocess.run(["sleep", "5"])  # this will blocked out CLI for 5 sec
 
 result = subprocess.run(['ls', 'this_file_does_not_exist'])
 print(result.returncode)
 
-### WHO command
+# WHO command
 # -> which prints the users currently logged into a computer
 # -> To be able to process the output of the command,
 # -> We'll set a parameter called [capture_output] to True when calling the run function
 
-### HOST command
+# HOST command
 # -> which can convert a host name to an IP address, pass a parameter capture_output to True
 
 #!/usr/bin/env python3
 
-import subprocess
 result = subprocess.run(["host", "8.8.8.8"], capture_output=True)
 print(result.returncode)
-print(result.stdout) # the result was a raw array of bytes, because we don't decode the encoding utf-8 parse
+# the result was a raw array of bytes, because we don't decode the encoding utf-8 parse
+print(result.stdout)
 
 # so use DECODE method
 # this method applies an encoding to transform the bytes into a string
-# by default, it uses a UTF-8 encoding 
-print(result.stdout.decode().split()) 
+# by default, it uses a UTF-8 encoding
+print(result.stdout.decode().split())
 
 # Short Quiz
 # Which of the following is a Unicode standard used to convert an array of bytes into a string?
@@ -1185,7 +1187,7 @@ print(result.stdout.decode().split())
 # Correct
 # Woohoo! This encoding is part of the Unicode standard that can transform an array of bytes into a string.
 
-## What if there is any error in capture_output parameter? use STDERR
+# What if there is any error in capture_output parameter? use STDERR
 
 # example: use RM command to remove non-existing file
 
@@ -1196,27 +1198,25 @@ print(result.stderr)
 print(result.stderr.decode())
 
 
-### Advanced Subprocess Management
+# Advanced Subprocess Management
 
 # ENV command
 
 #!/usr/bin/env python3
 
-import os
-import subprocess
 
 my_env = os.environ.copy()
 my_env["PATH"] = os.pathsep.join(["/opt/myapp/", my_env["PATH"]])
 
 result = subprocess.run(["myapp"], env=my_env)
 
-## CWD command
+# CWD command
 # -> change the Current Working Directory
 
-## timeout parameter on .run() method
+# timeout parameter on .run() method
 # -> this will cause the run function to kill the process if it takes longer than a given number of seconds to finish
 
-## Shell parameter on .run() method [True/False]
+# Shell parameter on .run() method [True/False]
 # -> python will first execute an instance of the default system shell and then run the given command inside of it
 
 # Which method do you use to prepare a new environment to modify environment variables?
@@ -1227,18 +1227,16 @@ result = subprocess.run(["myapp"], env=my_env)
 # Awesome! Calling this method of the os.environ dictionary will copy the current environment variables to store and prepare a new environment.
 
 
-################## Processing Log Files
+# Processing Log Files
 
-## use REGEX to extract info in text based file
+# use REGEX to extract info in text based file
 
-## Filtering log files with Regular Expressions
+# Filtering log files with Regular Expressions
 
 #!/usr/bin/env python3
 
-import sys
-import re
 
-logfile = sys.argv[1] # to get the second argument in CLI
+logfile = sys.argv[1]  # to get the second argument in CLI
 
 with open(logfile) as f:
     for line in f:
@@ -1247,34 +1245,49 @@ with open(logfile) as f:
             continue
         pattern = r"USER \((\w+)\)$"
         result = re.search(pattern, line)
-        print(result[1]) # the first capturing group
+        print(result[1])  # the first capturing group
         print(line.strip())
 
-## CRON JOB is used to schedule scripts on UNIX-based OS
+# CRON JOB is used to schedule scripts on UNIX-based OS
 
 # Short Quiz: Filtering Log Files with Regular Expressions
 
 # We're using the same syslog, and we want to display the date, time, and process id that's inside the square brackets. We can read each line of the syslog and pass the contents to the show_time_of_pid function. Fill in the gaps to extract the date, time, and process id from the passed line, and return this format: Jul 6 14:01:23 pid:29440.
 
-import re
+
 def show_time_of_pid(line):
-  pattern = r"(\w+ \d+ [\d:]+).*\[(\d+)\]"
-  result = re.search(pattern, line)
-  return "{} pid:{}".format(result[1], result[2])
+    pattern = r"(\w+ \d+ [\d:]+).*\[(\d+)\]"
+    result = re.search(pattern, line)
+    return "{} pid:{}".format(result[1], result[2])
 
-print(show_time_of_pid("Jul 6 14:01:23 computer.name CRON[29440]: USER (good_user)")) # Jul 6 14:01:23 pid:29440
 
-print(show_time_of_pid("Jul 6 14:02:08 computer.name jam_tag=psim[29187]: (UUID:006)")) # Jul 6 14:02:08 pid:29187
+# Jul 6 14:01:23 pid:29440
+print(show_time_of_pid(
+    "Jul 6 14:01:23 computer.name CRON[29440]: USER (good_user)"))
 
-print(show_time_of_pid("Jul 6 14:02:09 computer.name jam_tag=psim[29187]: (UUID:007)")) # Jul 6 14:02:09 pid:29187
+# Jul 6 14:02:08 pid:29187
+print(show_time_of_pid(
+    "Jul 6 14:02:08 computer.name jam_tag=psim[29187]: (UUID:006)"))
 
-print(show_time_of_pid("Jul 6 14:03:01 computer.name CRON[29440]: USER (naughty_user)")) # Jul 6 14:03:01 pid:29440
+# Jul 6 14:02:09 pid:29187
+print(show_time_of_pid(
+    "Jul 6 14:02:09 computer.name jam_tag=psim[29187]: (UUID:007)"))
 
-print(show_time_of_pid("Jul 6 14:03:40 computer.name cacheclient[29807]: start syncing from \"0xDEADBEEF\"")) # Jul 6 14:03:40 pid:29807
+# Jul 6 14:03:01 pid:29440
+print(show_time_of_pid(
+    "Jul 6 14:03:01 computer.name CRON[29440]: USER (naughty_user)"))
 
-print(show_time_of_pid("Jul 6 14:04:01 computer.name CRON[29440]: USER (naughty_user)")) # Jul 6 14:04:01 pid:29440
+# Jul 6 14:03:40 pid:29807
+print(show_time_of_pid(
+    "Jul 6 14:03:40 computer.name cacheclient[29807]: start syncing from \"0xDEADBEEF\""))
 
-print(show_time_of_pid("Jul 6 14:05:01 computer.name CRON[29440]: USER (naughty_user)")) # Jul 6 14:05:01 pid:29440
+# Jul 6 14:04:01 pid:29440
+print(show_time_of_pid(
+    "Jul 6 14:04:01 computer.name CRON[29440]: USER (naughty_user)"))
+
+# Jul 6 14:05:01 pid:29440
+print(show_time_of_pid(
+    "Jul 6 14:05:01 computer.name CRON[29440]: USER (naughty_user)"))
 
 # Here is your output:
 # Jul 6 14:01:23 pid:29440
@@ -1289,7 +1302,7 @@ print(show_time_of_pid("Jul 6 14:05:01 computer.name CRON[29440]: USER (naughty_
 # the information that we need, with nothing extra!
 
 
-## Making Sense out of the Data
+# Making Sense out of the Data
 
 # use dictionary to store specific log data we want
 
@@ -1303,10 +1316,8 @@ print(usernames)
 usernames[name] = usernames.get(name, 0) + 1
 print(usernames)
 
-import sys
-import re
 
-logfile = sys.argv[1] # to get the second argument in CLI
+logfile = sys.argv[1]  # to get the second argument in CLI
 usernames = {}
 
 with open(logfile) as f:
@@ -1314,7 +1325,7 @@ with open(logfile) as f:
         # Check whether "CRON" letter is in logfile
         if "CRON" not in line:
             continue
-        
+
         pattern = r"USER \((\w+)\)$"
         result = re.search(pattern, line)
 
@@ -1322,13 +1333,14 @@ with open(logfile) as f:
         if result is None:
             continue
         name = result[1]
-        usernames[name] = usernames.get(name, 0) + 1 # Increment The Name Value, it the key has same value
+        # Increment The Name Value, it the key has same value
+        usernames[name] = usernames.get(name, 0) + 1
 
 print(usernames)
 
-################################################ Intro to Module 5: Testing in Python
+# Intro to Module 5: Testing in Python
 
-## Software Testing
+# Software Testing
 # -> The process of evaluating computer code to determine whether or not it does what you expect it to do
 
 # When you test software, what are you really looking for?
@@ -1337,12 +1349,12 @@ print(usernames)
 # Correct Answer: Defects
 
 # Correct
-# Right on! You want to find errors and defects when testing software. 
+# Right on! You want to find errors and defects when testing software.
 
-## Unit Test
+# Unit Test
 # -> Used to verify that small, isolated parts of a program are correct
 
-# An important characteristic of a unit test is ___. 
+# An important characteristic of a unit test is ___.
 
 
 # Correct Answer: Isolation.
@@ -1350,17 +1362,18 @@ print(usernames)
 # Correct
 # Nice job! Unit tests test the piece of code they target.
 
-## Python has a test module. It's unittest
+# Python has a test module. It's unittest
 
 #!/usr/bin/env python3
 
-import unittest
 
 # inherit the TestCase class
+
 class TestRearrange(unittest.TestCase):
-        # ready to write first test case
-        def test_basic(self):
-                # we setting up our expected inputs and outputs
-                testcase = "Lovelace, Ada"
-                expected = "Ada Lovelace"
-                self.assertEqual(rearrange_name(testcase), expected)
+    # ready to write first test case
+    def test_basic(self):
+        # we setting up our expected inputs and outputs
+        testcase = "Lovelace, Ada"
+        expected = "Ada Lovelace"
+        self.assertEqual(rearrange_name(testcase), expected)
+        # assertEqual to verify what we expected is exactly what we got
