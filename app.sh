@@ -776,3 +776,12 @@ AssertionError: '' != 'Voltaire' # Assertion Error -> Which means the original u
 Ran 4 tests in 0.002s
 
 FAILED (failures=1)
+
+# Yay!
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ ./rearrange_test.py
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
