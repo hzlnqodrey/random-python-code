@@ -722,3 +722,21 @@ Ran 1 test in 0.000s
 
 OK
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ nano rearrange_test.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ ./rearrange_test.py
+.E
+======================================================================
+ERROR: test_empty (__main__.TestRearrange)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./rearrange_test.py", line 18, in test_empty
+    self.assertEqual(rearrange_name(testcase), expected)
+  File "/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test/rearrange.py", line 7, in rearrange_name
+    return "{} {}".format(result[2], result[1])
+TypeError: 'NoneType' object is not subscriptable
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.016s
+
+FAILED (errors=1)
