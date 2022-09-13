@@ -1324,5 +1324,9 @@ with open(logfile) as f:
         name = result[1]
         usernames[name] = usernames.get(name, 0) + 1 # Increment The Name Value, it the key has same value
 
-        print(result[1]) # the first capturing group
-        print(line.strip())
+print(usernames)
+
+################################################ Intro to Module 5: Testing in Python
+
+## Software Testing
+# -> The process of evaluating computer code to determine whether or not it does what you expect it to do
