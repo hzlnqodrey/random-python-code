@@ -749,3 +749,12 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 Ran 2 tests in 0.000s
 
 OK
+
+## additional test cases - 3rd Cases
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ ./rearrange_test.py
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
