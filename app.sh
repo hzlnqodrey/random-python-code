@@ -769,7 +769,7 @@ FAIL: test_one_name (__main__.TestRearrange)
 Traceback (most recent call last):
   File "./rearrange_test.py", line 29, in test_one_name
     self.assertEqual(rearrange_name(testcase), expected)
-AssertionError: '' != 'Voltaire'
+AssertionError: '' != 'Voltaire' # Assertion Error -> Which means the original unexpected values don't match
 + Voltaire
 
 ----------------------------------------------------------------------
