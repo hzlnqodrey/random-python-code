@@ -692,3 +692,22 @@ b''
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$ ls
 host.py  main.py
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Reading-Data-interactively/Subprocess$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ nano rearrange.py
+  GNU nano 4.8                                                                             rearrange.py                                                                                       
+#!/usr/bin/env python3
+
+import re
+
+def rearrange_name(name):
+        result = re.search(r"^([\w .]*), ([\w .]*)$", name)
+        return "{} {}".format(result[2], result[1])
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test$ python3
+Python 3.8.10 (default, Jun 22 2022, 20:18:18)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from rearrange import rearrange_name
+>>> rearrange_name("Qodrey, Hazlan")
+'Hazlan Qodrey'
+>>>
