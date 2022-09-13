@@ -1330,3 +1330,11 @@ print(usernames)
 
 ## Software Testing
 # -> The process of evaluating computer code to determine whether or not it does what you expect it to do
+
+# When you test software, what are you really looking for?
+
+
+# Correct Answer: Defects
+
+# Correct
+# Right on! You want to find errors and defects when testing software. 
