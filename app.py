@@ -1534,3 +1534,6 @@ def rearrange_name(name):
 
 # Correct
 # You got it! Black-box tests have no knowledge of the code.
+
+### Integration Test
+# -> Basically Whole Software Testing, group of unit test packed up in test environment
