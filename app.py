@@ -1579,7 +1579,7 @@ def rearrange_name(name):
 # Which of the following is NOT an advantage of test-driven development (TDD)?
 
 
-# Faster development of code
+# Correct Answer: Faster development of code
 
 
 # Test cases written before writing code
@@ -1592,3 +1592,7 @@ def rearrange_name(name):
 
 # Correct
 # Nailed it! Testing while developing code may increase the code completion time.
+
+### Continuous Integration [CI]
+# -> When engineers submit their code, it's integrated to main repository
+# -> and tests are automatically run againts it to spot bugs and error in a process
