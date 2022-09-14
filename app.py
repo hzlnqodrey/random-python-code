@@ -1567,3 +1567,28 @@ def rearrange_name(name):
 
 # Correct
 # Keep it up! This test finds out if the program can run in its basic form before undergoing more refined test cases.
+
+### Test-Driven Development [TDD]
+
+# -> Calls for creating the test before writing the code
+# -> First Writing a test then running the development code to make sure it fails
+# -> Once it fails, you write the actual code to satisfy the test run, and run the TDD again
+
+## Short Quiz : Test-Driven Development
+
+# Which of the following is NOT an advantage of test-driven development (TDD)?
+
+
+# Faster development of code
+
+
+# Test cases written before writing code
+
+
+# A problem is well thought out
+
+
+# Test while you develop code
+
+# Correct
+# Nailed it! Testing while developing code may increase the code completion time.
