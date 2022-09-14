@@ -1535,5 +1535,35 @@ def rearrange_name(name):
 # Correct
 # You got it! Black-box tests have no knowledge of the code.
 
+############# TEST SUITE
+
 ### Integration Test
 # -> Basically Whole Software Testing, group of unit test packed up in test environment
+
+### Regression Test
+# -> Debug the only bug line
+
+### Smoke Test
+# -> [ironically] check whether our hardware output smokes out of it (lol)
+
+### Load Test
+# -> Generate Traffic
+
+## Short Quiz
+
+# Running a piece of software code as-is to see if it runs describes what type of testing?
+
+
+# Regression test
+
+
+# Load test
+
+
+# Integration test
+
+
+# Correct Answer: Smoke test
+
+# Correct
+# Keep it up! This test finds out if the program can run in its basic form before undergoing more refined test cases.
