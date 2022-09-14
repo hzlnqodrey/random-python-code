@@ -1508,3 +1508,29 @@ def rearrange_name(name):
         if result is None:
             return name
         return "{} {}".format(result[2], result[1])
+
+##### White vs Black Box Test
+
+## White Box Test
+# -> the test is made along by development by developer that know exactly what is going in the code
+
+## Black Box Test
+# -> is based on requirement of test, mainly written before the application even coded yet
+
+
+# Which of the following is descriptive of a black-box test case?
+
+
+# Correct Ansswer: Code is opaque.
+
+
+# The code is open-source.
+
+
+# Tests are created alongside the code development.
+
+
+# The tester is familiar with the code.
+
+# Correct
+# You got it! Black-box tests have no knowledge of the code.
