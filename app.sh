@@ -1193,3 +1193,8 @@ Retry #3
 Returning: 1
 Retry #4
 Returning: 0
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./fruits.sh
+I love apple
+I love orange
+I love peach
