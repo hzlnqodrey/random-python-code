@@ -1851,11 +1851,11 @@ unittest.main()
 ## Redirection (>)
 #  -> the process of sending a stream to different destinatiion
 
-# STDOUT
+# STDOUT [File Descriptor: 1]
 ## > is overwritten the file
 ## >> is to append the new content of the file in the end of line
 
-# STDIN
+# STDIN [File Descriptor: 0]
 ## < is to read the input
 
 ## Short Quiz: Redirecting Streams
@@ -1877,5 +1877,5 @@ unittest.main()
 # Correct
 # Great work! A double greater than sign will append a command output to a file.
 
-# STD_ERROR
+# STD_ERROR [File Descriptor: 2]
 ## 2> redirected of error value to error file
