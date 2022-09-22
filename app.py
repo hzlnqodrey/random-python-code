@@ -1808,3 +1808,10 @@ unittest.main()
 
 ## bash is to simplify the complex script in  modern prog-lang
 ## you are using bash scripting to automate a few lines of codes
+
+## Basic Linux Commands | other resource: https://devhints.io/bash
+
+# echo      : is a command to used to print messages to the screen
+# cat       : is a command for showing contents of files
+# ls        : is a command to list contents of a directory
+# chmod     : is a command to change a permission of a file
