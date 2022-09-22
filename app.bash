@@ -45,3 +45,6 @@ CTRL-Z
 fg
 kill
 ps
+    [arguments
+        ax  : to calling all the running process in the computer
+    ]

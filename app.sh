@@ -1052,3 +1052,18 @@ ping www.google.com
 64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=47 ttl=57 time=26.2 ms
 64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=48 ttl=57 time=27.6 ms
 64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=49 ttl=57 time=28.9 ms
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ps
+  PID TTY          TIME CMD
+   12 pts/0    00:00:00 bash
+  136 pts/0    00:00:00 less
+  206 pts/0    00:00:00 ps
+
+  qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ps ax
+  PID TTY      STAT   TIME COMMAND
+    1 ?        Sl     0:00 /init
+   10 ?        Ss     0:00 /init
+   11 ?        R      0:00 /init
+   12 pts/0    Ss     0:00 -bash
+  136 pts/0    T      0:00 less
+  224 pts/0    R+     0:00 ps ax
