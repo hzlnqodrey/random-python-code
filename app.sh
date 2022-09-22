@@ -1067,3 +1067,34 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
    12 pts/0    Ss     0:00 -bash
   136 pts/0    T      0:00 less
   224 pts/0    R+     0:00 ps ax
+
+  qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32$ ps ax
+  PID TTY      STAT   TIME COMMAND
+    1 ?        Sl     0:00 /init
+   10 ?        Ss     0:00 /init
+   11 ?        S      0:00 /init
+   12 pts/0    Ss     0:00 -bash
+  136 pts/0    T      0:00 less
+  225 pts/0    S+     0:00 ping www.google.com  ## WE NEED TO KILL THIS IN OTHER TERMINAL YES YES YES
+  226 ?        Ss     0:00 /init
+  227 ?        S      0:00 /init
+  228 pts/1    Ss     0:00 -bash
+  241 pts/1    R+     0:00 ps ax
+
+# use GREP to match our search word
+  qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32$ ps ax | grep ping
+  225 pts/0    S+     0:00 ping www.google.com
+  246 pts/1    S+     0:00 grep --color=auto ping
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32$ kill 225
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32$
+
+....
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=137 ttl=57 time=26.9 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=138 ttl=57 time=28.0 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=139 ttl=57 time=34.3 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=140 ttl=57 time=27.1 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=141 ttl=57 time=25.9 ms
+Terminated
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
