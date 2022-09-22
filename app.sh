@@ -1180,3 +1180,16 @@ Iteration number - 2
 Iteration number - 3
 Iteration number - 4
 Iteration number - 5
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./retry.sh ./random-exit.py
+Returning: 0
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./retry.sh ./random-exit.py
+Returning: 1
+Retry #1
+Returning: 1
+Retry #2
+Returning: 2
+Retry #3
+Returning: 1
+Retry #4
+Returning: 0
