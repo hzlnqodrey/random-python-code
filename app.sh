@@ -976,3 +976,8 @@ Traceback (most recent call last):
     print("Now we generate an error to STDERR" + data + 1)
 TypeError: can only concatenate str (not "int") to str
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ echo "Just a single line here" > my_amazing_file.txt
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat my_amazing_file.txt
+Just a single line here
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
