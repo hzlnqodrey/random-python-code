@@ -24,3 +24,5 @@ touch
 mv
 
 rm
+
+rmdir

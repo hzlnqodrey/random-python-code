@@ -1824,3 +1824,4 @@ unittest.main()
 # touch     : is a command to create a empty file
 # mv        : is a command to RENAME and MOVE file
 # rm        : is a command to delete file (delete all using asterisk (*))
+# rmdir     : is a command to delete directory [ONLY WORKS IN EMPTY DIRECTORIES]
