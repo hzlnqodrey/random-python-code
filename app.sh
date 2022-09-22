@@ -1132,3 +1132,7 @@ Swap:       4194304           0     4194304
 WHO
 
 Finishing at Thu Sep 22 16:18:52 WIB 2022
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ example=hello
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ echo $example
+hello

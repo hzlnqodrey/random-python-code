@@ -2042,6 +2042,8 @@ for line in sys.stdin:
 
 # top: shows the processes currently using the most CPU time (press "q" to quit)  
 
+################## BASH SCRIPTING
+
 ## Short Quiz: Creating Bash Scripts
 
 # Which command will correctly run a bash script?
@@ -2060,3 +2062,7 @@ for line in sys.stdin:
 
 # Correct
 # Right on! A bash script is run with the .sh file extension.
+
+
+###### Using Variables and Globs
+
