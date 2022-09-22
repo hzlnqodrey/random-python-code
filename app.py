@@ -1820,3 +1820,4 @@ unittest.main()
 # pwd       : is a command to checking currect working directory
 # cp        : is a command to copy a file (using a dot)
 #           : -> dot is this directory (./) like that
+# touch     : is a command to create a empty file

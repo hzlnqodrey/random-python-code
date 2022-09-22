@@ -13,3 +13,5 @@ cd
 pwd
 
 cp
+
+touch
