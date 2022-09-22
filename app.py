@@ -2090,3 +2090,14 @@ for line in sys.stdin:
 
 # Correct
 # Right on! The if conditional ends with fi (a backwards "if").
+
+## WHILE LOOP IN BASH
+
+#   GNU nano 4.8                                                                            random-exit.py                                                                                      #!/usr/bin/env python
+
+import sys
+import random
+
+value = random.randint(0, 3)
+print("Returning: " + str(value))
+sys.exit(value)
