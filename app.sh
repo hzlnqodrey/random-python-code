@@ -926,3 +926,18 @@ drwxrwxrwx 1 qodri123 qodri123 4096 Sep 12 16:08 Reading-Data-interactively
 -rwxrwxrwx 1 qodri123 qodri123   90 Sep  6 00:19 hello.py
 -rwxrwxrwx 1 qodri123 qodri123  528 Sep  6 00:26 seconds.py
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat stdout_example.py
+#!/usr/bin/env python3
+
+print("jsut a bit of text here...")
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ls
+stdout_example.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./stdout_example.py
+jsut a bit of text here...
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./stdout_example.py > newfile.txt
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ls
+newfile.txt  stdout_example.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat newfile.txt
+jsut a bit of text here...
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$

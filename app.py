@@ -1844,3 +1844,9 @@ unittest.main()
 
 # Correct
 # Right on! The touch command will create an empty file.
+
+
+###### Redirecting Streams | I/O streams with Bash
+
+## Redirection (>)
+#  -> the process of sending a stream to different destinatiion
