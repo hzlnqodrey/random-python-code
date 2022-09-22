@@ -1823,3 +1823,4 @@ unittest.main()
 #           : -> dot dot is the parent directory (../)
 # touch     : is a command to create a empty file
 # mv        : is a command to RENAME and MOVE file
+# rm        : is a command to delete file (delete all using asterisk (*))

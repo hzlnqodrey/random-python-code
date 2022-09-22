@@ -893,3 +893,16 @@ while(cont.lower() == 'y'):
 
 print("Good bye!")
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ ls -l
+total 0
+-rwxrwxrwx 1 qodri123 qodri123   0 Sep 22 12:27 emptyfile.txt
+-rwxrwxrwx 1 qodri123 qodri123 528 Sep 22 11:21 seconds.py
+-rwxrwxrwx 1 qodri123 qodri123 528 Sep 22 12:38 yetanotherfile.txt
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ rm *
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ ls
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ ls -l
+total 0
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$

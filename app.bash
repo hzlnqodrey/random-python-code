@@ -20,3 +20,7 @@ pwd
 cp
 
 touch
+
+mv
+
+rm
