@@ -2072,3 +2072,21 @@ for line in sys.stdin:
 
 ### Conditional Execution in Bash
 
+## Short Quiz: Conditional Execution in Bash
+
+# A conditional block in Bash that starts with 'if', ends with which of the following lines?
+
+
+# Correct Answer: fi
+
+
+# if
+
+
+# else
+
+
+# grep
+
+# Correct
+# Right on! The if conditional ends with fi (a backwards "if").
