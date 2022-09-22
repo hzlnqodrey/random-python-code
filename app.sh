@@ -1002,3 +1002,10 @@ Advance your career,
 Automating with python,
 It's so fun to learn.
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
+
+# or you can just do by this
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./capitalize.py < haiku.txt
+Advance your career,
+Automating with python,
+It's so fun to learn.
