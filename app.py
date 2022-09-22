@@ -1739,3 +1739,23 @@ def validate_user(username, minlen):
         if not username.isalnum():
                 return False
         return True
+
+
+## Short Quiz: Raising Errors
+
+# What keyword can help provide a reason an error has occurred in a function?
+
+
+# raise
+
+
+# Correct Ansewer assert
+
+
+# return
+
+
+# minlen
+
+# Correct
+# Right on! This keyword is used to produce a message when a conditional is false.
