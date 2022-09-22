@@ -1850,3 +1850,6 @@ unittest.main()
 
 ## Redirection (>)
 #  -> the process of sending a stream to different destinatiion
+
+## > is overwritten the file
+## >> is to append the new content of the file in the end of line
