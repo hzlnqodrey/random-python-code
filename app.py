@@ -1876,3 +1876,6 @@ unittest.main()
 
 # Correct
 # Great work! A double greater than sign will append a command output to a file.
+
+# STD_ERROR
+## 2> redirected of error value to error file

@@ -966,3 +966,13 @@ Traceback (most recent call last):
     print("Now we generate an error to STDERR" + data + 1)
 TypeError: can only concatenate str (not "int") to str
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
+
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./streams.py < newfile.txt 2> error_file.txt
+This will come from STDIN: Now we write it to STDOUT: jsut a bit of text here...
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat error_file.txt
+Traceback (most recent call last):
+  File "./streams.py", line 5, in <module>
+    print("Now we generate an error to STDERR" + data + 1)
+TypeError: can only concatenate str (not "int") to str
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
