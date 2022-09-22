@@ -1825,3 +1825,22 @@ unittest.main()
 # mv        : is a command to RENAME and MOVE file
 # rm        : is a command to delete file (delete all using asterisk (*))
 # rmdir     : is a command to delete directory [ONLY WORKS IN EMPTY DIRECTORIES]
+
+## Short Quiz: Basic Linux Commands
+
+# Which of the following Linux commands will create an empty file?
+
+
+# Correct Answer: touch
+
+
+# pwd
+
+
+# mkdir
+
+
+# cd
+
+# Correct
+# Right on! The touch command will create an empty file.

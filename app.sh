@@ -912,3 +912,17 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ls mynewdir
 ls: cannot access 'mynewdir': No such file or directory
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ls September
+BashScripting  Dicoding  Python-Test  Reading-Data-interactively  hello.py  seconds.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$ ls September -la
+total 0
+drwxrwxrwx 1 qodri123 qodri123 4096 Sep 22 11:13 .
+drwxrwxrwx 1 qodri123 qodri123 4096 Sep 13 10:23 ..
+drwxrwxrwx 1 qodri123 qodri123 4096 Sep 22 12:42 BashScripting
+drwxrwxrwx 1 qodri123 qodri123 4096 Sep 20 15:54 Dicoding
+drwxrwxrwx 1 qodri123 qodri123 4096 Sep 22 09:57 Python-Test
+drwxrwxrwx 1 qodri123 qodri123 4096 Sep 12 16:08 Reading-Data-interactively
+-rwxrwxrwx 1 qodri123 qodri123   90 Sep  6 00:19 hello.py
+-rwxrwxrwx 1 qodri123 qodri123  528 Sep  6 00:26 seconds.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise$
