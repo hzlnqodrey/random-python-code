@@ -854,3 +854,8 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ touch myfile.txt
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ ls
 myfile.txt  seconds.py
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ ls -l
+total 0
+-rwxrwxrwx 1 qodri123 qodri123   0 Sep 22 12:27 myfile.txt
+-rwxrwxrwx 1 qodri123 qodri123 528 Sep 22 11:21 seconds.py

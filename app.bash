@@ -2,7 +2,10 @@ echo
 
 cat
 
-ls
+ls 
+    [flag:
+        -l :
+    ]
 
 chmod
 
