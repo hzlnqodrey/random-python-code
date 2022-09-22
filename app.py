@@ -1892,3 +1892,22 @@ import sys
 
 for line in sys.stdin:
         print(line.strip().capitalize())
+
+## Short Quiz: Pipes and Pipelines
+
+# Which of the following is the correct way of using pipes?
+
+
+# user@ubuntu:~$ cat sample.txt ./process.py
+
+
+# user@ubuntu:~$ cat sample.txt || ./process.py
+
+
+# user@ubuntu:~$ tr ' ' '\n' | sort | cat sample.txt
+
+
+# Correct Answer: user@ubuntu:~$ cat sample.txt | tr ' ' '\n' | sort
+
+# Correct
+# Woohoo! The contents of the txt file are passed on to be placed in their own line and sorted in alphabetical order on the display.
