@@ -785,3 +785,14 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 Ran 4 tests in 0.000s
 
 OK
+
+## Validate User
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test/ErrorHandling$ python3
+Python 3.8.10 (default, Jun 22 2022, 20:18:18)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from validations import validate_user
+>>> validate_user("", -1)
+False
+>>>
