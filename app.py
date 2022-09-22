@@ -1802,3 +1802,9 @@ unittest.main()
 
 # Correct
 # Way to go! The expected error is passed first.
+
+
+################################################# Intro to Module 6: Bash Scripting
+
+## bash is to simplify the complex script in  modern prog-lang
+## you are using bash scripting to automate a few lines of codes
