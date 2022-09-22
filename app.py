@@ -1921,3 +1921,22 @@ for line in sys.stdin:
 ## [SIGINT] ^C : is to Terminating Program cleanly
 ## [SIGSTOP] ^Z : is to stopped program
 ## fg : is to continued the stopped program
+
+## Short Quiz: Signalling Processes
+
+# What can you type in the terminal to stop the traceroute command from running cleanly?
+
+
+# Correct Answer: Ctrl-C
+
+
+# SIGINT
+
+
+# Ctrl-Z
+
+
+# SIGSTOP
+
+# Correct
+# Right on! This sends a SIGINT signal to the program to stop processing cleanly.
