@@ -1,3 +1,4 @@
+## Basic Command
 echo
 
 cat
@@ -26,3 +27,21 @@ mv
 rm
 
 rmdir
+
+## Redirection Command
+overwritten a file  >
+append to a file    >>
+
+read stdout and output the stdin <
+
+stderror 2>
+
+## Pipelines Command
+cmd | cmd | cmd | cmd | until infinity 
+
+## Signalling Command
+CTRL-C
+CTRL-Z
+fg
+kill
+ps

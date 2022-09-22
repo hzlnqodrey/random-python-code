@@ -1940,3 +1940,6 @@ for line in sys.stdin:
 
 # Correct
 # Right on! This sends a SIGINT signal to the program to stop processing cleanly.
+
+# [SIGTERM] kill : signal that tell program to terminate
+# ps : which list the current running process
