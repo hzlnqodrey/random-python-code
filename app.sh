@@ -1158,3 +1158,6 @@ capitalize.py stdout_example.py streams.py
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ echo *.txt
 error_file.txt haiku.txt my_amazing_file.txt newfile.txt
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ if test -n "$PATH"; then echo "Your path is not empty"; fi
+Your path is not empty
