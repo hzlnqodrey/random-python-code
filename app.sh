@@ -809,3 +809,9 @@ Traceback (most recent call last):
     raise ValueError("minlen must be at least one")
 ValueError: minlen must be at least one
 >>>
+
+>>> validate_user("", 1)
+False
+>>> validate_user("hzlnqodrey", 1)
+True
+>>>
