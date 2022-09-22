@@ -1783,3 +1783,22 @@ class TestValidateUser(unittest.TestCase):
 
 # Run The Test
 unittest.main()
+
+## Short Quiz: Testing for Expected Errors
+
+# When using the assertRaises method, what is passed first?
+
+
+# Function name
+
+
+# Conditional
+
+
+# Parameters
+
+
+# Correct Answer: Error
+
+# Correct
+# Way to go! The expected error is passed first.
