@@ -796,3 +796,16 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> validate_user("", -1)
 False
 >>>
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test/ErrorHandling$ python3
+Python 3.8.10 (default, Jun 22 2022, 20:18:18)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from validations import validate_user
+>>> validate_user("", -1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test/ErrorHandling/validations.py", line 5, in validate_user
+    raise ValueError("minlen must be at least one")
+ValueError: minlen must be at least one
+>>>
