@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# TEST
+# -> a command that evaluates the conditions received and exits with zero when true, one when false
+
 if test -n "$PATH"; then echo "Your path is not empty"; fi
 
 # -n indicate which check if a string variable empty or not 

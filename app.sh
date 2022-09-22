@@ -1164,3 +1164,19 @@ Your path is not empty
 
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ if [ -n "$PATH" ]; then echo "Your path is not empty"; fi
 Your path is not empty
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat while.sh
+#!/bin/bash
+
+n=1
+
+while [ $n -le 5 ]; do
+        echo "Iteration number - $n"
+        ((n+=1))
+done
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./while.sh
+Iteration number - 1
+Iteration number - 2
+Iteration number - 3
+Iteration number - 4
+Iteration number - 5
