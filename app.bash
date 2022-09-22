@@ -11,3 +11,5 @@ mkdir
 cd
 
 pwd
+
+cp
