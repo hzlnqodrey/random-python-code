@@ -1727,6 +1727,9 @@ def character_frequency(filename):
 #!/usr/bin/env python3
 
 def validate_user(username, minlen):
+        # add Assertion checking
+        assert type(username) == str, "username must be as string"
+
         if minlen < 1:
             raise ValueError("minlen must be at least 1")
         # mininum required characters
