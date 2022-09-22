@@ -1098,3 +1098,37 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32$
 64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=141 ttl=57 time=25.9 ms
 Terminated
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat gather-information.sh
+#!/bin/bash
+
+echo "Starting at: $(date)"
+echo
+
+echo "UPTIME"
+uptime # cmd
+echo # empty lines
+
+echo "FREE"
+free # cmd
+echo # empty lines
+
+echo "WHO"
+who  # cmd
+echo # empty lines
+
+echo "Finishing at $(date)"
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./gather-information.sh
+Starting at: Thu Sep 22 16:18:52 WIB 2022
+
+UPTIME
+ 16:18:52 up 3 min,  0 users,  load average: 0.00, 0.00, 0.00
+
+FREE
+              total        used        free      shared  buff/cache   available
+Mem:       13029044       93216    12900712          68       35116    12766668
+Swap:       4194304           0     4194304
+
+WHO
+
+Finishing at Thu Sep 22 16:18:52 WIB 2022
