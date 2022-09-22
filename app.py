@@ -2041,3 +2041,22 @@ for line in sys.stdin:
 # jobs: lists the jobs currently running or stopped
 
 # top: shows the processes currently using the most CPU time (press "q" to quit)  
+
+## Short Quiz: Creating Bash Scripts
+
+# Which command will correctly run a bash script?
+
+
+# user@ubuntu:~$ #!/bin/bash
+
+
+# user@ubuntu:~$ ./bash.py 
+
+
+# Correct Answer: user@ubuntu:~$ ./bash_sample.sh
+
+
+# user@ubuntu:~$ ./sh.bash
+
+# Correct
+# Right on! A bash script is run with the .sh file extension.
