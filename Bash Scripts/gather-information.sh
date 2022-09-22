@@ -1,18 +1,18 @@
 #!/bin/bash
-
+line="======================================="
 echo "Starting at: $(date)"
 echo
 
 echo "UPTIME"
 uptime # cmd
-echo # empty lines
+echo $line # empty lines
 
 echo "FREE"
 free # cmd
-echo # empty lines
+echo $line # empty lines
 
 echo "WHO"
 who  # cmd
-echo # empty lines
+echo $line # empty lines
 
 echo "Finishing at $(date)"
