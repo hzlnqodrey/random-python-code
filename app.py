@@ -1727,6 +1727,8 @@ def character_frequency(filename):
 #!/usr/bin/env python3
 
 def validate_user(username, minlen):
+        if minlen < 1:
+            raise ValueError("minlen must be at least 1")
         # mininum required characters
         if len(username) < minlen:
                 return False
