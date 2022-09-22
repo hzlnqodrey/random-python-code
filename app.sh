@@ -947,3 +947,22 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 jsut a bit of text here...
 jsut a bit of text here...
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ls ../Reading-Data-interactively/
+Subprocess  create_file.py  parameters.py  streams.py  test-1.txt  variables.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cp ../Reading-Data-interactively/streams.py .
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ls
+newfile.txt  stdout_example.py  streams.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat streams.py
+#!/usr/bin/env python3
+
+data = input("This will come from STDIN: ")
+print("Now we write it to STDOUT: " + data)
+print("Now we generate an error to STDERR" + data + 1)
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./streams.py < newfile.txt
+This will come from STDIN: Now we write it to STDOUT: jsut a bit of text here...
+Traceback (most recent call last):
+  File "./streams.py", line 5, in <module>
+    print("Now we generate an error to STDERR" + data + 1)
+TypeError: can only concatenate str (not "int") to str
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
