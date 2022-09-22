@@ -1161,3 +1161,6 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ if test -n "$PATH"; then echo "Your path is not empty"; fi
 Your path is not empty
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ if [ -n "$PATH" ]; then echo "Your path is not empty"; fi
+Your path is not empty
