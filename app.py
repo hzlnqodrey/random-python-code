@@ -1911,3 +1911,9 @@ for line in sys.stdin:
 
 # Correct
 # Woohoo! The contents of the txt file are passed on to be placed in their own line and sorted in alphabetical order on the display.
+
+
+######## Signalling Processes
+
+## Signals
+#  -> Tokens delivered to running process to indicate a desired action

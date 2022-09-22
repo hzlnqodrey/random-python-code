@@ -996,11 +996,11 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat haiku.txt
 advance your career,
 automating with Python,
-it's so fun to learn.
+its so fun to learn.
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat haiku.txt | ./capitalize.py
 Advance your career,
 Automating with python,
-It's so fun to learn.
+Its so fun to learn.
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
 
 # or you can just do by this
@@ -1008,4 +1008,24 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ./capitalize.py < haiku.txt
 Advance your career,
 Automating with python,
-It's so fun to learn.
+Its so fun to learn.
+
+
+###### SIGNALLING
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ ping www.google.com
+PING forcesafesearch.google.com (216.239.38.120) 56(84) bytes of data.
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=1 ttl=57 time=63.7 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=2 ttl=57 time=26.3 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=3 ttl=57 time=29.1 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=4 ttl=57 time=30.6 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=5 ttl=57 time=39.1 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=6 ttl=57 time=30.1 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=7 ttl=57 time=32.5 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=8 ttl=57 time=26.2 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=9 ttl=57 time=26.4 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=10 ttl=57 time=26.9 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=11 ttl=57 time=27.2 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=12 ttl=57 time=52.2 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=13 ttl=57 time=27.0 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=14 ttl=57 time=28.0 ms
