@@ -1152,3 +1152,9 @@ Swap:       4194304           0     4194304
 WHO
 ---------------------------------------------
 Finishing at Thu Sep 22 16:30:55 WIB 2022
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ echo *.py
+capitalize.py stdout_example.py streams.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ echo *.txt
+error_file.txt haiku.txt my_amazing_file.txt newfile.txt
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$

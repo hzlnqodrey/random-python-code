@@ -2066,3 +2066,6 @@ for line in sys.stdin:
 
 ###### Using Variables and Globs
 
+## globs
+#  -> use to create a list of files 
+# * and ? is a common globs
