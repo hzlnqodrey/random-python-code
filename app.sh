@@ -1029,3 +1029,26 @@ PING forcesafesearch.google.com (216.239.38.120) 56(84) bytes of data.
 64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=12 ttl=57 time=52.2 ms
 64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=13 ttl=57 time=27.0 ms
 64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=14 ttl=57 time=28.0 ms
+
+^C
+--- forcesafesearch.google.com ping statistics ---
+89 packets transmitted, 89 received, 0% packet loss, time 88101ms
+rtt min/avg/max/mdev = 25.563/29.647/126.124/13.243 ms
+
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=37 ttl=57 time=26.1 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=38 ttl=57 time=26.3 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=39 ttl=57 time=26.1 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=40 ttl=57 time=28.3 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=41 ttl=57 time=26.5 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=42 ttl=57 time=26.1 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=43 ttl=57 time=26.3 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=44 ttl=57 time=32.3 ms
+^Z
+[2]+  Stopped                 ping www.google.com
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ fg
+ping www.google.com
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=45 ttl=57 time=26.2 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=46 ttl=57 time=28.3 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=47 ttl=57 time=26.2 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=48 ttl=57 time=27.6 ms
+64 bytes from any-in-2678.1e100.net (216.239.38.120): icmp_seq=49 ttl=57 time=28.9 ms

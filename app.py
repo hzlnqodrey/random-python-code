@@ -1917,3 +1917,7 @@ for line in sys.stdin:
 
 ## Signals
 #  -> Tokens delivered to running process to indicate a desired action
+
+## [SIGINT] ^C : is to Terminating Program cleanly
+## [SIGSTOP] ^Z : is to stopped program
+## fg : is to continued the stopped program
