@@ -1884,3 +1884,11 @@ unittest.main()
 
 ## Pipes [Represented by pipe character ( | )]
 #  -> connect the output of one program to the input of another in order to pass data between programs.
+
+# qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat capitalize.py
+#!/usr/bin/env python3
+
+import sys
+
+for line in sys.stdin:
+        print(line.strip().capitalize())
