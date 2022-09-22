@@ -981,3 +981,14 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat my_amazing_file.txt
 Just a single line here
 qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
+
+## IDK WHAT IS THIS LMAO
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cat newfile.txt | tr ' ' '\n' | sort | uniq -c | sort -nr | head
+      2 text
+      2 of
+      2 jsut
+      2 here...
+      2 bit
+      2 a
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$
