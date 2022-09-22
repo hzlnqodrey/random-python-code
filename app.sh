@@ -835,3 +835,9 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 Ran 4 tests in 0.000s
 
 OK
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ mkdir mynewdir
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting$ cd mynewdir/
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$
+
+## they dont print anything if succeed, they will only print when there is an error
