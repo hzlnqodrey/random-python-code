@@ -859,3 +859,10 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 total 0
 -rwxrwxrwx 1 qodri123 qodri123   0 Sep 22 12:27 myfile.txt
 -rwxrwxrwx 1 qodri123 qodri123 528 Sep 22 11:21 seconds.py
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ ls -la
+total 0
+drwxrwxrwx 1 qodri123 qodri123 4096 Sep 22 12:27 .
+drwxrwxrwx 1 qodri123 qodri123 4096 Sep 22 11:18 ..
+-rwxrwxrwx 1 qodri123 qodri123    0 Sep 22 12:27 myfile.txt
+-rwxrwxrwx 1 qodri123 qodri123  528 Sep 22 11:21 seconds.py
