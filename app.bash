@@ -9,3 +9,5 @@ chmod
 mkdir
 
 cd
+
+pwd

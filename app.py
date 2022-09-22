@@ -1815,3 +1815,6 @@ unittest.main()
 # cat       : is a command for showing contents of files
 # ls        : is a command to list contents of a directory
 # chmod     : is a command to change a permission of a file
+# mkdir     : is a command to make a directory
+# cd        : is a command to change a directory
+# pwd       : is a command to checking currect working directory
