@@ -866,3 +866,30 @@ drwxrwxrwx 1 qodri123 qodri123 4096 Sep 22 12:27 .
 drwxrwxrwx 1 qodri123 qodri123 4096 Sep 22 11:18 ..
 -rwxrwxrwx 1 qodri123 qodri123    0 Sep 22 12:27 myfile.txt
 -rwxrwxrwx 1 qodri123 qodri123  528 Sep 22 11:21 seconds.py
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ mv myfile.txt emptyfile.txt
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ ls
+emptyfile.txt  seconds.py
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ cp seconds.py yetanotherfile.txt
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ ls
+emptyfile.txt  seconds.py  yetanotherfile.txt
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$ cat yetanotherfile.txt
+#!/usr/bin/env python3
+
+def to_seconds(hours, minutes, seconds):
+        return hours*3600+minutes*60+seconds
+
+print("Welcome to this thime converter program")
+
+cont = "y"
+while(cont.lower() == 'y'):
+        hours = int(input("Enter the number of hours: "))
+        minutes = int(input("Enter the number of minutes: "))
+        seconds = int(input("Enter the number of seconds: "))
+
+        print("That's {} seconds".format(to_seconds(hours, minutes, seconds)))
+        print()
+        cont = input("Do you want to do another conversion? [y to continue] ")
+
+print("Good bye!")
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/mynewdir$

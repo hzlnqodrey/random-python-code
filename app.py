@@ -1822,3 +1822,4 @@ unittest.main()
 #           : -> dot is the current directory (./) like that
 #           : -> dot dot is the parent directory (../)
 # touch     : is a command to create a empty file
+# mv        : is a command to RENAME and MOVE file
