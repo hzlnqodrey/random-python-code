@@ -1721,3 +1721,16 @@ def character_frequency(filename):
                         characters[char] = characters.get(char, 0) + 1
         f.close()
         return characters
+
+# Validating Username
+
+#!/usr/bin/env python3
+
+def validate_user(username, minlen):
+        # mininum required characters
+        if len(username) < minlen:
+                return False
+        # is username alphanumerice?
+        if not username.isalnum():
+                return False
+        return True
