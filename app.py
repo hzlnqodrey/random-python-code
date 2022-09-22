@@ -1818,5 +1818,5 @@ unittest.main()
 # mkdir     : is a command to make a directory
 # cd        : is a command to change a directory
 # pwd       : is a command to checking currect working directory
-# cp        : is a command to copy a file
-
+# cp        : is a command to copy a file (using a dot)
+#           : -> dot is this directory (./) like that
