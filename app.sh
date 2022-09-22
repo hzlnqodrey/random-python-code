@@ -828,3 +828,10 @@ Traceback (most recent call last):
     assert type(username) == str, "username must be a string"
 AssertionError: username must be a string
 >>>
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/Python-Test/ErrorHandling$ ./validations_test.py
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
