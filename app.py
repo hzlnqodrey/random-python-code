@@ -1880,3 +1880,7 @@ unittest.main()
 # STD_ERROR [File Descriptor: 2]
 ## 2> redirected of error value to error file
 
+########## Pipes and Pipelines
+
+## Pipes [Represented by pipe character ( | )]
+#  -> connect the output of one program to the input of another in order to pass data between programs.
