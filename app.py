@@ -2101,3 +2101,8 @@ import random
 value = random.randint(0, 3)
 print("Returning: " + str(value))
 sys.exit(value)
+
+## FOR LOOP IN BASH
+
+## basename index.HTM .HTM
+## output: index

@@ -1198,3 +1198,45 @@ qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/
 I love apple
 I love orange
 I love peach
+
+################ RENAMING FILE WITH FOR LOOP IN BASH
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ ls -l
+total 0
+-rwxrwxrwx 1 qodri123 qodri123  0 Sep 22 19:46 about.HTM
+-rwxrwxrwx 1 qodri123 qodri123  0 Sep 22 19:46 footer.HTM
+-rwxrwxrwx 1 qodri123 qodri123  0 Sep 22 19:46 index.HTM
+-rwxrwxrwx 1 qodri123 qodri123 12 Sep 22 19:49 rename.sh
+
+-rwxrwxrwx 1 qodri123 qodri123 12 Sep 22 19:49 rename.sh
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ nano rename.sh
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ chmod +x rename.sh
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ ./rename.sh
+mv about.HTM file
+mv footer.HTM file
+mv index.HTM file
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ nano rename.sh
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ ./rename.sh
+mv about.HTM about
+mv footer.HTM footer
+mv index.HTM index
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ nano rename.sh
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ ./rename.sh
+mv about.HTM about.html
+mv footer.HTM footer.html
+mv index.HTM index.html
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ nano rename.sh
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ ./rename.sh
+about.HTM about.html
+footer.HTM footer.html
+index.HTM index.html
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ nano rename.sh
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ ./rename.sh
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ ls -la
+total 0
+drwxrwxrwx 1 qodri123 qodri123 4096 Sep 23 13:50 .
+drwxrwxrwx 1 qodri123 qodri123 4096 Sep 22 19:46 ..
+-rwxrwxrwx 1 qodri123 qodri123    0 Sep 22 19:46 about.html
+-rwxrwxrwx 1 qodri123 qodri123    0 Sep 22 19:46 footer.html
+-rwxrwxrwx 1 qodri123 qodri123    0 Sep 22 19:46 index.html
+-rwxrwxrwx 1 qodri123 qodri123   94 Sep 23 13:50 rename.sh
