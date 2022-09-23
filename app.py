@@ -2149,3 +2149,23 @@ sys.exit(value)
 # Correct
 # Woohoo! The time of the log will be shown with the -f3- or field three option of the cut command.
 
+## Choosing Between Bash and Python
+
+## Short Quiz: Choosing Between Bash and Python
+
+# Which of the following statements would make it better to start using Python instead of Bash?
+
+
+# Operate with system commands.
+
+
+# Correct Answer: Use on multi-platforms.
+
+
+# Operate with system files.
+
+
+# Run a single process on multiple files.
+
+# Correct
+# Right on! It is better to use Python and its standard library to use when working across multiple platforms.
