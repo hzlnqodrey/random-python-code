@@ -2106,3 +2106,22 @@ sys.exit(value)
 
 ## basename index.HTM .HTM
 ## output: index
+
+## Short Quiz: For Loops in Bash Scripts
+
+# Which “for” conditional line will add users Paul and Jeremy to a user variable?
+
+
+# for users in Paul Jeremy
+
+
+# Correct Answer: for user in Paul Jeremy
+
+
+# for Paul Jeremy in user
+
+
+# for Paul & Jeremy in user
+
+# Correct
+# Nice job! The elements Paul and Jeremy are added to the user variable.
