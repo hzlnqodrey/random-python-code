@@ -1240,3 +1240,13 @@ drwxrwxrwx 1 qodri123 qodri123 4096 Sep 22 19:46 ..
 -rwxrwxrwx 1 qodri123 qodri123    0 Sep 22 19:46 footer.html
 -rwxrwxrwx 1 qodri123 qodri123    0 Sep 22 19:46 index.html
 -rwxrwxrwx 1 qodri123 qodri123   94 Sep 23 13:50 rename.sh
+
+
+### Advanced Command Interaction
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ tail /var/log/syslog | cut -d' ' -f5-
+
+# -d' ' : is space as a delimiter
+# -f5-  : we want to extract the fifth field
+
+qodri123@DESKTOP-V1LR167:/mnt/c/WINDOWS/system32/programming_exercise/September/BashScripting/old_websites$ cut -d' ' -f5- /var/log/syslog | sort | uniq -c | sort -nr | head
